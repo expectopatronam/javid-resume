@@ -1,4 +1,4 @@
-6383007505 | farrukjavid@gmail.com Javid Akeel | linkedin.com/in/javid-akeel | javid-portfolio-alpha.vercel.app [URL 🔗](https://www.linkedin.com/in/javid-akeel/)
+6383007505 | farrukjavid@gmail.com Javid Akeel | linkedin.com/in/javid-akeel | javid-portfolio.web.app [URL 🔗](https://www.linkedin.com/in/javid-akeel/)
 
 ## Education
 
