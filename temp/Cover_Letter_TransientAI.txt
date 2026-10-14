@@ -1,0 +1,18 @@
+Dear Hiring Team at Transient.AI,
+
+I am writing to express my strong interest in the Senior Flutter Developer position at Transient.AI. With over 2.5 years of intensive production experience architecting high-performance cross-platform mobile applications and AI-driven platforms, I am excited about the opportunity to contribute to Transient.AI's next-generation B2B AI products.
+
+In my current role at Doubletap Innovations, I built Selfitoons, an AI-powered video generation and social media application deployed on iOS and Android. I spearheaded the mobile architecture using Clean Architecture, Riverpod, and BLoC with asynchronous streams, while integrating client-side video processing via FFmpeg to reduce server CPU load by 75%. To eliminate memory leaks during high-throughput media scrolling, I engineered a custom Video Controller Manager that maintains only 5 active controllers, ensuring 60 FPS playback. Additionally, across Ecfile Solutions and independent platforms, I have built production applications with Hive, SQLite/RoomDB, Firebase (Auth, Firestore, FCM, Crashlytics), WebSockets, and payment gateways (Razorpay, Cashfree).
+
+Having managed end-to-end releases on both the Google Play Console and Apple App Store Connect, automated CI/CD pipelines, and mentored junior developers on test-driven development, I take ownership of the full application lifecycle. I am available to join within a 30-day notice period.
+
+Thank you for your time and consideration.
+
+Warm regards,
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+Notice Period: 30 Days
+Location: Chennai, India (Open to Remote / Relocation)

@@ -1,0 +1,22 @@
+Dear Hiring Team at Logzee Technologies,
+
+I am writing to apply for the Mobile Developer (iOS / Android / Flutter) position at Logzee Technologies. Based in Chennai with over 2.5 years of hands-on production experience engineering cross-platform Flutter applications, I am an immediate location and technical fit for your on-site team in Chennai.
+
+My experience aligns directly with the requirements outlined in your job posting:
+- GetX & MVC Architecture: Extensive experience utilizing GetX for reactive state management, dependency injection, and routing alongside MVC architecture and SOLID design principles. In my work on Ubill and Selfitoons, I structured modular projects with reusable components and clean separation of concerns.
+- RESTful Architecture & WebSockets: Over 3 years of experience integrating and architecting RESTful APIs, handling asynchronous communication, and implementing real-time WebSockets.
+- Push Notifications & Firebase: Integrated Firebase Cloud Messaging (FCM) for targeted and automated push notifications across Android and iOS.
+- Local Storage & Optimization: Proficient in local database implementations using SQLite, Get Storage, SharedPreferences, and Hive for offline-first persistence. Engineered memory optimization techniques (custom video controller pooling) and FFmpeg client processing to eliminate memory leaks and ensure 60 FPS performance.
+
+I am available to join your on-site office in Chennai within a 30-day notice period.
+
+Thank you for your time and consideration.
+
+Warm regards,
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+Notice Period: 30 Days
+Location: Chennai, India (Ready for On-site)

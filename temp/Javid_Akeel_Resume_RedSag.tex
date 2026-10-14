@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mobile App Developer (Flutter \& Native)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Selfitoons}, an AI video generation and social media app deployed across \textbf{iOS and Android}.}
+        \resumeItem{Implemented client-side video watermarking via \textbf{FFmpeg}, shifting computation to device and cutting CPU load by \textbf{75\%}.}
+        \resumeItem{Engineered a custom \textbf{Video Controller Manager} maintaining 5 active controllers, optimizing memory leaks and scroll FPS.}
+        \resumeItem{Architected a scalable feeds engine applying \textbf{Riverpod, Bloc}, and \textbf{GoRouter} for predictable state and navigation.}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment gateways with strict security best practices and verified webhook callbacks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mobile \& FullStack Developer}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (Cloud Accounting \& Financial Software)}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code across Flutter (iOS/Android/Web) and Node.js microservices.}
+        \resumeItem{Built a high-performance PDF invoice generator via \textbf{JS Interop} to reuse backend HTML templates on client, boosting speed by \textbf{50\%}.}
+        \resumeItem{Designed secure \textbf{Node.js + MongoDB} backend APIs with custom JWT authentication and role-based access control (RBAC).}
+        \resumeItem{Implemented \textbf{Excel bulk stock upload} to eliminate manual data entry and accelerate customer migration from legacy systems.}
+        \resumeItem{Architected cross-platform apps using \textbf{Clean Architecture, MVVM, and MVC} with Hive for offline-first encrypted storage.}
+        \resumeItem{Collaborated with designers and backend engineers to optimize app performance; managed store releases on Google Play and App Store.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS \& Retail Platform} $|$ \emph{Kotlin (Jetpack Compose), Python, Firebase, Google Cloud Run, RoomDB}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack offline-first POS app in native \textbf{Kotlin Jetpack Compose} with delta sync, conflict logic, and barcode scanning.}
+            \resumeItem{Designed comprehensive analytics: profit/loss, category/item/seller-wise, and day/month/year date-range reports with stock alerts.}
+            \resumeItem{Scaled to \textbf{1,000+ active users}; integrated \textbf{Google Play Billing} in-app subscriptions; handled full backend on \textbf{Cloud Run} and \textbf{RoomDB}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Built a Flutter technical utility app for marine engineers to reference technical manuals and perform complex formula evaluations.}
+            \resumeItem{Developed containerized \textbf{Express.js + MongoDB} backend on \textbf{Docker} with \textbf{AWS S3}; managed releases on \textbf{Google Play Store}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Admin Panel} $|$ \emph{Next.js, NestJS, Tailwind CSS, AWS Cognito, Docker, Terraform}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Developed a scalable real-estate admin platform with complete CRUD workflows using \textbf{Next.js} and \textbf{NestJS} RESTful microservices.}
+            \resumeItem{Integrated enterprise RBAC authentication via \textbf{AWS Cognito} and automated infrastructure provisioning using \textbf{Terraform}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Dart, JavaScript, TypeScript, Java, Python, Kotlin, SQL (PostgreSQL), HTML5, CSS3} \\
+     \textbf{Mobile Frameworks}{: Flutter (iOS \& Android), React Native / React, Jetpack Compose, Native Android SDK, Platform Channels} \\
+     \textbf{Architecture \& Patterns}{: Clean Architecture, MVVM, MVC, Riverpod, BLoC, Provider, State Management, Design Patterns} \\
+     \textbf{Security \& APIs}{: Mobile Security Best Practices, JWT Authentication, RBAC, REST APIs, Dio, Payment Gateways (Razorpay, Cashfree)} \\
+     \textbf{Databases \& Cloud}{: MongoDB, PostgreSQL, Firebase (Firestore, Realtime DB, FCM, Crashlytics), RoomDB, Hive, AWS (S3, Cognito)} \\
+     \textbf{DevOps \& Deployment}{: Google Play Console, Apple App Store Connect, Git, CI/CD, Flutter DevTools (Profiling \& Optimization), Docker}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

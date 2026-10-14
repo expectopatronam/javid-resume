@@ -1,0 +1,21 @@
+Dear Hiring Team at Career Soft Solutions Pvt. Ltd.,
+
+I am writing to express my strong interest in the Flutter Mobile Consultant / Full Stack Developer position at Career Soft Solutions. Based in Chennai with an MCA and extensive experience delivering enterprise mobile and web applications, I am eager to contribute to your client delivery programs across Chennai and onsite in UAE/Saudi.
+
+Across my experience at Ecfile Solutions and Doubletap Innovations, I have worked across the full mobile and backend lifecycle:
+- Mobile & Full-Stack Delivery: Authored over 40,000 lines of production code across cross-platform Flutter (iOS, Android, and Web) and backend microservices (Java, Node.js, and MongoDB).
+- Banking & Financial Domain: Implemented mathematically compliant financial and GST calculation engines, invoice generation workflows via JS Interop, and integrated secure payment gateways (Razorpay, Cashfree) with automated transaction reconciliation.
+- Engineering & AI Productivity: Apply Clean Architecture, SOLID principles, and design patterns, actively leveraging AI coding assistants (GitHub Copilot, Claude) to accelerate defect resolution, code reviews, and test automation.
+
+I am based in Chennai, ready for onsite client engagements in UAE/Saudi, and available to join within a 30-day notice period.
+
+Thank you for your time and consideration.
+
+Warm regards,
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+Notice Period: 30 Days
+Location: Chennai, India (Open to Onsite UAE / Saudi)

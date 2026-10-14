@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications}{2024 -- 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flutter \& Full-Stack Developer}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Selfitoons}, an AI video generation and social platform on Android and iOS, owning end-to-end full-stack releases.}
+        \resumeItem{Built responsive mobile feeds and interactive screens using \textbf{custom Flutter widgets, custom code actions}, and \textbf{Riverpod}.}
+        \resumeItem{Integrated \textbf{Firebase Authentication, Cloud Firestore}, and \textbf{Firebase Storage} for user auth and real-time media storage.}
+        \resumeItem{Engineered a custom \textbf{Video Controller Manager} pooling 5 controllers, eliminating leaks and boosting feed scroll FPS.}
+        \resumeItem{Implemented client-side video watermarking via \textbf{FFmpeg}, cutting server CPU by \textbf{75\%}; integrated \textbf{Razorpay/Cashfree} APIs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-Stack Developer (Flutter + Node.js)}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (Cloud Accounting \& GST Software)}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of production code across responsive Flutter Web/Mobile frontends and Node.js microservices.}
+        \resumeItem{Architected responsive web-first UI following modern UI/UX principles; implemented \textbf{Clean Architecture} with Hive and Firestore.}
+        \resumeItem{Built secure full-stack backend services in \textbf{Node.js and Express REST APIs} with custom JWT authentication and encryption.}
+        \resumeItem{Developed a fast PDF generator with \textbf{JS Interop} and reusable HTML templates, accelerating invoice rendering by \textbf{50\%}.}
+        \resumeItem{Collaborated in an agile startup team with PMs, designers, and content teams; managed version control with \textbf{Git} and CI builds.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- Community \& POS Platform} $|$ \emph{Kotlin Jetpack Compose, Firebase, Google Cloud Run, RoomDB}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered an offline-first POS platform with \textbf{Cloud Firestore} and \textbf{Firebase Realtime Database} sync, barcode scan, and alerts.}
+            \resumeItem{Integrated \textbf{Firebase Authentication, Cloud Functions, and Firebase Storage}; scaled platform to \textbf{1,000+ active users}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack mobile utility app with responsive UI and offline calculation engines; published to \textbf{Google Play Store}.}
+            \resumeItem{Developed containerized \textbf{Node.js + REST APIs} on \textbf{Docker} with cloud object storage for technical documentation manuals.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Admin Panel} $|$ \emph{Next.js, NestJS, Tailwind CSS, AWS Cognito, Docker, Terraform}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Engineered a full-stack real-estate administration platform with complete CRUD interfaces via \textbf{Next.js} and \textbf{NestJS} APIs.}
+            \resumeItem{Configured enterprise RBAC auth with \textbf{AWS Cognito} and automated infrastructure provisioning using \textbf{Terraform}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend \& Low-Code}{: Flutter, FlutterFlow (Custom Code, Custom Widgets \& Actions), Dart, HTML5, CSS3, React, Next.js} \\
+     \textbf{Firebase Suite}{: Cloud Firestore, Firebase Authentication, Firebase Storage, Cloud Functions, FCM Push Notifications} \\
+     \textbf{Backend \& APIs}{: Node.js, Express.js, NestJS, REST APIs, Third-Party API Integrations, Webhooks, Dio, Microservices} \\
+     \textbf{Databases \& Storage}{: Cloud Firestore, MongoDB, PostgreSQL, Firebase Realtime DB, RoomDB, Hive, SharedPreferences} \\
+     \textbf{Tools \& Practices}{: Clean Architecture, MVVM, Git, CI/CD, Docker, AWS (S3, Cognito), Postman, Play Store \& App Store}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

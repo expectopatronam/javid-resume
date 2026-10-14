@@ -51,7 +51,7 @@ Prompt the AI agent with the target JD file name. The AI follows this exact work
 
 When asking the AI to tailor a resume, you can use:
 
-> *"Please tailor my resume for the job description in `jd/<company_name>.md`. Refer to `Javid_Resume_2026.md` for my current resume structure, use `javid-resume-content.md` for deeper details/metrics, and adapt keywords (such as state management libraries, architecture, or tools) to match the JD without changing core facts. Use `Javid_Akeel_Resume.tex` as the template and save the new tailored resume in `temp/Javid_Akeel_Resume_<company_name>.tex`."*
+> *"Please tailor my resume for the job description in `jd/<company_name>.md`. Refer to `Javid_Resume_2026.md` for my current resume structure, use `javid-resume-content.md` for deeper details/metrics, and adapt keywords (such as state management libraries, architecture, or tools) to match the JD without changing core facts. Keep the resume strictly to exactly 1 page (10pt, well-filled with optimal content density, no empty gaps). Use `Javid_Akeel_Resume.tex` as the template and save the new tailored resume in `temp/Javid_Akeel_Resume_<company_name>.tex`."*
 
 ---
 
@@ -62,8 +62,28 @@ When tailoring a resume, the AI must adhere to the following rules:
 1. **Truthfulness**: Never fabricate companies, job titles, education, or employment dates.
 2. **Equivalent Substitutions**: Adapt equivalent tech stack keywords to match JD phrasing (e.g., Riverpod ↔ Bloc/Cubit/Provider, REST ↔ GraphQL, clean architecture patterns).
 3. **Keyword Density**: Seamlessly incorporate JD keywords into summary, skills list, and project bullet points for optimal ATS parsing.
-4. **Page Constraints**: Keep the LaTeX layout strictly to **1 page** by balancing bullet points, spacing, and concise phrasing.
-5. **Output Isolation**: Never overwrite the root template `Javid_Akeel_Resume.tex`. Always write generated resumes into the `temp/` folder.
+4. **Strict 1-Page Constraint & Optimal Space Utilization**:
+   - The resume must fit **strictly on exactly 1 page** (no spillover onto page 2).
+   - Use the standard **`10pt`** document class (`\documentclass[letterpaper,10pt]{article}`).
+   - **No Empty / Sparse White Space**: The page must look complete, rich, and well-balanced. Do not leave awkward gaps or sparse sections with too few bullet points; ensure high information density with impactful metrics, achievements, and keywords from `javid-resume-content.md` that fill the single page edge-to-edge.
+5. **Plain-Text Cover Letters for Web Forms**:
+   - When generating cover letters, always provide them in clean **Plain Text** (no markdown bolding `**`, headers `#`, or bracketed links `[text](url)`). Write out raw URLs and standard numbering/spacing so the text can be pasted directly into portal form fields without looking broken.
+6. **Live App & Store Links (Proof of Production)**:
+   - Always include live links for published apps, web portals, and store listings. This provides concrete validation and adds high credibility for hiring managers.
+   - **Explicit Link Styling**: Instead of hiding links inside the project title, explicitly label them so the reviewer immediately recognizes live links.
+     - Preferred syntax: `\href{<url>}{\underline{iOS}} $|$ \href{<url>}{\underline{Android}}` or `\href{<url>}{\underline{Play Store}}` or `\href{<url>}{\underline{Web}}`
+     - Example in project headings:
+       ```latex
+       \textbf{Bizstack} $|$ \href{http://play.google.com/store/apps/details?id=com.nativedesk.bizstack&hl=en_IN}{\underline{Play Store}} $|$ \emph{Kotlin, RoomDB...}
+       \textbf{Selfitoons} (\href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons&pli=1}{\underline{Android}} $|$ \underline{iOS})
+       ```
+     - Verified URLs to use (from `javid-resume-content.md`):
+       - **Selfitoons (Android)**: `https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons&pli=1`
+       - **Ubill (Web)**: `https://app.ubill.tech/`
+       - **Bizstack (Play Store)**: `http://play.google.com/store/apps/details?id=com.nativedesk.bizstack&hl=en_IN`
+       - **Engine Room Ninja (Play Store)**: `https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja`
+     - Ensure line lengths remain calibrated so adding link tags does not trigger an accidental line wrap onto a dangling line.
+7. **Output Isolation**: Never overwrite the root template `Javid_Akeel_Resume.tex`. Always write generated resumes into the `temp/` folder.
 
 ---
 

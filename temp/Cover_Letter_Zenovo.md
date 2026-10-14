@@ -1,0 +1,23 @@
+# Cover Letter — Full Stack Developer (MERN + Mobile) at Zenovo Inc
+
+**Javid Akeel**  
+Chennai, India | +91 6383007505 | farrukjavid@gmail.com  
+[LinkedIn](https://www.linkedin.com/in/javid-akeel/) | [Portfolio](https://javid-portfolio-alpha.vercel.app/)  
+**Notice Period:** 30 Days | **Preferred Location:** Coimbatore (Hybrid) / Remote
+
+---
+
+Dear Hiring Team at Zenovo Inc,
+
+I am writing to express my strong interest in the **Full Stack Developer (MERN Stack + Mobile)** position at Zenovo Inc. With over 2.5 years of experience architecting full-stack web platforms and cross-platform mobile applications, I am eager to contribute to Zenovo's global SaaS and enterprise digital solutions.
+
+Across my experience at Ecfile Solutions and Doubletap Innovations, I have authored over 40,000 lines of production code bridging both ecosystems:
+- **MERN Stack & Backend:** Engineered robust microservices using Node.js, Express.js, and MongoDB with custom JWT authentication, aggregation pipelines, and scalable schema design. Built full-stack SaaS administrative panels in React / Next.js with complete CRUD workflows and containerized deployments on Docker.
+- **Mobile Engineering:** Architected high-performance mobile applications on Flutter and React Native/React with Clean Architecture, responsive UI/UX, and state management (Riverpod/Redux). I also built an ultra-fast PDF generation engine using JS Interop that sped up client invoicing by 50%.
+
+I am comfortable working across agile sprint cycles, participating in peer code reviews, and collaborating directly with UI/UX designers and backend teams. I am available to join within a **30-day notice period** and open to the hybrid working model in Coimbatore.
+
+Thank you for your time and consideration.
+
+Warm regards,  
+**Javid Akeel**

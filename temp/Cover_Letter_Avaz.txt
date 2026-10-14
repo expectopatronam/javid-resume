@@ -1,0 +1,21 @@
+Dear Balaji and the Hiring Team at Avaz,
+
+I am writing to express my strong interest in the SDE II Full-Stack Mobile Engineer role at Avaz. Having built products combining cross-platform mobile, cloud web platforms, and AI workflows, I am deeply inspired by Avaz's mission of Making Every Voice Heard and empowering individuals through transformative assistive communication technology.
+
+My experience aligns directly with Avaz's core engineering stack:
+- Flutter & Next.js: Developed production mobile applications on Flutter for iOS and Android while building scalable cloud web applications using Next.js, React, and Node.js microservices. In my work across Ecfile Solutions and Doubletap Innovations, I have authored over 40,000 lines of modular, clean code adhering to Clean Architecture and MVVM principles.
+- Generative AI & Performance: Built Selfitoons, an AI-powered media generation platform, integrating generative AI pipelines and client-side processing via FFmpeg to reduce server CPU load by 75%. Engineered a custom controller manager that eliminated memory leaks and optimized UI responsiveness.
+- Native Mobile & Automation: Experienced in native Android development (Kotlin, Jetpack Compose, RoomDB, platform channels) and automating development, testing, and deployment workflows with Git, GitHub Actions, and CI/CD pipelines.
+
+I take pride in building user-centered technology with empathy, accessibility, and high performance. I am available to join within a 30-day notice period.
+
+Thank you for your time and for the vital work you do at Avaz.
+
+Warm regards,
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+Notice Period: 30 Days
+Location: Chennai, India

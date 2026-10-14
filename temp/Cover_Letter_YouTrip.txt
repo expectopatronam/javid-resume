@@ -1,0 +1,21 @@
+Dear Hiring Team at YouTrip,
+
+I am writing to express my strong interest in the Software Engineer - Mobile App Development position at YouTrip. As Asia Pacific's leading multi-currency payment platform, YouTrip's mission to transform digital financial services resonates deeply with my background in engineering high-performance mobile applications and mission-critical financial software.
+
+Across my experience at Doubletap Innovations and Ecfile Solutions, I have specialized in building robust cross-platform mobile architectures with a strong focus on financial reliability:
+- FinTech & Payment Integrations: Integrated enterprise payment gateways including Razorpay, Cashfree, and Google Play Billing, implementing secure payload validation and automated transaction reconciliation. Engineered compliant financial calculation engines for Ubill, delivering mathematically accurate, zero-error accounting workflows.
+- Flutter & Native Hybrid Modules: Architected scalable applications using Clean Architecture, BLoC, Provider, and MVVM patterns with high FPS responsiveness. Experienced in bridging Flutter with native Android components in Kotlin (Jetpack Compose, RoomDB, platform channels) and managing complete store releases on Google Play and Apple App Store.
+- Quality, Performance & Security: Engineered client-side FFmpeg processing reducing server CPU by 75%, built custom controller managers eliminating memory leaks, and maintained automated test suites (unit, widget, and integration testing) with code reviews and performance profiling.
+
+I am eager to contribute to YouTrip's fast-growing multi-currency wallet ecosystem. I am available to join within a 30-day notice period.
+
+Thank you for your time and consideration.
+
+Warm regards,
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+Notice Period: 30 Days
+Location: Chennai, India

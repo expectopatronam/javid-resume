@@ -1,0 +1,27 @@
+Dear Hiring Team at Techtinium Technologies,
+
+I am writing to express my strong interest in the Senior Mobile Engineer / Tech Lead role at Techtinium Technologies. With hands-on experience architecting and shipping high-performance mobile applications across Flutter, Android (Kotlin / Jetpack Compose), and iOS, combined with a disciplined foundation in Computer Science, Data Structures, and Software Design, I am eager to contribute to Techtinium's product engineering excellence.
+
+Across my professional experience at Doubletap Innovations and Ecfile Solutions (Ubill), I have led mobile initiatives centered around scalable architecture, component reusability, and uncompromising performance:
+
+- Scalable Architecture & Reusable Components: I architect production mobile systems adhering to Clean Architecture and SOLID design principles, utilizing state management paradigms like Riverpod, BLoC, and GetX. I design modular UI component libraries that accelerate feature delivery across teams while maintaining visual and functional consistency.
+
+- Algorithmic Problem Solving & Optimization: When faced with critical feed latency and memory bottlenecks, I engineered a custom Video Controller Manager maintaining a bounded pool of 5 controllers, eliminating memory leaks and sustaining a smooth 60 FPS scrolling experience. Additionally, I implemented client-side video processing with FFmpeg, slashing backend CPU load by 75%.
+
+- Testing & Code Quality: I champion automated testing best practices, building comprehensive Unit and Widget/UI test suites with Flutter Test and mock frameworks to catch regressions early. I actively profile memory and render cycles using Flutter DevTools to preempt performance degradation.
+
+- Technical Leadership & Collaboration: I regularly conduct peer code reviews, mentor junior engineers, establish coding conventions, and collaborate closely with product designers, QA, and backend engineers throughout the full product lifecycle.
+
+- Store Publishing & Native Capabilities: I have published and managed production applications on both the Google Play Store and Apple App Store, handling store guidelines, platform channels, native integrations, and CI/CD pipelines.
+
+Techtinium's commitment to building world-class technology products across diverse industries aligns perfectly with my engineering mindset and drive for technical rigor. I would welcome the opportunity to discuss how my technical leadership and mobile engineering experience can help elevate your team.
+
+Thank you for your time and consideration.
+
+Sincerely,
+
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
