@@ -10,7 +10,7 @@
 - **Phone:** +91 6383007505
 - **Email:** farrukjavid@gmail.com
 - **LinkedIn:** [linkedin.com/in/javid-akeel](https://www.linkedin.com/in/javid-akeel/)
-- **Portfolio:** [javid-portfolio.web.app](https://javid-portfolio.web.app)
+- **Portfolio:** [javid-portfolio-alpha.vercel.app](https://javid-portfolio-alpha.vercel.app/)
 - **Primary Location:** Chennai, Tamil Nadu, India
 
 ---
@@ -69,6 +69,7 @@
 - **Location:** Chennai, India
 - **Primary Product:** *Ubill* — Cloud Accounting & GST Filing Software
 - **Web App Link:** [Ubill Web Portal](https://app.ubill.tech/)
+- **Play Store Link:** [Ubill on Google Play Store](https://play.google.com/store/apps/details?id=com.ubill.tech)
 - **Tech Stack:** Flutter Web/Desktop/Mobile, Node.js, Express.js, MongoDB, GetX, Riverpod, Provider, Hive, HTML/CSS, JS Interop
 
 #### Uncompressed Achievements & Bullet Points:

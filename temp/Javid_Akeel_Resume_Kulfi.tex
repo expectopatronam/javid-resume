@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer (Product \& Mobile)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Selfitoons} (\href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}} $|$ \underline{iOS}), an AI video social app, owning features from UX intent to store release.}
+        \resumeItem{Implemented on-device video watermarking with \textbf{FFmpeg}, shifting compute to client and cutting server CPU load by \textbf{75\%}.}
+        \resumeItem{Engineered a custom \textbf{Video Controller Manager} pooling 5 controllers, eliminating memory leaks and driving 60 FPS playback.}
+        \resumeItem{Architected interactive feeds via \textbf{Riverpod} and \textbf{BLoC}, building full states (loading skeletons, empty, offline, error/retry).}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} checkout flows; debugged across client, network, and API layers with unit/widget tests.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-Stack / Product Software Engineer}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code spanning Flutter (Web/Mobile), \textbf{Node.js} microservices, and MongoDB.}
+        \resumeItem{Built high-speed PDF invoice generator via \textbf{JS Interop} reusing backend HTML templates on client, boosting speed by \textbf{50\%}.}
+        \resumeItem{Designed secure \textbf{Node.js + MongoDB} REST APIs with JWT authentication, structured error states, and rate limiting.}
+        \resumeItem{Implemented \textbf{Excel bulk stock upload} pipelines to eliminate manual data entry and accelerate customer onboarding.}
+        \resumeItem{Architected responsive \textbf{Flutter Web} layouts with \textbf{Clean Architecture, MVVM}, and \textbf{Hive} offline-first local data caching.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- Real-Time POS \& Retail} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Python, Firebase, Cloud Run, RoomDB}}{}
+          \resumeItemListStart
+            \resumeItem{Built an offline-first POS platform scaled to \textbf{1,000+ active users}; implemented delta synchronization, conflict resolution, barcode scanning, and multi-tier billing logic with \textbf{RoomDB} local persistence.}
+            \resumeItem{Engineered backend on \textbf{Cloud Run (Python)} with \textbf{Firebase Realtime DB}; built real-time analytics (profit/loss, item/seller-wise).}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Shipped a Flutter utility app for marine engineers with offline local formula evaluation and technical manual reference caching.}
+            \resumeItem{Built containerized \textbf{Express.js + MongoDB} REST backend on \textbf{Docker} with \textbf{AWS S3}; wrote custom Markdown content tools.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Admin Platform} $|$ \emph{Next.js, NestJS, Tailwind CSS, PostgreSQL, AWS Cognito, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Developed full-stack real-estate management platform using \textbf{Next.js} and \textbf{NestJS} microservices with complete CRUD workflows.}
+            \resumeItem{Configured enterprise RBAC authentication via \textbf{AWS Cognito} and provisioned cloud infrastructure using \textbf{Terraform} and \textbf{Docker}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Core Languages}{: Dart, JavaScript, TypeScript, Python, Kotlin, SQL (PostgreSQL), HTML5/CSS3} \\
+     \textbf{Frontend \& Mobile}{: Flutter (iOS, Android, Web), Next.js, React, Responsive Layouts, UI States (Empty/Loading/Retry)} \\
+     \textbf{State Management}{: Riverpod, BLoC, Provider, GetX, Clean Architecture, MVVM, MVC} \\
+     \textbf{Backend \& APIs}{: Node.js, Express.js, NestJS, Python (Cloud Run/Django), RESTful APIs, Webhooks, JWT Auth} \\
+     \textbf{Databases \& Caching}{: MongoDB, PostgreSQL, Firebase (Realtime DB/Firestore), RoomDB, Hive, Redis/Local Caching} \\
+     \textbf{DevOps \& Tools}{: Git, GitHub Actions, CI/CD, Docker, AWS (S3, Cognito), Flutter DevTools, App Store / Play Console}
+    }}
+ \end{itemize}
+
+\end{document}

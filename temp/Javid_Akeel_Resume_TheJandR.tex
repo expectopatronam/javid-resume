@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    Gandhinagar / Open to Relocate
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flutter Developer}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Engineered core client features for \textbf{Selfitoons} (\href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}} $|$ \underline{iOS}), an interactive cross-platform mobile application on Android and iOS.}
+        \resumeItem{Implemented robust state management using \textbf{BLoC} and \textbf{Riverpod}, establishing clean, modular, and maintainable app architecture.}
+        \resumeItem{Integrated third-party APIs and SDKs including \textbf{Razorpay}, \textbf{Cashfree}, and \textbf{FFmpeg} (cutting server-side compute load by \textbf{75\%}).}
+        \resumeItem{Built a custom \textbf{Video Controller Manager} pooling 5 controllers to prevent memory leaks and maintain smooth 60 FPS performance.}
+        \resumeItem{Conducted extensive debugging and profiling using Flutter DevTools, resolving performance bottlenecks and UI jank across diverse devices.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Authored \textbf{40,000+ lines} of modular production code for Flutter Web and Mobile frontends and Node.js/Express REST microservices.}
+        \resumeItem{Architected scalable mobile architecture using \textbf{Clean Architecture, MVVM}, and \textbf{Provider/BLoC} with structured data layers.}
+        \resumeItem{Consumed secure RESTful APIs with JWT authentication, custom interceptors, automated retry policies, and error-handling pipelines.}
+        \resumeItem{Implemented \textbf{Hive} for high-performance offline local caching; built \textbf{JS Interop} PDF rendering improving document generation speed by \textbf{50\%}.}
+        \resumeItem{Integrated native plugins and third-party libraries for document parsing, data export, and seamless client onboarding.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InvusProp -- Real Estate Management Platform} $|$ \emph{Flutter, Next.js, NestJS, PostgreSQL, AWS Cognito, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Developed full-stack property management system featuring property listing workflows, tenant onboarding, and complete CRUD operations.}
+            \resumeItem{Architected geospatial property discovery with \textbf{Custom Map Integration} (Google Maps API), plotting dynamic property pins, area polygons, and location search.}
+            \resumeItem{Implemented role-based access control (RBAC) via \textbf{AWS Cognito} and designed REST microservices for property data persistence.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Flutter, Kotlin, Firebase Realtime DB, Cloud Run}}{}
+          \resumeItemListStart
+            \resumeItem{Built an offline-first mobile platform scaled to \textbf{1,000+ active users} with real-time \textbf{Firebase} sync, barcode scanning, and delta conflict resolution.}
+            \resumeItem{Integrated Google Play Billing and custom analytics dashboards with automated cloud function alerts.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Shipped a Flutter utility application with REST API integration via \textbf{Dio}, local offline caching, and responsive technical calculation modules.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Mobile Frameworks}{: Flutter (iOS \& Android), Dart, Widget Lifecycle, Custom Layouts, Responsive UI} \\
+     \textbf{State Management}{: BLoC, Provider, Riverpod, GetX -- Clean Architecture, MVVM, MVC} \\
+     \textbf{APIs \& Maps}{: RESTful APIs, Dio/HTTP, Custom Map Integration (Google Maps SDK, Location Pins, Geocoding), Webhooks} \\
+     \textbf{Backend \& Cloud}{: Firebase (Realtime Database, Firestore, Auth, FCM, Cloud Functions), Node.js, Express.js, PostgreSQL, MongoDB} \\
+     \textbf{SDKs \& Storage}{: Payment SDKs (Razorpay, Cashfree), Third-Party Plugins, Hive, SharedPreferences, SQLite/RoomDB} \\
+     \textbf{DevOps \& Quality}{: Git, GitHub, Flutter DevTools, Postman, Debugging, Docker, App Store \& Play Store Deployment}
+    }}
+ \end{itemize}
+
+\end{document}

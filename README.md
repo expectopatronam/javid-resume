@@ -80,6 +80,7 @@ When tailoring a resume, the AI must adhere to the following rules:
      - Verified URLs to use (from `javid-resume-content.md`):
        - **Selfitoons (Android)**: `https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons&pli=1`
        - **Ubill (Web)**: `https://app.ubill.tech/`
+        - **Ubill (Play Store)**: `https://play.google.com/store/apps/details?id=com.ubill.tech`
        - **Bizstack (Play Store)**: `http://play.google.com/store/apps/details?id=com.nativedesk.bizstack&hl=en_IN`
        - **Engine Room Ninja (Play Store)**: `https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja`
      - Ensure line lengths remain calibrated so adding link tags does not trigger an accidental line wrap onto a dangling line.

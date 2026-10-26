@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    Remote (India)
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Remote / Chennai}
+      \resumeItemListStart
+        \resumeItem{Engineered features for \textbf{Selfitoons} (\href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}} $|$ \underline{iOS}), applying \textbf{OOP principles} and clean design patterns.}
+        \resumeItem{Built a custom controller resource manager pooling 5 active instances, eliminating memory leaks and improving runtime efficiency.}
+        \resumeItem{Shifted heavy computational media watermarking to the client via \textbf{FFmpeg}, reducing backend CPU resource consumption by \textbf{75\%}.}
+        \resumeItem{Integrated \textbf{REST APIs} and payment SDKs (Razorpay, Cashfree); handled end-to-end payload validation, error states, and retries.}
+        \resumeItem{Authored unit and integration test suites, conducted peer code reviews, and managed release lifecycles using \textbf{Git} version control.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-Stack Software Developer}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code spanning web frontend, \textbf{Node.js/Express} microservices, and databases.}
+        \resumeItem{Designed and implemented secure \textbf{RESTful APIs} in Node.js with JWT authentication, request sanitization, and structured error handling.}
+        \resumeItem{Engineered responsive web interfaces using modern \textbf{HTML5, CSS3, JavaScript}, and component-driven architecture for desktop UX.}
+        \resumeItem{Built high-speed PDF invoice generation via \textbf{JS Interop} reusing backend templates on client, boosting document render speed by \textbf{50\%}.}
+        \resumeItem{Modeled relational and document schemas; optimized query lookups and authored comprehensive regression test suites in Postman.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InvusProp -- Real Estate Web Platform} $|$ \emph{React.js, Next.js, NestJS, PostgreSQL (SQL), Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Built a scalable enterprise web management platform using \textbf{React.js/Next.js} frontend and \textbf{NestJS} RESTful microservices.}
+            \resumeItem{Designed relational \textbf{SQL} database schemas in \textbf{PostgreSQL}; implemented full CRUD operations with role-based access control (RBAC).}
+            \resumeItem{Configured reproducible containerized environments using \textbf{Docker} and managed infrastructure deployments on AWS.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS \& Retail Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Python, Cloud Run, Firebase, RoomDB (SQL)}}{Client Project}
+          \resumeItemListStart
+            \resumeItem{Engineered backend microservices on \textbf{Google Cloud Run (Python)} with \textbf{Firebase} and local relational storage (\textbf{RoomDB/SQLite}).}
+            \resumeItem{Implemented delta data synchronization, conflict resolution algorithms, barcode scanning, and multi-tier transaction billing logic.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{JavaScript, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Developed containerized \textbf{Express.js} REST APIs with MongoDB data persistence; engineered custom data formatting and caching tools.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript (ES6+), Python, Java, Dart, SQL (PostgreSQL), HTML5, CSS3} \\
+     \textbf{Frontend Web}{: React.js, Next.js, HTML5/CSS3, Responsive UI, Component Architecture, State Management} \\
+     \textbf{Backend \& APIs}{: Node.js, Express.js, NestJS, Python (Django, Cloud Run), REST API Development, JWT Auth, Microservices} \\
+     \textbf{Databases}{: PostgreSQL (SQL), MongoDB, RoomDB/SQLite, Firebase (Realtime DB, Firestore), Data Modeling} \\
+     \textbf{Core Concepts}{: Data Structures \& Algorithms (DSA), Object-Oriented Programming (OOP), MVC, Clean Architecture} \\
+     \textbf{DevOps \& Quality}{: Git, GitHub, Unit Testing, Integration Testing, Debugging, Docker, Postman, CI/CD Workflows}
+    }}
+ \end{itemize}
+
+\end{document}

@@ -1,4 +1,4 @@
-6383007505 | farrukjavid@gmail.com Javid Akeel | linkedin.com/in/javid-akeel | javid-portfolio.web.app [URL 🔗](https://www.linkedin.com/in/javid-akeel/)
+6383007505 | farrukjavid@gmail.com Javid Akeel | linkedin.com/in/javid-akeel | javid-portfolio-alpha.vercel.app [URL 🔗](https://www.linkedin.com/in/javid-akeel/)
 
 ## Education
 
@@ -46,7 +46,7 @@ Ecfile Solutions (Ubill – Accounting & GST Filing Software)
 
 - Implemented Flutter architectural patterns including MVC, MVVM, Clean Architecture, and state management using GetX,Riverpod, Provider, with local storage via Hive
 
-- Link : Web [URL 🔗](https://app.ubill.tech/)
+- Link : Web [URL 🔗](https://app.ubill.tech/) | Play Store [URL 🔗](https://play.google.com/store/apps/details?id=com.ubill.tech)
 
 - Built a community-driven Flutter app with AI chat, Q&A feed, user profiles, notifications, and deep linking.
 

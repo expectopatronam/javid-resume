@@ -1,0 +1,31 @@
+Subject: Application for Flutter Developer Position - Javid Akeel
+
+Dear Hiring Team at J And R Company / Bhumipun Pvt. Ltd.,
+
+I am writing to express my strong interest in the Flutter Developer position at your Gandhinagar office. With over 2.5 years of professional experience building high-performance cross-platform mobile applications in Flutter and Dart, combined with direct domain experience developing real estate technology platforms, I am excited about the opportunity to contribute to your growing engineering team.
+
+Here is how my technical background directly aligns with your requirements:
+
+1. Flutter, Dart & Mobile Architecture:
+I have engineered modular, production-ready Flutter applications using Clean Architecture and MVVM patterns. I implement robust state management using BLoC and Provider to keep codebases testable, maintainable, and scalable.
+
+2. Real Estate Tech & Custom Map Integration:
+I developed InvusProp, a full-stack real estate and property management platform. As part of property discovery workflows, I implemented custom map integrations using the Google Maps SDK, plotting dynamic property markers, location geocoding, and interactive boundary zones.
+
+3. REST APIs, Firebase & Third-Party SDK Integrations:
+I have extensive experience consuming secure RESTful APIs (via Dio/HTTP with custom interceptors and error recovery) as well as integrating Firebase (Realtime Database, Firestore, Authentication, and Cloud Functions). In my current role at Doubletap Innovations, I integrated payment gateways (Razorpay, Cashfree) and native media SDKs, reducing backend compute costs by 75%.
+
+4. Strong Debugging & Problem-Solving:
+I actively profile and debug apps using Flutter DevTools to resolve memory leaks, optimize widget render trees, and ensure consistent 60 FPS performance across lower-end devices.
+
+I am enthusiastic about relocating to Gandhinagar to work on-site with your team on exciting real estate mobile applications.
+
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+
+I have attached my resume for your review and look forward to the opportunity to discuss how my skill set can support Bhumipun's product vision.
+
+Warm regards,
+Javid Akeel
