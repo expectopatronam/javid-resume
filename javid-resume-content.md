@@ -23,6 +23,9 @@
 ### Option B: Full-Stack Engineer (Flutter + Node.js / React) Profile
 > Versatile Full-Stack Engineer specializing in Flutter, Node.js, Express, NestJS, and modern web frameworks (React, Next.js). Authored 40,000+ lines of production code across accounting, financial GST systems, and AI-driven social platforms. Experienced in architecting REST APIs, microservices, MongoDB/PostgreSQL databases, and cloud infrastructure (AWS, Docker, Cloud Functions).
 
+### Option C: Mobile & AI / GenAI Engineer Profile (Recommended Primary)
+> Software Engineer specializing in Mobile & Generative AI applications with 2.5+ years of experience engineering high-performance cross-platform apps (iOS, Android, Web). Architected end-to-end multimodal AI pipelines (voice-to-text context extraction, automated prompt enhancement, and image-to-video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI object detection, and video optimization (FFmpeg, controller pooling). Proven track record reducing backend compute costs by 75% and scaling production apps to thousands of active users.
+
 ---
 
 ## 3. Master Technical Skills Matrix
@@ -37,6 +40,7 @@
 | **Cloud & DevOps** | AWS (S3, Cognito), Google Cloud Functions, Docker, Terraform, Git, CI/CD |
 | **Architecture & Patterns** | MVC, MVVM, Clean Architecture, Offline-First, Micro-frontends |
 | **State Management** | Riverpod, GetX, Bloc, Provider |
+| **AI, Vision & Generative Tech** | LLM APIs (ChatGPT/OpenAI), Multimodal Pipelines, Kling AI, Grok Imagine, On-Device Object Detection, Prompt Engineering, Async Render Queues |
 | **Multimedia & Payments** | FFmpeg (Video processing & watermarking), Video Player Controller, Razorpay, Cashfree, Google Play Billing |
 | **Developer Tools** | VS Code, Android Studio, IntelliJ IDEA, Postman, Git |
 
@@ -48,18 +52,29 @@
 - **Role:** Flutter Developer
 - **Duration:** Dec 2025 – Present
 - **Location:** Chennai, India
-- **Primary Product:** *Selfitoons* — AI-powered video generation and social media application (Android & iOS)
-- **App Link:** [Selfitoons on Google Play Store](https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons&pli=1)
-- **Tech Stack:** Flutter, Dart, Riverpod, GoRouter, FFmpeg, Razorpay, Cashfree, REST APIs, Video Player SDKs
+- **Primary Products:**
+  - *Selfitoons* — AI-powered video generation and social media app ([Web](https://selfitoons.ai/) | [iOS App Store](https://apps.apple.com/in/app/selfitoons/id6758597947) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons))
+  - *Internsharks* — Professional student-recruiter network with AI Resume Builder ([Web Portal](https://internsharks.ai/) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai))
+  - *Fulupo Store* — Smart retail store management with on-device AI object detection & instant automated billing ([Play Store](https://play.google.com/store/apps/details?id=com.doubletap.fulupostore))
+- **Tech Stack:** Flutter, Dart, Riverpod, GoRouter, Generative AI (ChatGPT LLM, Kling AI, Grok Imagine), Multimodal Pipelines, FFmpeg, Razorpay, Cashfree, REST APIs, Object Detection, Video Player SDKs
 
 #### Uncompressed Achievements & Bullet Points:
-- Developed **Selfitoons**, an AI-powered video generation and social media mobile application deployed on Android and iOS.
-- Architected a high-performance, scalable social feed featuring follower/following graphs, likes, comments, and post interaction workflows using **Riverpod** and **GoRouter**.
-- Integrated **Razorpay** and **Cashfree** payment gateways to handle seamless premium user subscriptions, instant checkouts, and transaction security.
-- Implemented client-side video watermarking via **FFmpeg**, shifting computation to the device and reducing server-side video processing costs and CPU load by **75%**.
-- Designed and engineered a custom **Video Controller Manager** maintaining a pool of maximum 5 active controllers, eliminating memory leaks and dramatically enhancing FPS and smooth scrolling performance during feed playback.
-- Optimized video rendering and playback caching mechanisms, significantly mitigating app crashes and reducing memory footprints under heavy media usage.
-- Built a modular, clean app architecture to seamlessly incorporate generative AI video pipelines and interactive social engagement features.
+- **Selfitoons (Multimodal AI Video Generation & Social Platform):**
+  - Developed and shipped **Selfitoons**, an AI-driven image + voice to video generation and social platform on Android and iOS.
+  - Engineered an end-to-end **multimodal GenAI pipeline**: transcribed user voice notes to text using LLM APIs, extracted contextual intent to generate detailed creative prompts, enhanced input portrait images, and synthesized high-definition videos via **Kling AI** and **Grok Imagine**.
+  - Built an asynchronous **generation job queue architecture** on the client, managing request states, queue position polling, background render notifications, and network error recovery.
+  - Architected high-performance social feed with follower graphs, interactions, and media playback using **Riverpod** and **GoRouter**.
+  - Implemented client-side video watermarking via **FFmpeg**, shifting compute to device and slashing backend processing costs and CPU load by **75%**.
+  - Designed custom **Video Controller Manager** maintaining a pool of max 5 active controllers, eliminating memory leaks and ensuring smooth 60 FPS playback across budget devices.
+  - Integrated **Razorpay** and **Cashfree** payment gateways for credit purchases, subscription tiers, and transaction reconciliation.
+- **Internsharks (Career Network & AI Resume Engine):**
+  - Built cross-platform mobile and web applications for **Internsharks**, connecting students with recruiters through dynamic job matching.
+  - Developed an **AI Resume Builder** workflow that parses user experiences and generates structured, ATS-optimized resumes in real time.
+  - Implemented role-based recruiter and applicant portals, interactive messaging, and profile analytics.
+- **Fulupo Store (AI Object Detection & POS Billing):**
+  - Engineered **Fulupo Store**, an intelligent store and inventory manager featuring camera-based **AI object detection** for automated cart item recognition and instant billing.
+  - Integrated on-device vision models with local barcode scanning and offline-capable retail transaction processing.
+  - Optimized camera stream frames and inference pipelines for zero latency and low battery consumption on budget Android hardware.
 
 ---
 
@@ -143,6 +158,10 @@
 ## 7. Skill-to-JD Tailoring Guide
 
 When tailoring a resume for a specific Job Description (JD), extract content based on the target role profile:
+
+### Role Focus: Mobile & AI / GenAI Engineer (Recommended Primary Profile)
+- **Highlight:** Selfitoons (multimodal voice+image to video generation, ChatGPT LLM prompt engineering, Kling AI & Grok Imagine APIs, async job render queue), Internsharks (ATS-optimized AI Resume Builder), Fulupo Store (on-device AI object detection for automated retail billing).
+- **Keywords:** Generative AI, Multimodal AI Pipelines, LLM APIs (ChatGPT/Whisper), Kling AI, Grok Imagine, AI Object Detection, Computer Vision, Async Job Queues, On-Device Inference, Flutter/Dart, Mobile AI Integration.
 
 ### Role Focus: Flutter / Mobile Lead
 - **Highlight:** Selfitoons (FFmpeg 75% CPU load reduction, Video Controller Manager pool of 5), Ubill (GetX, Riverpod, Clean Architecture, Hive), Bizstack (Jetpack Compose, RoomDB offline-first, Google Play Billing).

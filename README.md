@@ -78,11 +78,16 @@ When tailoring a resume, the AI must adhere to the following rules:
        \textbf{Selfitoons} (\href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons&pli=1}{\underline{Android}} $|$ \underline{iOS})
        ```
      - Verified URLs to use (from `javid-resume-content.md`):
-       - **Selfitoons (Android)**: `https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons&pli=1`
+       - **Selfitoons (Web)**: `https://selfitoons.ai/`
+        - **Selfitoons (iOS App Store)**: `https://apps.apple.com/in/app/selfitoons/id6758597947`
+        - **Selfitoons (Android Play Store)**: `https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons`
        - **Ubill (Web)**: `https://app.ubill.tech/`
         - **Ubill (Play Store)**: `https://play.google.com/store/apps/details?id=com.ubill.tech`
        - **Bizstack (Play Store)**: `http://play.google.com/store/apps/details?id=com.nativedesk.bizstack&hl=en_IN`
        - **Engine Room Ninja (Play Store)**: `https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja`
+        - **Internsharks (Web)**: `https://internsharks.ai/`
+        - **Internsharks (Play Store)**: `https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai`
+        - **Fulupo Store (Play Store)**: `https://play.google.com/store/apps/details?id=com.doubletap.fulupostore`
      - Ensure line lengths remain calibrated so adding link tags does not trigger an accidental line wrap onto a dangling line.
 7. **Output Isolation**: Never overwrite the root template `Javid_Akeel_Resume.tex`. Always write generated resumes into the `temp/` folder.
 

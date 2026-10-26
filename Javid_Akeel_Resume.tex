@@ -18,22 +18,11 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+
 \ifdefined\pdfgentounicode
   \input{glyphtounicode}
+  \pdfgentounicode=1
 \fi
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -41,7 +30,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Adjust margins - Classic Jake's margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -59,11 +48,6 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\ifdefined\pdfgentounicode
-  \pdfgentounicode=1
-\fi
-
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -80,21 +64,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -105,7 +80,6 @@
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -118,7 +92,6 @@
     \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
 \end{center}
 
-
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -127,82 +100,78 @@
       {Bachelor of Science in Computer Science}{2020 -- 2023}
     \resumeSubheading
       {SRM Institute of Science and Technology}{Chennai, India}
-      {Master of Computer Applications}{2024 -- 2026}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
   \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Flutter Developer}{Dec 2025 -- Present}
+      {Software Engineer -- Mobile \& AI (Flutter)}{Dec 2025 -- Present}
       {Doubletap Innovations and Technologies}{Chennai, India}
       \resumeItemListStart
-        \resumeItem{Developed \textbf{Selfitoons}, an AI-powered video generation and social media mobile application deployed on Android and iOS.}
-        \resumeItem{Implemented client-side video watermarking via \textbf{FFmpeg}, shifting computation to the device and reducing server-side CPU load by \textbf{75\%}.}
-        \resumeItem{Engineered a custom \textbf{Video Controller Manager} maintaining a pool of 5 active controllers, eliminating memory leaks and boosting smooth scroll FPS in feed playback.}
-        \resumeItem{Architected a high-performance social feed with follower/following graphs, likes, comments, and post interactions using \textbf{Riverpod} and \textbf{GoRouter}.}
-        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment gateways for seamless premium subscriptions and transaction security.}
+        \resumeItem{Developed \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}} $|$ \href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}}), an AI video generation app; engineered an end-to-end \textbf{multimodal GenAI pipeline} (voice transcription via LLM, prompt context expansion, and video synthesis via \textbf{Kling AI} \& \textbf{Grok Imagine}) with an async render waiting queue.}
+        \resumeItem{Built on-device video watermarking via \textbf{FFmpeg}, shifting compute to device and slashing server CPU load by \textbf{75\%}.}
+        \resumeItem{Architected a custom \textbf{Video Controller Manager} maintaining a pool of 5 controllers, eliminating memory leaks and driving 60 FPS playback.}
+        \resumeItem{Engineered \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{\underline{Play Store}}), a career network featuring an \textbf{AI Resume Builder} generating ATS resumes in real time.}
+        \resumeItem{Built \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}), integrating camera-based on-device \textbf{AI object detection} for automated item checkout and retail billing.}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment checkouts with secure automated reconciliation for user credit and subscription tiers.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Flutter FullStack Developer}{Oct 2023 -- Aug 2025}
-      {Ecfile Solutions -- Ubill (Accounting \& GST Filing Software)}{Chennai, India}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
       \resumeItemListStart
-        \resumeItem{Contributed \textbf{40,000+ lines} of production code across Flutter (Web/Mobile), Node.js microservices, and MongoDB.}
-        \resumeItem{Built a PDF invoice generator using \textbf{JS Interop} to reuse backend HTML templates on the client side, improving generation speed by \textbf{50\%}.}
-        \resumeItem{Designed secure \textbf{Node.js + MongoDB} backend APIs with custom JWT authentication and role-based authorization.}
-        \resumeItem{Implemented \textbf{Excel bulk stock upload} to eliminate manual data entry and accelerate customer migration from other apps.}
-        \resumeItem{Architected a web-first \textbf{Flutter Web} application with responsive layouts and desktop-class UX; implemented \textbf{Clean Architecture} with GetX, Riverpod, and Hive for offline-first local storage.}
-        \resumeItem{Mastered complex Indian GST and accounting business logic, delivering mathematically precise, compliance-ready financial workflows.}
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code across Flutter (Web/Mobile), Node.js microservices, and MongoDB.}
+        \resumeItem{Built a high-performance PDF invoice generator via \textbf{JS Interop} reusing backend HTML templates, boosting speed by \textbf{50\%}.}
+        \resumeItem{Designed secure \textbf{Node.js + MongoDB} backend REST APIs with custom JWT authentication and role-based authorization.}
+        \resumeItem{Implemented \textbf{Excel bulk stock upload} pipelines to eliminate manual data entry and accelerate customer migration from legacy apps.}
+        \resumeItem{Architected responsive \textbf{Flutter Web} layouts with \textbf{Clean Architecture, MVVM}, and \textbf{Hive} offline-first local storage.}
+        \resumeItem{Mastered Indian GST rules, implementing mathematically precise, compliance-ready financial computation workflows.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Bizstack -- POS \& Inventory} $|$ \emph{Kotlin (Jetpack Compose), Python, Firebase, Google Cloud Run, RoomDB}}{}
+          {\textbf{Bizstack -- POS \& Retail Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Python, Firebase, Cloud Run, RoomDB}}{}
           \resumeItemListStart
-            \resumeItem{Built a full-stack offline-first POS and inventory app in \textbf{Kotlin Jetpack Compose} with delta sync, conflict resolution, barcode scanning, and complex billing logic.}
-            \resumeItem{Designed comprehensive analytics: profit/loss, category/item/seller-wise, and day/month/year date-range reports with stock alerts.}
-            \resumeItem{Scaled to \textbf{1,000+ active users}; integrated \textbf{Google Play Billing} for multi-tier in-app subscriptions; handled full backend on \textbf{Google Cloud Run (Python)} and \textbf{RoomDB} for local storage.}
+            \resumeItem{Built a full-stack offline-first POS app in \textbf{Kotlin Jetpack Compose} with delta sync, conflict resolution, barcode scanner, and billing logic.}
+            \resumeItem{Designed real-time analytics: profit/loss, item/seller-wise, and date-range reports with automated inventory alerts.}
+            \resumeItem{Scaled to \textbf{1,000+ active users}; integrated \textbf{Google Play Billing} subscriptions; managed backend on \textbf{Cloud Run (Python)}.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Engine Room Ninja} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
           \resumeItemListStart
-            \resumeItem{Built a Flutter utility app for marine engineers to reference engine room technical manuals and perform mobile calculations.}
-            \resumeItem{Developed containerized \textbf{Express.js + MongoDB} backend on \textbf{Docker} with \textbf{AWS S3} file storage; built a custom Markdown formatter for structured content and bulk admin panel posting.}
+            \resumeItem{Built a Flutter technical calculation app for marine engineers with offline caching and formula evaluation.}
+            \resumeItem{Developed containerized \textbf{Express.js + MongoDB} backend on \textbf{Docker} with \textbf{AWS S3} and custom Markdown content tools.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{InvusProp Admin Panel} $|$ \emph{Next.js, NestJS, Tailwind CSS, AWS Cognito, Docker, Terraform}}{Freelance}
+          {\textbf{InvusProp Admin Platform} $|$ \emph{Next.js, React, NestJS, Tailwind CSS, PostgreSQL, AWS Cognito, Docker}}{Freelance}
           \resumeItemListStart
             \resumeItem{Developed a scalable real-estate admin platform with complete CRUD workflows using \textbf{Next.js} and \textbf{NestJS} microservices.}
-            \resumeItem{Integrated enterprise-grade RBAC authentication via \textbf{AWS Cognito} and provisioned cloud infrastructure using \textbf{Terraform} and \textbf{Docker} on AWS.}
+            \resumeItem{Integrated enterprise RBAC via \textbf{AWS Cognito} and provisioned cloud infrastructure using \textbf{Docker} and \textbf{Terraform} on AWS.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
-
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Dart, JavaScript, TypeScript, Java, Python, Kotlin, SQL (PostgreSQL), HTML/CSS} \\
-     \textbf{Frameworks}{: Flutter, React, Next.js, Node.js, Express.js, NestJS, Django, Jetpack Compose} \\
-     \textbf{Architecture / State Management}{: Clean Architecture, MVC, MVVM, Offline-First, Riverpod, GetX, Bloc, Provider} \\
-     \textbf{Databases}{: MongoDB, PostgreSQL, Firebase (Realtime DB), RoomDB, Hive, SharedPreferences} \\
-     \textbf{Cloud \& DevOps}{: AWS (S3, Cognito), Google Cloud Functions/Run, Docker, Terraform, Git} \\
-     \textbf{Libraries \& Integrations}{: FFmpeg, Razorpay, Cashfree, Google Play Billing, JS Interop, Dio}
+     \textbf{Languages}{: Dart, JavaScript (ES6+), TypeScript, Python, Java, Kotlin, SQL (PostgreSQL), HTML5, CSS3} \\
+     \textbf{Mobile \& Frontend}{: Flutter (iOS, Android, Web), React.js, Next.js, Jetpack Compose, Responsive Layouts, UI States} \\
+     \textbf{Architecture \& State}{: Clean Architecture, MVVM, MVC, Offline-First, Riverpod, BLoC, Provider, GetX, SOLID Principles} \\
+     \textbf{AI \& Backend}{: Multimodal GenAI (LLMs, Kling AI, Grok Imagine), Node.js, Express.js, NestJS, Python, REST APIs, JWT Auth} \\
+     \textbf{Databases \& DevOps}{: MongoDB, PostgreSQL, Firebase, RoomDB, Hive, AWS (S3, Cognito), Docker, Git, CI/CD}
     }}
  \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
