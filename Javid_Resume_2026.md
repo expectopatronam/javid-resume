@@ -76,7 +76,7 @@ Software Engineer specializing in Mobile & Generative AI applications with 2.5+ 
 - **AI, Vision & Generative Tech:** LLM APIs (ChatGPT/OpenAI), Multimodal Pipelines, Kling AI, Grok Imagine, On-Device AI Object Detection, Prompt Engineering, Async Render Queues
 - **Backend & APIs:** Node.js, Express.js, NestJS, Python (Django, Cloud Run), RESTful APIs, Webhooks, JWT Authentication
 - **Databases & Storage:** MongoDB, PostgreSQL, Firebase (Realtime Database, Firestore), RoomDB/SQLite, Hive, SharedPreferences
-- **Cloud, DevOps & Tools:** Git, GitHub, Docker, AWS (S3, Cognito), Terraform, Postman, Flutter DevTools, Google Play Console, Apple App Store Connect
+- **Store Publishing & DevOps:** Google Play Console, Apple App Store Connect, TestFlight, iOS Provisioning & Certificates, App Signing, Privacy Manifests, Git, CI/CD, Docker, AWS (S3, Cognito)
 
 ---
 

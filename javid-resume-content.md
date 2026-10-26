@@ -24,7 +24,7 @@
 > Versatile Full-Stack Engineer specializing in Flutter, Node.js, Express, NestJS, and modern web frameworks (React, Next.js). Authored 40,000+ lines of production code across accounting, financial GST systems, and AI-driven social platforms. Experienced in architecting REST APIs, microservices, MongoDB/PostgreSQL databases, and cloud infrastructure (AWS, Docker, Cloud Functions).
 
 ### Option C: Mobile & AI / GenAI Engineer Profile (Recommended Primary)
-> Software Engineer specializing in Mobile & Generative AI applications with 2.5+ years of experience engineering high-performance cross-platform apps (iOS, Android, Web). Architected end-to-end multimodal AI pipelines (voice-to-text context extraction, automated prompt enhancement, and image-to-video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI object detection, and video optimization (FFmpeg, controller pooling). Proven track record reducing backend compute costs by 75% and scaling production apps to thousands of active users.
+> Software Engineer specializing in Mobile & Generative AI applications with 2.5+ years of experience engineering high-performance cross-platform apps (iOS, Android, Web). Architected end-to-end multimodal AI pipelines (voice-to-text context extraction, automated prompt enhancement, and image-to-video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI object detection, and video optimization (FFmpeg, controller pooling). Proven track record reducing backend compute costs by 75% and end-to-end ownership publishing multiple production apps to the Apple App Store and Google Play Store.
 
 ---
 
@@ -37,12 +37,13 @@
 | **Web & Frontend** | React, Next.js, HTML/CSS, Tailwind CSS, JS Interop |
 | **Backend & APIs** | Node.js, Express.js, NestJS, Django, REST APIs, HTTP, Dio |
 | **Databases & Storage** | MongoDB, PostgreSQL, Firebase (Realtime DB), RoomDB, Hive, SharedPreferences |
-| **Cloud & DevOps** | AWS (S3, Cognito), Google Cloud Functions, Docker, Terraform, Git, CI/CD |
-| **Architecture & Patterns** | MVC, MVVM, Clean Architecture, Offline-First, Micro-frontends |
-| **State Management** | Riverpod, GetX, Bloc, Provider |
+| **Cloud & DevOps** | AWS (S3, Cognito), Google Cloud Functions/Run, Docker, Terraform, Git, CI/CD |
+| **Architecture & Patterns** | MVC, MVVM, Clean Architecture, Offline-First, Micro-frontends, SOLID Principles |
+| **State Management** | Riverpod, BLoC, GetX, Provider |
 | **AI, Vision & Generative Tech** | LLM APIs (ChatGPT/OpenAI), Multimodal Pipelines, Kling AI, Grok Imagine, On-Device Object Detection, Prompt Engineering, Async Render Queues |
 | **Multimedia & Payments** | FFmpeg (Video processing & watermarking), Video Player Controller, Razorpay, Cashfree, Google Play Billing |
-| **Developer Tools** | VS Code, Android Studio, IntelliJ IDEA, Postman, Git |
+| **Store Publishing & Releases** | Google Play Console, Apple App Store Connect, TestFlight, iOS Provisioning & Certificates, Android App Signing, Privacy Manifests, Store Compliance |
+| **Developer Tools** | VS Code, Android Studio, IntelliJ IDEA, Postman, Flutter DevTools |
 
 ---
 
