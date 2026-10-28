@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in LaTeX - Option 3: Jake's Resume with Profile Summary, Education at Bottom (1 Page)
+% Author : Javid Akeel
+% Based on: Jake Gutierrez's template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit with summary
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Full-stack Mobile Engineer with \textbf{3+ years} of production experience architecting high-performance cross-platform applications across Flutter, Native Android (Kotlin), Node.js, and Generative AI systems. Proven record shipping 6+ production apps on Google Play Store and Apple App Store, engineering on-device AI pipelines ($<$100ms inference), async GenAI queue management, and scalable cloud architectures.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer -- Mobile \& AI (Flutter)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Architected \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}} $|$ \href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}}), a multimodal GenAI app; engineered voice prompt expansion pipelines, async render queue management, and video synthesis via \textbf{Kling AI} \& \textbf{Grok Imagine}.}
+        \resumeItem{Built on-device video watermarking via \textbf{FFmpeg}, shifting compute to client device and slashing server CPU load by \textbf{75\%}.}
+        \resumeItem{Architected a custom \textbf{Video Controller Manager} maintaining a pool of 5 controllers, eliminating memory leaks and driving 60 FPS playback.}
+        \resumeItem{Engineered \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{\underline{Play Store}}), building an \textbf{AI Resume Builder} generating ATS resumes in \textbf{$<$3s} and semantic candidate-job matching algorithms driving \textbf{92\%} relevance.}
+        \resumeItem{Built \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}), integrating on-device \textbf{AI object detection} operating at \textbf{$<$100ms} inference and \textbf{98\% checkout accuracy} for automated retail billing.}
+        \resumeItem{Integrated \textbf{Razorpay/Cashfree} payments; managed end-to-end publishing across the \textbf{Apple App Store} and \textbf{Google Play Console} (TestFlight, signing, privacy manifests, and store compliance).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code across Flutter (Web/Mobile), Node.js microservices, and MongoDB.}
+        \resumeItem{Built a high-performance PDF invoice generator via \textbf{JS Interop} reusing backend HTML templates, boosting speed by \textbf{50\%}.}
+        \resumeItem{Designed secure \textbf{Node.js + MongoDB} backend REST APIs with custom JWT authentication and role-based authorization.}
+        \resumeItem{Engineered an \textbf{Excel bulk stock upload} pipeline, eliminating manual data entry for 10,000+ SKU catalogs and accelerating customer onboarding and migration from legacy billing apps by \textbf{60\%}.}
+        \resumeItem{Architected responsive \textbf{Flutter Web} interfaces using \textbf{Clean Architecture, MVVM}, and \textbf{Hive} offline-first local caching, maintaining sub-second screen rendering and zero downtime.}
+        \resumeItem{Implemented compliant \textbf{Indian GST calculation} logic, multi-tier tax computations, and automated financial ledgers processing thousands of commercial invoice transactions.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS \& Retail Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Python, Firebase, Cloud Run, RoomDB}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack offline-first POS app in \textbf{Kotlin Jetpack Compose} with delta sync, conflict resolution, barcode scanner, and billing logic.}
+            \resumeItem{Designed real-time analytics: profit/loss, item/seller-wise, and date-range reports with automated inventory alerts.}
+            \resumeItem{Scaled to \textbf{1,000+ active users}; integrated \textbf{Google Play Billing} subscriptions; managed backend on \textbf{Cloud Run (Python)}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Built a Flutter technical calculation app for marine engineers with offline caching and formula evaluation.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Dart, Kotlin, JavaScript/TypeScript, Python, C/C++, HTML/CSS, SQL} \\
+     \textbf{Frameworks \& Mobile}{: Flutter (iOS \& Android), Jetpack Compose, Node.js, Express.js, Next.js, Android SDK} \\
+     \textbf{Architecture \& State}{: Clean Architecture, MVVM, BLoC, Riverpod, Provider, GetX, RESTful APIs, WebSockets} \\
+     \textbf{AI, Cloud \& DevOps}{: LLM Prompting, Kling AI, Grok Imagine, FFmpeg, Firebase, Google Cloud Run, MongoDB, RoomDB, Hive, Git, Docker}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

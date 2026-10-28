@@ -8,6 +8,7 @@ This repository contains the source files, master content, LaTeX templates, and 
 
 ```text
 javid-resume/
+├── base/                    # General base resumes across all 4 layout options (Options 1–4)
 ├── jd/                      # Drop target Job Descriptions here (e.g., jd/globaldigitaz.md)
 ├── temp/                    # Output directory for newly generated resumes (e.g., temp/Javid_Resume_<Company>.tex)
 ├── pdf/                     # Compiled application-ready PDF resumes (e.g., pdf/Javid_Akeel_Resume_<Company>.pdf)
