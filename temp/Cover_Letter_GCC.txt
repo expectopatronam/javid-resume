@@ -1,0 +1,30 @@
+Dear Hiring Team,
+
+I am writing to express my strong interest in the Flutter Developer position. With over 2.5 years of hands-on experience developing, optimizing, and deploying cross-platform mobile applications for Android and iOS, I am confident in my ability to immediately contribute to your engineering team.
+
+My technical background aligns directly with your core requirements:
+
+- Flutter & BLoC State Management: Extensive experience building production mobile apps using Flutter and Dart, structuring state management with BLoC (and Cubit) alongside Clean Architecture and MVVM patterns to ensure clean, reusable, and maintainable code.
+- REST API Integration (Dio / HTTP): Hands-on expertise integrating complex RESTful APIs using Dio with custom request/response interceptors, automated authentication token refreshes, and structured error-handling pipelines.
+- Firebase Ecosystem: Proven experience implementing Firebase Authentication, Cloud Firestore, Firebase Cloud Messaging (FCM) for push notifications, and Firebase Crashlytics for real-time crash reporting and diagnostic monitoring.
+- Local Storage Solutions: Deep practical knowledge of offline-first architectures using Hive and SharedPreferences for rapid key-value caching and persistent data storage.
+- iOS & Android Deployment: Proficient with Xcode, iOS signing certificates, provisioning profiles, TestFlight builds, App Store Connect submissions, and Google Play Console release management.
+- Performance & Debugging: Experienced in profiling memory and rendering with Flutter DevTools. In production, I engineered a custom video controller pooling mechanism that eliminated memory leaks to sustain 60 FPS playback, and moved video processing to device via FFmpeg to reduce server load by 75%.
+
+You can review my live apps and portfolio below:
+- Selfitoons on iOS: https://apps.apple.com/in/app/selfitoons/id6758597947
+- Selfitoons on Android: https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons
+- Ubill Web Portal: https://app.ubill.tech/
+- Ubill on Play Store: https://play.google.com/store/apps/details?id=com.ubill.tech
+- Portfolio: https://javid-portfolio-alpha.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/javid-akeel/
+
+I would welcome the opportunity to discuss how my technical skills and mobile development experience align with your goals. Thank you for your time and consideration.
+
+Warm regards,
+
+Javid Akeel
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+Location: Chennai, India
+Notice Period: Immediate / 30 Days
