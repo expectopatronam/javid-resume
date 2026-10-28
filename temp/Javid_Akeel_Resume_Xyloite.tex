@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Software Engineer with 2.5+ years of full-stack and mobile development experience, with deep hands-on exposure to manual testing, functional validation, bug identification, and API verification across multiple production applications deployed to the Google Play Store and Apple App Store. Familiar with SDLC, STLC, and Bug Life Cycle from end-to-end feature development and quality assurance in cross-platform mobile and web products. Proficient with Postman for API testing and experienced collaborating with developers to document, track, and resolve defects.
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer -- Mobile \& AI (Flutter)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Performed end-to-end \textbf{manual testing} of \textbf{Selfitoons} (\href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}} $|$ \href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}}) -- prepared and executed \textbf{functional, regression, and usability test cases} before each Play Store and App Store release.}
+        \resumeItem{Identified, documented, and tracked \textbf{defects} in video generation pipelines, social feed interactions, and payment flows; coordinated fix verification cycles with the development team.}
+        \resumeItem{Conducted \textbf{API testing} using \textbf{Postman} to validate REST endpoint behaviour, error responses, authentication flows (JWT), and edge cases for backend services.}
+        \resumeItem{Validated \textbf{Razorpay} and \textbf{Cashfree} payment integration end-to-end -- tested subscription flows, failed transactions, and webhook callbacks to ensure correct state handling.}
+        \resumeItem{Tested \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{\underline{Play Store}}) and \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}) for functional correctness, UI states (loading, empty, error/retry), and offline-mode behaviour.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (Accounting \& GST Filing Software)}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Executed \textbf{functional and regression testing} for \textbf{Ubill} (\href{https://app.ubill.tech/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}}) -- validated multi-screen responsive layouts, financial computation accuracy, and GST filing workflows for compliance correctness.}
+        \resumeItem{Used \textbf{Postman} to test Node.js REST APIs: verified authentication (JWT), role-based access, invoice generation endpoints, and error handling before feature sign-off.}
+        \resumeItem{Validated \textbf{Excel bulk stock upload} feature end-to-end: tested file parsing edge cases, malformed data handling, duplicate detection, and database consistency post-import.}
+        \resumeItem{Collaborated directly with product managers and enterprise clients to surface \textbf{usability issues}, document defect reports, and confirm bug fixes -- contributing to measurable improvements in product adoption.}
+        \resumeItem{Contributed \textbf{40,000+ lines} of production code; applied SDLC discipline throughout -- writing test cases for features as part of the development-to-release workflow.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS \& Inventory} $|$ \href{http://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin (Jetpack Compose), Python, Firebase, RoomDB}}{}
+          \resumeItemListStart
+            \resumeItem{Tested \textbf{offline-first sync and conflict resolution} logic extensively -- validated delta sync correctness, data integrity after connectivity loss, and edge-case billing scenarios.}
+            \resumeItem{Validated barcode scanner accuracy, stock alert triggers, and all report types (profit/loss, category/item/seller/date-range) for business logic correctness with 1,000+ active users.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, Docker, AWS S3}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Performed API testing via \textbf{Postman} for Express.js backend services; verified content retrieval, file upload to AWS S3, and formula calculation endpoints for functional correctness.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Testing}{: Manual Testing, Functional Testing, Regression Testing, Usability Testing, API Testing (Postman), Test Case Design, Bug Documentation \& Tracking, SDLC, STLC, Bug Life Cycle} \\
+     \textbf{Tools}{: Postman, Git, Android Studio (Logcat/Debugging), Flutter DevTools, VS Code, Jira (familiar)} \\
+     \textbf{Languages}{: Dart, JavaScript, TypeScript, SQL (PostgreSQL), Python, Java, Kotlin, HTML/CSS} \\
+     \textbf{Frameworks \& Platforms}{: Flutter (Android, iOS, Web), React, Next.js, Node.js, Express.js, Jetpack Compose} \\
+     \textbf{Databases}{: MongoDB, PostgreSQL, Firebase, RoomDB/SQLite, Hive} \\
+     \textbf{Store \& DevOps}{: Google Play Console, Apple App Store Connect, Docker, AWS S3, Git, CI/CD}
+    }}
+ \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

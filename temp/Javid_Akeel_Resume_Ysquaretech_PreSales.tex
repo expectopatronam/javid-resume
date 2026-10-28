@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+AI Engineer (2026 MCA Graduate, Chennai) with hands-on Generative AI and LLM pipeline experience, and a proven ability to translate business requirements into working AI solutions. Built and shipped production AI products -- multimodal voice-to-video synthesis, AI Resume Builder, and on-device object detection -- end to end. Directly onboarded enterprise clients at a fintech startup (Ubill), collaborating with customers to identify pain points and refine workflows. Strong communicator with technical depth across Python, LLM APIs, Flutter, and Node.js.
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer -- Mobile \& AI}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Identified client-facing AI opportunities and built \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{\underline{Play Store}}) -- an \textbf{AI Resume Builder} that parses user experience and generates structured, ATS-optimized resumes in real time using LLM APIs.}
+        \resumeItem{Engineered an end-to-end \textbf{multimodal GenAI pipeline} for \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}} $|$ \href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}}): transcribed voice to text via \textbf{LLM APIs (ChatGPT)}, extracted user intent, enhanced prompts, and synthesized HD video via \textbf{Kling AI} and \textbf{Grok Imagine}.}
+        \resumeItem{Developed \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}) -- translated a retail client's need for faster checkout into an \textbf{on-device AI object detection} solution for automated cart recognition and instant billing.}
+        \resumeItem{Built async \textbf{AI job queue architecture} managing generation request states, polling, background render notifications, and error recovery; reduced backend processing costs by \textbf{75\%} via device-side FFmpeg optimization.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Aug 2025}
+      {Ecfile Solutions -- Ubill (Accounting \& GST Filing Software)}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Directly \textbf{onboarded enterprise clients}, conducting discovery sessions to understand business workflows and translating requirements into product features; collaborated with product managers and customer success teams.}
+        \resumeItem{Developed AI-amenable \textbf{automation workflows}: Excel bulk upload for stock migration, intelligent PDF invoice generation via JS Interop (\textbf{50\% faster}), and GST computation automation for 100\% compliance.}
+        \resumeItem{Contributed \textbf{40,000+ lines} of production code across Flutter, Node.js, and MongoDB for \textbf{Ubill} (\href{https://app.ubill.tech/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}}); built secure REST APIs with JWT auth and RBAC.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS \& Retail Analytics} $|$ \href{http://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Python, Firebase, Google Cloud Run, RoomDB}}{}
+          \resumeItemListStart
+            \resumeItem{Translated a retail PoS business requirement into a full-stack offline-first app with delta sync, billing automation, barcode scanning, and profit/loss analytics; scaled to \textbf{1,000+ users}. Backend on \textbf{Python / Google Cloud Run}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{InvusProp -- Real Estate Admin Platform} $|$ \emph{Next.js, NestJS, PostgreSQL, AWS Cognito, Docker, Terraform}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Identified client requirements for a real-estate management platform and built full CRUD workflows with \textbf{AWS Cognito} RBAC and cloud infrastructure on \textbf{AWS via Terraform}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI \& GenAI}{: LLM APIs (OpenAI/ChatGPT), Multimodal Pipelines, Kling AI, Grok Imagine, On-Device Object Detection, Prompt Engineering, AI Agents, Automation Workflows, Async Job Queues} \\
+     \textbf{Languages}{: Python, Dart, JavaScript (ES6+), TypeScript, Java, Kotlin, SQL (PostgreSQL), HTML/CSS} \\
+     \textbf{Frameworks \& Backend}{: Flutter, React, Next.js, Node.js, Express.js, NestJS, Django, Google Cloud Run} \\
+     \textbf{Databases \& Cloud}{: MongoDB, PostgreSQL, Firebase, RoomDB, AWS (S3, Cognito), Docker, Terraform, Git}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA) -- 2026 Graduate}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+\end{document}
