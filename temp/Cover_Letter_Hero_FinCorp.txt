@@ -1,0 +1,48 @@
+To: Adit Narayan (Talent Acquisition)
+Hero FinCorp
+Gurugram, Haryana, India
+Email: adit.narayan@herofincorp.biz
+
+Subject: Application for Flutter Developer – Gurugram | 4-6 Years Experience
+
+Dear Adit and the Hero FinCorp Hiring Team,
+
+I am writing to express my strong interest in the Flutter Developer position at Hero FinCorp in Gurugram. With over 3 years of hands-on experience engineering scalable, cross-platform mobile and web applications across iOS and Android, I have built and scaled production products in enterprise financial accounting, retail POS billing, and multimodal AI platforms.
+
+My background directly aligns with Hero FinCorp's focus on high-performance financial mobile experiences:
+
+1. State Management & Architecture:
+I specialize in Clean Architecture, MVVM, and SOLID principles with production expertise in BLoC, Cubit, and Riverpod. At Ecfile Solutions (Ubill Cloud Accounting), I managed complex reactive UI states across multi-step financial ledgers, tax workflows, and high-frequency real-time updates.
+
+2. FinTech, GST, and Accounting Systems:
+At Ubill, I authored over 40,000 lines of modular production code, implementing mathematically precise Indian GST filing rules, automated tax calculation logic, invoice numbering sequences, and multi-tier discount structures. I also engineered an ultra-fast client-side PDF invoice generator via JS Interop that slashed document generation times by 50%.
+
+3. Offline-First Databases & Real-Time Sync:
+I have engineered robust offline-first synchronization using Hive, SQLite, and RoomDB. On Bizstack (offline-first retail POS on Google Play), I implemented automated bidirectional delta sync and conflict resolution algorithms ensuring seamless transaction billing during network dropouts with sub-100ms item lookup speeds.
+
+4. Performance Profiling & Hardware Optimization:
+I maintain a rigorous focus on the Flutter rendering pipeline, Widget lifecycle management, and memory profiling. At Doubletap, I engineered a custom Video Controller pooling architecture that eradicated memory leaks and guaranteed steady 60 FPS playback on budget hardware. By shifting media compute workloads to user devices via FFmpeg, I reduced server-side processing overhead and CPU expenses by 75%.
+
+5. Payments, Security & Automated CI/CD:
+I have integrated production payment gateways (Razorpay, Cashfree, Google Play Billing) with automated webhook verification and transaction reconciliation. Additionally, I manage end-to-end publishing across the Apple App Store and Google Play Console, with automated CI/CD pipelines orchestrated using GitHub Actions and Fastlane.
+
+6. Native Android Capabilities:
+Complementing my Flutter expertise, I possess strong native Android engineering skills in Kotlin and Jetpack Compose, enabling me to write custom MethodChannels and integrate low-level device APIs whenever platform-specific bridging is required.
+
+Hero FinCorp's mission of transforming retail and MSME financial services through innovative digital products strongly resonates with my experience building reliable financial software. I am prepared to relocate to Gurugram and would welcome the opportunity to discuss how my technical skills can drive immediate value for your mobile engineering initiatives.
+
+Thank you for your time and consideration.
+
+Sincerely,
+
+Javid Akeel
+Chennai, India (Open to Relocate to Gurugram)
+Phone: +91 6383007505
+Email: farrukjavid@gmail.com
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+Live Applications:
+- Selfitoons: https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons | https://apps.apple.com/in/app/selfitoons/id6758597947
+- Ubill: https://app.ubill.tech/ | https://play.google.com/store/apps/details?id=com.ubill.tech
+- Bizstack: https://play.google.com/store/apps/details?id=com.nativedesk.bizstack
+- Engine Room Ninja: https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja

@@ -6,7 +6,7 @@ Chennai, Tamil Nadu, India | +91 6383007505 | farrukjavid@gmail.com
 ---
 
 ## Professional Summary
-Software Engineer specializing in Mobile & Generative AI applications with 2.5+ years of experience engineering high-performance cross-platform apps for iOS, Android, and Web. Proven track record architecting multimodal AI pipelines (voice-to-text context enhancement and video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI object detection, and high-throughput media feeds (FFmpeg, controller pooling). Authored 40,000+ lines of production code across AI-driven social media, retail POS, and enterprise accounting systems.
+Software Engineer specializing in Mobile & Generative AI applications with 3+ years of experience engineering high-performance cross-platform apps for iOS, Android, and Web. Proven track record architecting multimodal GenAI pipelines (speech-to-text context enhancement, LLM prompt engineering, and diffusion video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI vision models, and high-throughput media feeds (FFmpeg, controller pooling). Authored 40,000+ lines of production code across AI-driven social media, retail POS, and enterprise accounting systems.
 
 ---
 
@@ -16,16 +16,19 @@ Software Engineer specializing in Mobile & Generative AI applications with 2.5+ 
 **Software Engineer — Mobile & AI (Flutter)** | *Dec 2025 – Present*
 
 - **Selfitoons (Multimodal AI Video Generation & Social Platform)** — [Web](https://selfitoons.ai/) | [iOS App Store](https://apps.apple.com/in/app/selfitoons/id6758597947) | [Google Play Store](https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons)
-  - Engineered an end-to-end **multimodal GenAI pipeline**: transcribed user voice notes via LLM APIs (ChatGPT), extracted contextual intent to generate detailed creative prompts, enhanced input portrait images, and synthesized high-definition videos via **Kling AI** and **Grok Imagine**.
-  - Built an asynchronous **generation job queue architecture** on the client, managing request states, queue position polling, background render notifications, and network error recovery.
-  - Architected a high-performance, scalable social feed featuring follower/following graphs, likes, comments, and post interaction workflows using **Riverpod** and **GoRouter**.
-  - Implemented client-side video watermarking via **FFmpeg**, shifting computation to the device and reducing server-side processing costs and CPU load by **75%**.
-  - Designed and engineered a custom **Video Controller Manager** maintaining a pool of maximum 5 active controllers, eliminating memory leaks and dramatically enhancing FPS and smooth scrolling performance.
-  - Integrated **Razorpay** and **Cashfree** payment gateways to handle seamless premium user subscriptions, instant checkouts, and transaction security.
+  - Engineered an end-to-end **multimodal GenAI pipeline**: ingested raw user voice notes, transcribed speech via LLM APIs (OpenAI Whisper / ChatGPT), extracted semantic intent, and dynamically generated rich prompt descriptions detailing cinematography, camera motion, lighting, and artistic styling to synthesize high-definition videos via **Kling AI** and **Grok Imagine**.
+  - Built an asynchronous **client-side AI generation job queue**: managed render lifecycle states (queued, generating, rendering, ready), exponential backoff polling, WebSocket progress updates, background render notifications, and network dropout recovery for multi-minute video synthesis tasks.
+  - Implemented AI model conditioning controls: allowed dynamic parameter tuning for aspect ratios, video durations, motion dynamics, prompt negative embeddings, and real-time generation credit calculations.
+  - Built on-device video post-processing and watermarking via **FFmpeg**, shifting compute to client hardware and reducing server-side GPU/CPU rendering expenses by **75%**.
+  - Designed an optimized **Video Controller Manager** maintaining a pool of maximum 5 active controllers, eliminating memory leaks and driving steady 60 FPS playback on budget hardware.
+  - Architected a scalable social feed featuring follower/following graphs, likes, comments, and media sharing using **Riverpod** and **GoRouter**.
+  - Integrated **Razorpay** and **Cashfree** payment gateways for credit top-ups, tiered AI subscription plans, and automated transaction reconciliation.
 
 - **Internsharks (Career Network & AI Resume Engine)** — [Web Portal](https://internsharks.ai/) | [Google Play Store](https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai)
-  - Built cross-platform mobile and web applications connecting students with recruiters through dynamic job matching.
-  - Developed an **AI Resume Builder** workflow that parses user experiences and generates structured, ATS-optimized resumes in real time.
+  - Developed an intelligent **AI Resume Builder & Content Optimizer**: built automated prompt engineering workflows that ingest raw career notes and dynamically synthesize structured, ATS-optimized resumes in real time adhering to Google XYZ and STAR frameworks.
+  - Engineered an AI-driven **Candidate-Job Matching Engine**: implemented semantic matching algorithms mapping candidate skillset vectors to recruiter job descriptions, generating instant compatibility scores and targeted skill-gap recommendations.
+  - Built real-time stream generation with live client previews, interactive editing, and automated PDF export formatting.
+  - Implemented role-based recruiter and applicant portals, interactive messaging, and profile analytics.
 
 - **Fulupo Store (Smart Retail & AI Object Detection)** — [Google Play Store](https://play.google.com/store/apps/details?id=com.doubletap.fulupostore)
   - Engineered an intelligent store and inventory manager featuring camera-based **AI object detection** for automated cart item recognition and instant billing.
@@ -34,7 +37,7 @@ Software Engineer specializing in Mobile & Generative AI applications with 2.5+ 
 ---
 
 ### Ecfile Solutions — Chennai, India
-**Flutter FullStack Developer** | *Oct 2023 – Aug 2025*
+**Flutter FullStack Developer** | *Oct 2023 – Nov 2025*
 
 - **Ubill (Cloud Accounting & GST Filing Software)** — [Web Portal](https://app.ubill.tech/) | [Google Play Store](https://play.google.com/store/apps/details?id=com.ubill.tech)
   - Contributed **40,000+ lines of robust production code** across Flutter frontend applications, Node.js microservices, and MongoDB backend databases.

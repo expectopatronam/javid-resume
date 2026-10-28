@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Template: Option 4 - Jake's Resume with Profile Summary & Education at Bottom (Spanning 2 Full Pages)
+% Target JD: Hero FinCorp - Flutter Developer (Gurugram, 4-6 Years Experience)
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins - Classic Jake's margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{2pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Senior Mobile \& Flutter Engineer with 3+ years of experience engineering high-performance cross-platform applications across iOS, Android, and Web for enterprise financial accounting, retail POS, and multimodal AI platforms. Proven expertise architecting clean, maintainable systems following SOLID principles, Clean Architecture, and enterprise state management (\textbf{BLoC}, \textbf{Riverpod}, \textbf{Provider}). Demonstrated track record in offline-first local databases (\textbf{Hive}, \textbf{SQLite}, \textbf{RoomDB}), high-throughput \textbf{REST APIs} and \textbf{WebSockets}, and zero-defect payment gateway integrations (\textbf{Razorpay}, \textbf{Cashfree}). End-to-end ownership across Apple App Store and Google Play Console publishing, CI/CD automation (\textbf{GitHub Actions}, \textbf{Fastlane}), unit/widget/integration testing, and native Android (\textbf{Kotlin/Java}) interop.
+  }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer -- Mobile \& AI (Flutter)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Architected and shipped \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}} $|$ \href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}}), a multimodal GenAI platform; engineered speech-to-text voice transcription workflows and multi-stage prompt engineering to generate cinematic visual prompts for video foundation models (\textbf{Kling AI}, \textbf{Grok Imagine}).}
+        \resumeItem{Built a fault-tolerant asynchronous \textbf{client-side AI generation job queue}: managed multi-minute render lifecycle states, exponential backoff polling, WebSocket progress updates, and network dropout recovery.}
+        \resumeItem{Implemented dynamic GenAI conditioning controls: aspect ratio adjustment, motion strength parameters, prompt negative embeddings, and real-time generation credit deduction pipelines.}
+        \resumeItem{Designed a custom \textbf{Video Controller Manager} maintaining a pool of 5 controllers, eliminating memory leaks and driving consistent \textbf{60 FPS} playback on budget Android and iOS hardware.}
+        \resumeItem{Built client-side video watermarking via \textbf{FFmpeg}, offloading compute to user devices and reducing backend server CPU load and processing expenses by \textbf{75\%}.}
+        \resumeItem{Engineered \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{\underline{Play Store}}), building an \textbf{AI Resume Builder} that ingests career notes and dynamically synthesizes ATS-compliant resumes with real-time UI streaming and export formatting.}
+        \resumeItem{Developed an AI-driven \textbf{Candidate-Job Matching Engine} on Internsharks, using semantic matching algorithms to map applicant skill vectors to recruiter requirements with instant compatibility scores.}
+        \resumeItem{Developed \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}), an intelligent retail POS integrating camera-based on-device \textbf{AI object detection} for automated item checkout and instant billing.}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment SDKs, managing webhooks, automated transaction reconciliation, and secure digital checkouts.}
+        \resumeItem{Implemented comprehensive automated test suites spanning \textbf{Unit Testing}, \textbf{Widget Testing}, and \textbf{Integration Testing} with \textbf{Mockito}, achieving 85\% test coverage on critical payment flows.}
+        \resumeItem{Automated mobile release pipelines using \textbf{GitHub Actions} and \textbf{Fastlane}, streamlining continuous integration, TestFlight distribution, and Play Store production rollouts.}
+        \resumeItem{Managed end-to-end store publishing across the \textbf{Apple App Store} and \textbf{Google Play Console}, maintaining code signing, privacy manifests, and App Store guidelines compliance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code across Flutter (Web/Desktop/Mobile), Node.js microservices, and MongoDB databases for an enterprise cloud accounting platform.}
+        \resumeItem{Implemented mathematically rigorous \textbf{Indian GST filing rules}, automated tax computation, multi-tier discounting, and compliance-ready financial invoicing workflows.}
+        \resumeItem{Architected responsive web and mobile interfaces adhering to \textbf{Clean Architecture}, \textbf{MVVM}, and \textbf{SOLID principles}, ensuring complete separation of presentation and domain layers.}
+        \resumeItem{Implemented state management using \textbf{BLoC} and \textbf{Riverpod}, managing complex reactive UI states (loading, empty, error, retry) across multi-step financial ledgers.}
+        \resumeItem{Engineered an offline-first storage layer using \textbf{Hive} and \textbf{SQLite}, caching invoices, inventory, and customer records to guarantee zero downtime during network outages.}
+        \resumeItem{Developed an ultra-fast client-side PDF invoice generator via \textbf{JS Interop} reusing backend HTML/CSS templates on Flutter Web, boosting generation speeds by \textbf{50\%}.}
+        \resumeItem{Designed and implemented secure \textbf{Node.js + Express.js} REST APIs and \textbf{WebSocket} endpoints for real-time inventory updates, role-based authorization (RBAC), and JWT authentication.}
+        \resumeItem{Built an asynchronous Excel/CSV bulk inventory upload pipeline, eliminating manual entry for 10,000+ SKU datasets and accelerating customer onboarding by \textbf{60\%}.}
+        \resumeItem{Collaborated with product teams through Git-based PR reviews, sprint planning, and structured QA bug triage to deliver bi-weekly production releases.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- Offline-First POS} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Jetpack Compose, RoomDB, Python}}{Production}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack offline-first retail POS app using native Android (\textbf{Kotlin}, \textbf{Jetpack Compose}) with automated bidirectional delta sync and conflict resolution algorithms.}
+            \resumeItem{Engineered local relational database persistence using \textbf{RoomDB (SQLite)}, guaranteeing offline billing reliability and sub-100ms item lookup queries during peak hours.}
+            \resumeItem{Designed real-time financial reporting modules: profit/loss statements, item/category breakdowns, date-range analysis, and automated inventory threshold alert notifications.}
+            \resumeItem{Scaled app to \textbf{1,000+ active users}, integrated \textbf{Google Play Billing} subscriptions, and architected microservices on \textbf{Google Cloud Run (Python)} with Firebase.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, AWS S3}}{Production}
+          \resumeItemListStart
+            \resumeItem{Engineered a specialized Flutter mobile utility app for marine engineers, integrating offline formula evaluation, unit conversion calculators, and interactive technical documentation.}
+            \resumeItem{Implemented local caching and offline persistence using local databases, allowing continuous operation in remote offshore environments without internet connectivity.}
+            \resumeItem{Developed containerized \textbf{Express.js + MongoDB} backend services deployed via \textbf{Docker} with \textbf{AWS S3} asset storage and an administrative Markdown content tool.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Admin Platform} $|$ \emph{Next.js, React, NestJS, PostgreSQL, AWS Cognito, Docker}}{Production}
+          \resumeItemListStart
+            \resumeItem{Developed a scalable enterprise property management platform with comprehensive CRUD workflows using \textbf{Next.js} frontend and \textbf{NestJS} microservices backend.}
+            \resumeItem{Implemented role-based access control (RBAC) and enterprise user authentication utilizing \textbf{AWS Cognito} and structured PostgreSQL schemas.}
+            \resumeItem{Automated infrastructure provisioning and containerization using \textbf{Docker} and \textbf{Terraform} deployed on AWS cloud instances.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Mobile \& Cross-Platform}{: Flutter (iOS, Android, Web), Dart, Android SDK, Native Android (Kotlin, Java), Jetpack Compose, Platform Channels (MethodChannel)} \\
+     \textbf{Architecture \& State Management}{: BLoC, Cubit, Riverpod, Provider, Clean Architecture, MVVM, SOLID Principles, Widget Lifecycle, Reactive Programming} \\
+     \textbf{Local Storage \& Databases}{: Hive, SQLite, RoomDB, ObjectBox, MongoDB, PostgreSQL, Firebase Realtime Database, SharedPreferences} \\
+     \textbf{Networking \& APIs}{: RESTful APIs, WebSockets, Dio, HTTP, Node.js, Express.js, NestJS, Python, JSON Serialization, JWT Authentication} \\
+     \textbf{Testing \& Quality Assurance}{: Unit Testing, Widget Testing, Integration Testing, Mockito, Test-Driven Development (TDD), Flutter DevTools, Memory Profiling} \\
+     \textbf{DevOps \& Store Publishing}{: Google Play Console, Apple App Store Connect, TestFlight, App Signing, Privacy Manifests, GitHub Actions, Fastlane, Codemagic, Git, Docker, AWS}
+    }}
+ \end{itemize}
+
+%-----------KEY ENGINEERING PRACTICES-----------
+\section{Engineering Practices \& Core Competencies}
+\begin{itemize}[leftmargin=0.15in]
+  \resumeItem{\textbf{Financial \& Transactional Reliability}: Extensive experience in tax accounting logic (Indian GST), mathematically precise ledger calculation, multi-currency invoicing, and end-to-end payment gateway integrations (\textbf{Razorpay}, \textbf{Cashfree}, \textbf{Google Play Billing}) with automated webhook reconciliation.}
+  \resumeItem{\textbf{Performance \& Memory Profiling}: In-depth knowledge of the Flutter rendering pipeline, Widget lifecycle, frame budget analysis, and memory leak diagnosis using Flutter DevTools; proven history maintaining \textbf{60 FPS} and reducing server CPU overhead by \textbf{75\%}.}
+  \resumeItem{\textbf{Offline-First Systems \& Data Sync}: Deep architectural experience with local storage engines (\textbf{Hive}, \textbf{SQLite}, \textbf{RoomDB}), delta sync protocols, local cache invalidation, and automated conflict resolution during intermittent network connectivity.}
+  \resumeItem{\textbf{Automated Quality Engineering}: Strong commitment to maintainable code quality through structured Unit, Widget, and Integration tests using \textbf{Mockito}; CI/CD deployment pipelines utilizing \textbf{GitHub Actions} and \textbf{Fastlane} for automated store distribution.}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

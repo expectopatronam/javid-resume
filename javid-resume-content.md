@@ -24,7 +24,7 @@
 > Versatile Full-Stack Engineer specializing in Flutter, Node.js, Express, NestJS, and modern web frameworks (React, Next.js). Authored 40,000+ lines of production code across accounting, financial GST systems, and AI-driven social platforms. Experienced in architecting REST APIs, microservices, MongoDB/PostgreSQL databases, and cloud infrastructure (AWS, Docker, Cloud Functions).
 
 ### Option C: Mobile & AI / GenAI Engineer Profile (Recommended Primary)
-> Software Engineer specializing in Mobile & Generative AI applications with 2.5+ years of experience engineering high-performance cross-platform apps (iOS, Android, Web). Architected end-to-end multimodal AI pipelines (voice-to-text context extraction, automated prompt enhancement, and image-to-video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI object detection, and video optimization (FFmpeg, controller pooling). Proven track record reducing backend compute costs by 75% and end-to-end ownership publishing multiple production apps to the Apple App Store and Google Play Store.
+> Software Engineer specializing in Mobile & Generative AI applications with 3+ years of experience engineering high-performance cross-platform apps (iOS, Android, Web). Architected end-to-end multimodal GenAI pipelines (speech-to-text context extraction, automated prompt engineering, and image-to-video synthesis via Kling AI & Grok Imagine), async job render queues, on-device AI object detection, and video optimization (FFmpeg, controller pooling). Proven track record reducing backend compute costs by 75% and end-to-end ownership publishing multiple production apps to the Apple App Store and Google Play Store.
 
 ---
 
@@ -62,15 +62,18 @@
 #### Uncompressed Achievements & Bullet Points:
 - **Selfitoons (Multimodal AI Video Generation & Social Platform):**
   - Developed and shipped **Selfitoons**, an AI-driven image + voice to video generation and social platform on Android and iOS.
-  - Engineered an end-to-end **multimodal GenAI pipeline**: transcribed user voice notes to text using LLM APIs, extracted contextual intent to generate detailed creative prompts, enhanced input portrait images, and synthesized high-definition videos via **Kling AI** and **Grok Imagine**.
-  - Built an asynchronous **generation job queue architecture** on the client, managing request states, queue position polling, background render notifications, and network error recovery.
-  - Architected high-performance social feed with follower graphs, interactions, and media playback using **Riverpod** and **GoRouter**.
-  - Implemented client-side video watermarking via **FFmpeg**, shifting compute to device and slashing backend processing costs and CPU load by **75%**.
+  - Engineered an end-to-end **multimodal GenAI pipeline**: ingested raw user voice notes, transcribed speech via LLM APIs (OpenAI Whisper / ChatGPT), extracted semantic intent, and dynamically generated rich prompt descriptions detailing cinematography, camera motion, lighting, and artistic styling to synthesize high-definition videos via **Kling AI** and **Grok Imagine**.
+  - Built an asynchronous **client-side AI generation job queue**: managed render lifecycle states (queued, generating, rendering, ready), exponential backoff polling, WebSocket progress updates, background render notifications, and network dropout recovery for multi-minute video synthesis tasks.
+  - Implemented AI model conditioning controls: allowed dynamic parameter tuning for aspect ratios, video durations, motion dynamics, prompt negative embeddings, and real-time generation credit calculations.
+  - Implemented client-side video watermarking and post-processing via **FFmpeg**, shifting compute to user devices and reducing backend server CPU load and processing expenses by **75%**.
   - Designed custom **Video Controller Manager** maintaining a pool of max 5 active controllers, eliminating memory leaks and ensuring smooth 60 FPS playback across budget devices.
+  - Architected high-performance social feed with follower graphs, interactions, and media playback using **Riverpod** and **GoRouter**.
   - Integrated **Razorpay** and **Cashfree** payment gateways for credit purchases, subscription tiers, and transaction reconciliation.
 - **Internsharks (Career Network & AI Resume Engine):**
   - Built cross-platform mobile and web applications for **Internsharks**, connecting students with recruiters through dynamic job matching.
-  - Developed an **AI Resume Builder** workflow that parses user experiences and generates structured, ATS-optimized resumes in real time.
+  - Developed an intelligent **AI Resume Builder & Content Optimizer**: built automated prompt engineering workflows that ingest raw career notes and dynamically synthesize structured, ATS-optimized resumes in real time adhering to Google XYZ and STAR frameworks.
+  - Engineered an AI-driven **Candidate-Job Matching Engine**: implemented semantic matching algorithms mapping candidate skillset vectors to recruiter job descriptions, generating instant compatibility scores and targeted skill-gap recommendations.
+  - Built real-time stream generation with live client previews, interactive editing, and automated PDF export formatting.
   - Implemented role-based recruiter and applicant portals, interactive messaging, and profile analytics.
 - **Fulupo Store (AI Object Detection & POS Billing):**
   - Engineered **Fulupo Store**, an intelligent store and inventory manager featuring camera-based **AI object detection** for automated cart item recognition and instant billing.
@@ -81,7 +84,7 @@
 
 ### 2. Ecfile Solutions
 - **Role:** Flutter FullStack Developer
-- **Duration:** Oct 2023 – Aug 2025
+- **Duration:** Oct 2023 – Nov 2025
 - **Location:** Chennai, India
 - **Primary Product:** *Ubill* — Cloud Accounting & GST Filing Software
 - **Web App Link:** [Ubill Web Portal](https://app.ubill.tech/)

@@ -19,3 +19,5 @@
 | Logzee Technologies | [Listing](...) | [logzeetech.com](https://...) | On-site (Chennai) | Mobile Developer (Flutter) | 14-10-2026 | Tailored / Ready |
 | Techtinium Technologies | [Listing](...) | [techtinium.com](https://...) | Career / Portal | Senior Mobile Engineer / Tech Lead | 14-10-2026 | Tailored / Ready |
 | GCC | [Listing](...) | [gcc.com](https://...) | Portal / Career | Flutter Developer | 27-10-2026 | Tailored / Ready |
+| Hero FinCorp | Email: adit.narayan@herofincorp.biz | [herofincorp.com](https://www.herofincorp.com/) | Email Application | Flutter Developer (4-6 Yrs) | 28-10-2026 | Tailored / Ready |
+
