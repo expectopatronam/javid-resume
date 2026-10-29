@@ -8,7 +8,7 @@ A consolidated reference of all personal, professional, product, app store, and 
 
 | Name / Platform | Link / Details | URL |
 | :--- | :--- | :--- |
-| **Email** | [farrukjavid@gmail.com](mailto:farrukjavid@gmail.com) | `mailto:farrukjavid@gmail.com` |
+| **Email** | [workwithakeel@gmail.com](mailto:workwithakeel@gmail.com) | `mailto:workwithakeel@gmail.com` |
 | **LinkedIn** | [linkedin.com/in/javid-akeel](https://www.linkedin.com/in/javid-akeel/) | `https://www.linkedin.com/in/javid-akeel/` |
 | **Portfolio** | [javid-portfolio-alpha.vercel.app](https://javid-portfolio-alpha.vercel.app/) | `https://javid-portfolio-alpha.vercel.app/` |
 | **GitHub** | [github.com/expectopatronam](https://github.com/expectopatronam) | `https://github.com/expectopatronam` |
@@ -56,7 +56,7 @@ A consolidated reference of all personal, professional, product, app store, and 
 
 ```text
 # Contact & Profiles
-mailto:farrukjavid@gmail.com
+mailto:workwithakeel@gmail.com
 https://www.linkedin.com/in/javid-akeel/
 https://javid-portfolio-alpha.vercel.app/
 https://github.com/expectopatronam
@@ -90,7 +90,7 @@ https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja
 
 ```latex
 % Header contact info
-\href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}}
+\href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}}
 \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}}
 \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}}
 

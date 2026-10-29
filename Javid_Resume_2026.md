@@ -1,6 +1,6 @@
 # Javid Akeel
 **Software Engineer — Mobile & AI (Flutter)**  
-Chennai, Tamil Nadu, India | +91 6383007505 | farrukjavid@gmail.com  
+Chennai, Tamil Nadu, India | +91 6383007505 | workwithakeel@gmail.com  
 [LinkedIn](https://www.linkedin.com/in/javid-akeel/) | [Portfolio](https://javid-portfolio-alpha.vercel.app/)
 
 ---

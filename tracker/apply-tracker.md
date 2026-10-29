@@ -22,4 +22,7 @@
 | Hero FinCorp | Email: adit.narayan@herofincorp.biz | [herofincorp.com](https://www.herofincorp.com/) | Email Application | Flutter Developer (4-6 Yrs) | 28-10-2026 | Tailored / Ready |
 | Avisol Technologies LLP | [JD](jd/AVISOL%20TECHNOLOGIES%20LLP.md) | [avisoltechnologies.com](https://avisoltechnologies.com) | Portal / Job Post | Flutter Developer | 29-10-2026 | Tailored / Ready |
 | Icube World | Email: icube.info.sol@gmail.com | [JD](jd/Icube%20world.md) | Direct Email (ICFD2905) | Full Stack Developer | 29-10-2026 | Tailored / Ready |
+| Careway | [JD](jd/Careway.md) | [carewayhealth.com](https://carewayhealth.com) | Portal / Job Post | Software Engineer (AI-Native EHR) | 29-10-2026 | Tailored / Ready |
+| Webdew | [JD](jd/Webdew.md) | [webdew.com](https://webdew.com) | Remote / Portal | AI-First Integration Engineer | 29-10-2026 | Tailored / Ready |
+| Questhostin Services Pvt Ltd | [Indeed](http://in.indeed.com/cmp/Questhostin-Services) | [JD](jd/Questhostin.md) | Indeed / Portal | Full Stack Developer – React & Node.js | 29-10-2026 | Tailored / Ready |
 

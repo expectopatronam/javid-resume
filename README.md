@@ -100,8 +100,14 @@ When tailoring a resume, the AI must adhere to the following rules:
    - **Option 4**: Must span **strictly across exactly 2 full pages** (both pages well-balanced, no dangling half-page gap).
    - Use the standard **`10pt`** document class (`\documentclass[letterpaper,10pt]{article}`).
    - **No Empty / Sparse White Space**: The pages must look complete, rich, and well-balanced. Do not leave awkward gaps or sparse sections with too few bullet points; ensure high information density with impactful metrics, achievements, and keywords from `javid-resume-content.md` that fill the target page budget edge-to-edge.
-5. **Plain-Text Cover Letters for Web Forms**:
-   - When generating cover letters, always provide them in clean **Plain Text** (no markdown bolding `**`, headers `#`, or bracketed links `[text](url)`). Write out raw URLs and standard numbering/spacing so the text can be pasted directly into portal form fields without looking broken.
+5. **Single `.md` File Standard for Cover Letters (No Duplicate `.txt` Files)**:
+   - **Single File Only**: Always generate cover letters exclusively as a single Markdown file: `temp/Cover_Letter_<Company>.md`. **Do NOT create duplicate `.txt` files**.
+   - **Clean Unformatted Style (Copy-Paste Safe)**: Write the `.md` file using clean, plain-text styling so it renders cleanly in GitHub/IDE previewers while remaining 100% copy-paste safe for portal web forms (Greenhouse, Lever, Workday) and email clients:
+     - **No Markdown Bolding**: Do NOT use `**bold**` asterisks in sentences (avoids ugly `**asterisks**` when pasted into ATS plain-text boxes).
+     - **No Markdown Headers**: Do NOT use `#` or `##` headers. Use clean spacing and simple ALL-CAPS or line breaks for sections.
+     - **Raw URLs Only**: Always provide full raw URLs (`https://linkedin.com/in/...`, `https://github.com/...`) instead of masked links `[label](url)` so links remain intact and clickable when pasted.
+     - **Standard Bullets**: Use clean `- ` hyphens.
+     - **Strict Location**: Always specify location as `Chennai, India` without availability/work-mode tags.
 6. **Live App & Store Links (Proof of Production)**:
    - Always include live links for published apps, web portals, and store listings. This provides concrete validation and adds high credibility for hiring managers.
    - **Explicit Link Styling**: Instead of hiding links inside the project title, explicitly label them so the reviewer immediately recognizes live links.

@@ -8,7 +8,7 @@
 
 - **Full Name:** Javid Akeel
 - **Phone:** +91 6383007505
-- **Email:** farrukjavid@gmail.com
+- **Email:** workwithakeel@gmail.com
 - **LinkedIn:** [linkedin.com/in/javid-akeel](https://www.linkedin.com/in/javid-akeel/)
 - **Portfolio:** [javid-portfolio-alpha.vercel.app](https://javid-portfolio-alpha.vercel.app/)
 - **Primary Location:** Chennai, Tamil Nadu, India
