@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in LaTeX - Tailored for Icube World / Icube Info Solutions (Full Stack Developer)
+% Layout Order: Header -> Profile Summary -> Experience -> Projects -> Technical Skills -> Education
+% Fits strictly onto 1 Page
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:farrukjavid@gmail.com}{\underline{farrukjavid@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Full Stack Developer with \textbf{3+ years} of production experience architecting responsive web applications, scalable RESTful APIs, and robust databases across \textbf{React.js, Next.js, Node.js, Express.js, MongoDB, and PostgreSQL}. Demonstrated track record delivering end-to-end web architectures, secure JWT/OAuth authentication, third-party payment gateway integrations, and containerized deployments on \textbf{AWS and Docker}.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full Stack \& Software Developer}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Engineered responsive web applications and portals for \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}}) and \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web Portal}}), utilizing \textbf{React, Next.js, and TypeScript} with real-time data streaming and cross-browser responsiveness.}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment gateways, implementing secure webhook listeners, transactional data verification, automated receipts, and reconciliation logic.}
+        \resumeItem{Built \textbf{Node.js + Express.js} backend services and asynchronous job queues to handle compute-heavy background processing tasks with real-time \textbf{WebSocket} client notifications.}
+        \resumeItem{Implemented user authentication, session security, input validation, and dynamic UI state handling (loading, empty, error states) using \textbf{Tailwind CSS} and modern frontend design principles.}
+        \resumeItem{Utilized \textbf{Git and GitHub} for source control, feature branching, code reviews, and automated deployment pipelines.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Engineer (Node.js + MongoDB + Web)}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code across \textbf{Node.js + Express.js} microservices, \textbf{MongoDB} databases, and responsive web client interfaces.}
+        \resumeItem{Designed and documented secure RESTful APIs in \textbf{Postman}; built custom \textbf{JWT authentication}, role-based access control (RBAC), and strict request validation following security best practices.}
+        \resumeItem{Designed and optimized \textbf{MongoDB schemas}, indexes, and aggregation pipelines processing thousands of commercial invoice transactions with sub-second query latency.}
+        \resumeItem{Built an ultra-fast PDF invoice generator using \textbf{HTML5, CSS3}, and JavaScript interop, reusing web templates and increasing generation speed by \textbf{50\%}.}
+        \resumeItem{Engineered an \textbf{Excel bulk stock data pipeline}, automating catalog migration for 10,000+ SKUs and accelerating client onboarding by \textbf{60\%}; implemented Indian GST calculation and accounting ledger logic.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Admin Platform} $|$ \emph{React, Next.js, NestJS, Tailwind CSS, PostgreSQL, AWS Cognito, Docker}}{Enterprise Project}
+          \resumeItemListStart
+            \resumeItem{Built a scalable enterprise SaaS administration portal with complete CRUD interfaces using \textbf{React, Next.js}, and Tailwind CSS.}
+            \resumeItem{Integrated enterprise-grade \textbf{AWS Cognito} RBAC authentication, PostgreSQL relational database modeling, and \textbf{Docker} containerization for streamlined deployment.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja Backend \& Web} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Node.js, Express.js, MongoDB, AWS S3, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Developed containerized \textbf{Node.js + Express.js} RESTful APIs backed by \textbf{MongoDB} and \textbf{AWS S3} for technical manual storage, formulas, and user calculations.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: React.js, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap, Responsive Design} \\
+     \textbf{Backend \& APIs}{: Node.js, Express.js, NestJS, RESTful APIs, WebSockets, Postman, npm, JSON Validation} \\
+     \textbf{Databases}{: MongoDB (Mongoose, Aggregations), PostgreSQL, MySQL, SQLite, Database Design \& Indexing} \\
+     \textbf{Security \& Integrations}{: JWT Authentication, RBAC, OAuth/SSO, Payment Gateways (Razorpay, Cashfree), API Integration} \\
+     \textbf{Tools \& Cloud}{: Git, GitHub, VS Code, AWS (S3, Cognito), Docker, Vercel, CI/CD, Agile/Scrum}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

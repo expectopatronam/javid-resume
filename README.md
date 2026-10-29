@@ -142,6 +142,9 @@ When tailoring a resume, the AI must adhere to the following rules:
 12. **Dates & Alignment**:
     - Always right-align dates using en dashes with spaces (`Jan 2024 -- Present` in LaTeX).
     - Always use `Present` instead of `Current`, `Now`, or `Ongoing`.
+13. **Header & Contact Information Guardrail**:
+    - **Clean Location Only**: Always format the location strictly as `Chennai, India` .
+    - **Strictly No Work-Mode or Availability Tags**: Never append `(Remote Available)`, `(Open to Remote)`, `(Open to Relocate)`, `(Hybrid)`, or similar availability/work-mode tags to the resume header or location line. Keep contact headings clean, professional, and standard across all base and tailored resumes.
 
 ---
 

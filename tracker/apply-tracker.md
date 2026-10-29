@@ -20,4 +20,6 @@
 | Techtinium Technologies | [Listing](...) | [techtinium.com](https://...) | Career / Portal | Senior Mobile Engineer / Tech Lead | 14-10-2026 | Tailored / Ready |
 | GCC | [Listing](...) | [gcc.com](https://...) | Portal / Career | Flutter Developer | 27-10-2026 | Tailored / Ready |
 | Hero FinCorp | Email: adit.narayan@herofincorp.biz | [herofincorp.com](https://www.herofincorp.com/) | Email Application | Flutter Developer (4-6 Yrs) | 28-10-2026 | Tailored / Ready |
+| Avisol Technologies LLP | [JD](jd/AVISOL%20TECHNOLOGIES%20LLP.md) | [avisoltechnologies.com](https://avisoltechnologies.com) | Portal / Job Post | Flutter Developer | 29-10-2026 | Tailored / Ready |
+| Icube World | Email: icube.info.sol@gmail.com | [JD](jd/Icube%20world.md) | Direct Email (ICFD2905) | Full Stack Developer | 29-10-2026 | Tailored / Ready |
 
