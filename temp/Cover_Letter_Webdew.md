@@ -1,11 +1,5 @@
 Cover Letter — AI-First Integration Engineer at Webdew
 
-Javid Akeel
-Chennai, India | +91 6383007505 | farrukjavid@gmail.com
-LinkedIn: https://www.linkedin.com/in/javid-akeel/
-Portfolio: https://javid-portfolio-alpha.vercel.app/
-GitHub: https://github.com/expectopatronam
-
 Dear Hiring Team at Webdew,
 
 I am writing to apply for the AI-First Integration Engineer role at Webdew. What caught my attention immediately in your posting is your explicit focus on treating AI as a core engineering multiplier rather than a novelty. As an engineer with 3+ years of experience building custom API integrations, event-driven middleware, and AI workflow automations, I actively leverage AI tools, LLM APIs, and coding agents daily to accelerate architecture design, prototyping, testing, and system delivery.
@@ -24,7 +18,9 @@ Thank you for your time and consideration.
 
 Warm regards,
 Javid Akeel
-Phone: +91 6383007505
-Email: farrukjavid@gmail.com
-Location: Chennai, India
-Availability: Immediate (Ready for 5:00 PM to 2:30 AM IST Shift)
+Phone: +91 6383007505 | Email: workwithakeel@gmail.com
+Location: Chennai, India (Available for 5:00 PM to 2:30 AM IST Shift)
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+GitHub: https://github.com/expectopatronam
+Notice Period: Immediate

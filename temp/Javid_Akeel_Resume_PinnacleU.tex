@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in LaTeX - Tailored for PinnacleU (Shopify / Frontend Developer)
+% Layout Order: Header -> Profile Summary -> Experience -> Projects -> Technical Skills -> Education
+% Fits strictly onto 1 Page
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Frontend \& Web Developer with \textbf{3+ years} of production experience building high-conversion, responsive web storefronts and interactive user experiences across \textbf{Shopify (Liquid, OS 2.0), React.js, JavaScript (ES6+), HTML5, and CSS3/SCSS}. Proven track record translating Figma designs into pixel-perfect landing pages, optimizing Core Web Vitals and load speeds by \textbf{50\%}, integrating Storefront/Ajax APIs, and executing rapid A/B testing iterations in fast-paced D2C environments.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Frontend \& Web Developer}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Built responsive web applications and high-conversion landing pages for \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}}) and \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web Portal}}), translating Figma mockups into pixel-perfect, mobile-first layouts using \textbf{React, HTML5, CSS3/SCSS, and Tailwind}}
+        \resumeItem{Engineered storefront experiences and catalog interfaces for \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}), integrating automated retail checkout and dynamic cart calculation workflows}
+        \resumeItem{Optimized page load speeds, Core Web Vitals, and asset delivery, ensuring smooth 60 FPS transitions and sub-second First Contentful Paint (FCP) across budget and mobile devices}
+        \resumeItem{Integrated native payment gateways (\textbf{Razorpay, Cashfree}) with real-time transaction verification, automated receipts, and conversion-friendly checkout flows}
+        \resumeItem{Maintained version-controlled Git workflows, conducted frontend code reviews, and implemented rapid A/B testing iterations for user acquisition campaigns}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Frontend \& Web Application Engineer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular frontend and client-side code for \textbf{Ubill}, crafting accessible, responsive web interfaces across diverse screen form factors}
+        \resumeItem{Engineered an ultra-fast dynamic document and invoice rendering engine utilizing \textbf{HTML5, CSS3, SCSS}, and JavaScript interop, boosting template rendering speed by \textbf{50\%}}
+        \resumeItem{Developed reusable UI component blocks and structured theme settings, empowering non-technical stakeholders to configure catalog items and layout templates effortlessly}
+        \resumeItem{Built client-side data validation pipelines, optimized DOM tree rendering, and resolved cross-browser compatibility hurdles across Chrome, Safari, and mobile browsers}
+        \resumeItem{Accelerated customer data migration by \textbf{60\%} through an automated bulk catalog upload tool for 10,000+ retail SKUs}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Responsive Web Platform} $|$ \emph{React.js, Next.js, Tailwind CSS, HTML5/SCSS, REST APIs}}{Web Platform}
+          \resumeItemListStart
+            \resumeItem{Translated complex multi-screen Figma prototypes into pixel-perfect responsive web pages with accessible components and dynamic layout states}
+            \resumeItem{Integrated RESTful APIs with asynchronous data fetching, client-side caching, and error-handling states to maximize user engagement}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja Web \& Digital Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{HTML5, CSS3, JavaScript, REST APIs}}{Digital Product}
+          \resumeItemListStart
+            \resumeItem{Built a responsive web manual reference interface with offline asset caching, custom typography formatting, and mobile-first design principles}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Storefront \& Theme Tech}{: Shopify Liquid, Online Store 2.0, Theme Customization, Sections \& Blocks, Theme Settings, Ajax APIs} \\
+     \textbf{Frontend Core}{: HTML5, CSS3, SCSS, JavaScript (ES6+), React.js, Next.js, Tailwind CSS, Bootstrap, Responsive Mobile-First Design} \\
+     \textbf{Design \& Performance}{: Figma to Code, Pixel-Perfect Layouts, Core Web Vitals, Page Speed Optimization, Cross-Browser Compatibility, CRO} \\
+     \textbf{Integrations \& APIs}{: REST APIs, Webhooks, Payment Gateways (Razorpay, Cashfree, Stripe), JSON, Third-Party Apps} \\
+     \textbf{Workflow \& Tools}{: Git, GitHub, VS Code, Postman, npm/yarn, Agile Sprints, A/B Testing}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

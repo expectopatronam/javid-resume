@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in LaTeX - Tailored for Big Happy (Front-end Developer)
+% Layout Order: Header -> Profile Summary -> Experience -> Projects -> Technical Skills -> Education
+% Fits strictly onto 1 Page
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Creative Front-End Developer with \textbf{3+ years} of production experience engineering high-performance, interactive, and responsive web applications across \textbf{JavaScript (ES6+), TypeScript, HTML5, CSS3/SCSS, React.js, and Next.js}. Proven track record building dynamic rich-media web experiences, interactive Canvas/animation pipelines, reusable UI component libraries, and optimizing render performance for 60 FPS across mobile and desktop. Experienced working across US time zones with Agile/Git workflows.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Front-End \& Interactive Web Developer}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Engineered interactive, responsive web applications and dynamic media feeds for \textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}}) and \textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web Portal}}), utilizing \textbf{JavaScript (ES6+), TypeScript, React, and HTML5/CSS3}}
+        \resumeItem{Architected high-performance multimedia and client-side rendering pipelines with \textbf{FFmpeg} and custom controller pools, eliminating memory leaks and driving steady 60 FPS playback on mobile viewports}
+        \resumeItem{Built interactive, real-time client UI states with WebSocket streams, handling asynchronous API responses and dynamic JSON data communication}
+        \resumeItem{Optimized frontend page load times, asset compression, and Core Web Vitals, reducing First Contentful Paint (FCP) across budget mobile devices}
+        \resumeItem{Integrated payment gateways (\textbf{Razorpay, Cashfree}) and maintained version control workflows with \textbf{Git/GitHub}, automated CI/CD builds, and peer code reviews}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Front-End Software Engineer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular frontend production code for \textbf{Ubill}, crafting pixel-perfect, accessible, and responsive web interfaces across diverse screen sizes}
+        \resumeItem{Built an ultra-fast dynamic document and invoice rendering engine utilizing \textbf{HTML5, CSS3, SCSS}, and JavaScript interop, boosting template generation speed by \textbf{50\%}}
+        \resumeItem{Developed a reusable front-end component library with strict modularity, ensuring brand consistency and accelerating new feature development}
+        \resumeItem{Resolved complex cross-browser rendering quirks across Safari, Chrome, Firefox, and mobile WebViews, maintaining 100\% layout fidelity}
+        \resumeItem{Integrated RESTful APIs with structured request interceptors, data validation, and custom JWT authentication in agile two-week sprints}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InvusProp Interactive Web Platform} $|$ \emph{React.js, Next.js, TypeScript, HTML5 Canvas}}{Web Platform}
+          \resumeItemListStart
+            \resumeItem{Translated complex multi-screen Figma prototypes into pixel-perfect responsive web pages with accessible components and dynamic layout states}
+            \resumeItem{Optimized bundle size using modern build tooling, code-splitting, and asset lazy loading to maximize client performance}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja Digital Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{JavaScript, HTML5, CSS3, REST APIs}}{Digital Product}
+          \resumeItemListStart
+            \resumeItem{Built an interactive calculation and technical manual interface featuring offline asset caching and responsive touch gestures}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Core Web}{: Vanilla JavaScript (ES6+), TypeScript, HTML5, CSS3, SASS/SCSS, Responsive Mobile-First Design} \\
+     \textbf{Frameworks \& State}{: React.js, Next.js, Redux, React Query, Webpack, Vite, npm, Reusable Component Libraries} \\
+     \textbf{Graphics \& Media}{: HTML5 Canvas, SVG Animation, D3.js/Canvas.js, Interactive Media, Video/FFmpeg, WebGL basics} \\
+     \textbf{APIs \& Optimization}{: RESTful APIs, JSON, WebSockets, Web Performance Optimization, Core Web Vitals, Cross-Browser Compatibility} \\
+     \textbf{Tools \& Workflow}{: Git, GitHub, VS Code, Linux CLI, Postman, CI/CD, Agile/Monday.com, US Timezone Collaboration}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

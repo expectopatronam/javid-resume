@@ -108,6 +108,7 @@ When tailoring a resume, the AI must adhere to the following rules:
      - **Raw URLs Only**: Always provide full raw URLs (`https://linkedin.com/in/...`, `https://github.com/...`) instead of masked links `[label](url)` so links remain intact and clickable when pasted.
      - **Standard Bullets**: Use clean `- ` hyphens.
      - **Strict Location**: Always specify location as `Chennai, India` without availability/work-mode tags.
+     - **Single Bottom Signature Only (No Duplicate Top Header)**: Do NOT duplicate contact info or links at the top. Open directly with the salutation (`Dear Hiring Team at <Company>,`), and place all contact details, URLs, location, and notice period cleanly in the **bottom signature once**.
 6. **Live App & Store Links (Proof of Production)**:
    - Always include live links for published apps, web portals, and store listings. This provides concrete validation and adds high credibility for hiring managers.
    - **Explicit Link Styling**: Instead of hiding links inside the project title, explicitly label them so the reviewer immediately recognizes live links.

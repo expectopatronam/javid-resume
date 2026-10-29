@@ -1,11 +1,5 @@
 Cover Letter — Software Engineer (AI-Native EHR) at Careway
 
-Javid Akeel
-Chennai, India | +91 6383007505 | farrukjavid@gmail.com
-LinkedIn: https://www.linkedin.com/in/javid-akeel/
-Portfolio: https://javid-portfolio-alpha.vercel.app/
-GitHub: https://github.com/expectopatronam
-
 Dear Careway Team,
 
 I am writing to apply for the Software Engineer role building Careway's AI-native EHR. What stood out to me immediately in your mission is the distinction between stapling a chatbot onto legacy healthcare software versus treating AI as an intrinsic primitive of the care model. When software runs the patient record, billing workflows, and advocate operations for seniors with complex health needs, reliability and clear data modeling are non-negotiable.
@@ -23,7 +17,9 @@ Thank you for your time and consideration.
 
 Warm regards,
 Javid Akeel
-Phone: +91 6383007505
-Email: farrukjavid@gmail.com
+Phone: +91 6383007505 | Email: workwithakeel@gmail.com
 Location: Chennai, India
+LinkedIn: https://www.linkedin.com/in/javid-akeel/
+Portfolio: https://javid-portfolio-alpha.vercel.app/
+GitHub: https://github.com/expectopatronam
 Notice Period: Immediate
