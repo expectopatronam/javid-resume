@@ -27,4 +27,6 @@
 | Questhostin Services Pvt Ltd | [Indeed](http://in.indeed.com/cmp/Questhostin-Services) | [JD](jd/Questhostin.md) | Indeed / Portal | Full Stack Developer – React & Node.js | 29-10-2026 | Tailored / Ready |
 | PinnacleU | [JD](jd/PinnacleU.md) | D2C Brand (Bengaluru) | Portal / Job Post | Frontend Developer (Shopify / Web) | 29-10-2026 | Tailored / Ready |
 | Big Happy | [Indeed](http://in.indeed.com/cmp/Big-Happy) | [JD](jd/BigHappy.md) | Indeed / Portal | Front-end Developer (US Timezones) | 29-10-2026 | Tailored / Ready |
+| Hirevoo | [JD](jd/Hirevoo.md) | In person | Portal / Job Post | Software Engineer – Generative AI & LLM | 03-11-2026 | Tailored / Ready |
+| HireAlpha | [JD](jd/hirealpha.md) | recruit@hirealpha.co.in | Email Application | Senior Flutter Developer (iOS) | 05-11-2026 | Tailored / Ready |
 

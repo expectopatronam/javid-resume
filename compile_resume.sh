@@ -1,6 +1,7 @@
 #!/bin/bash
 # Compiles LaTeX resume files to the pdf/ directory using tectonic / pdflatex
 
+export PATH="$PATH:/usr/lib/chatgpt/resources/tectonic"
 mkdir -p pdf
 
 if [ "$#" -eq 0 ]; then
