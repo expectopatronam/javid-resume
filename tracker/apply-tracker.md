@@ -29,4 +29,7 @@
 | Big Happy | [Indeed](http://in.indeed.com/cmp/Big-Happy) | [JD](jd/BigHappy.md) | Indeed / Portal | Front-end Developer (US Timezones) | 29-10-2026 | Tailored / Ready |
 | Hirevoo | [JD](jd/Hirevoo.md) | In person | Portal / Job Post | Software Engineer – Generative AI & LLM | 03-11-2026 | Tailored / Ready |
 | HireAlpha | [JD](jd/hirealpha.md) | recruit@hirealpha.co.in | Email Application | Senior Flutter Developer (iOS) | 05-11-2026 | Tailored / Ready |
+| Lydon Keats | [JD](jd/lydon.md) | Tiruppur (In-person) | Portal / Job Post | Flutter Developer | 14-11-2026 | Tailored / Ready |
+| FuGenTex Solutions | [Indeed](http://in.indeed.com/cmp/Fugened) | [JD](jd/FuGenTex.md) | Indeed (Bengaluru) | Senior Flutter Developer | 14-11-2026 | Tailored / Ready |
+| Blackstone Evolve | Email: hr@blackstoneevolve.com | [JD](jd/BlackstoneEvolve.md) | Direct Email | Full Stack Engineer (Flutter, React, Node) | 14-11-2026 | Tailored / Ready |
 

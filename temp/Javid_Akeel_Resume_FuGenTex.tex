@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in LaTeX - Option 3: Jake's Resume with Profile Summary, Education at Bottom (1 Page)
+% Tailored for FuGenTex Solutions Pvt Ltd: Senior Flutter Developer (Bengaluru, Karnataka)
+% Author : Javid Akeel
+% Based on: Jake Gutierrez's template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit with summary
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Senior Flutter Engineer with \textbf{3+ years} of production experience architecting modular, highly decoupled cross-platform applications across iOS, Android, and Web. Deep expertise in \textbf{Clean Architecture, Domain-Driven Design (DDD)}, and scalable state management (\textbf{BLoC, Riverpod}) separating Presentation, Domain, and Data layers. Proven track record engineering offline-first sync pipelines (\textbf{SQLite, Hive}), payment gateway integrations (\textbf{UPI, Razorpay, Cashfree}), Flutter Web rendering optimization (\textbf{CanvasKit vs. HTML, JS Interop}), and enterprise-grade mobile security protocols.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code for \textbf{Ubill}, a commercial accounting and financial ERP platform spanning Flutter (Web, Android, iOS) and Node.js microservices.}
+        \resumeItem{Architected modular feature packages following \textbf{Clean Architecture} and \textbf{DDD} principles, strictly separating Presentation, Domain, and Data layers to ensure core business logic remained decoupled from UI and API changes.}
+        \resumeItem{Optimized \textbf{Flutter Web} rendering engine selection (\textbf{CanvasKit vs. HTML}) and engineered client-side PDF document generation via \textbf{JS Interop}, boosting rendering speed by \textbf{50\%} with zero layout shift across Chrome, Safari, and Edge.}
+        \resumeItem{Engineered compliant \textbf{Indian GST computation} logic, multi-tier tax computations, and automated financial ledgers processing thousands of commercial transactions with rigorous error-handling and audit-ready data consistency.}
+        \resumeItem{Designed and implemented offline-first caching and data persistence layers using \textbf{Hive} and local storage, ensuring continuous invoice creation during network dropouts with automated background retry sync.}
+        \resumeItem{Enforced enterprise-grade security protocols: implemented secure token storage, custom \textbf{JWT authentication}, role-based access control (RBAC), request rate-limiting, and encrypted transport layers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer -- Mobile \& AI (Flutter)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Architected modular features and scalable state management using \textbf{Riverpod} and \textbf{BLoC} streams for \textbf{Selfitoons} (\href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}}), preventing unnecessary widget rebuilds and minimizing battery drain.}
+        \resumeItem{Engineered on-device video post-processing via \textbf{FFmpeg}, shifting intensive compute to client hardware and reducing server-side CPU load and processing expenses by \textbf{75\%}.}
+        \resumeItem{Designed a custom \textbf{Video Controller Manager} maintaining a pool of maximum 5 active controllers, eliminating cross-platform memory leaks and sustaining steady \textbf{60 FPS} playback on budget hardware.}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment gateways, UPI intent flows, and subscription models with automated webhook reconciliation, signature validation, and idempotent transaction handling.}
+        \resumeItem{Engineered \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}), integrating on-device AI object detection ($<$100ms inference, 98\% accuracy) with local barcode scanning and offline-capable retail billing.}
+        \resumeItem{Owned end-to-end publishing, app signing, and release pipelines across the \textbf{Apple App Store} and \textbf{Google Play Console}, enforcing CI/CD workflows, privacy manifests, and store compliance standards.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- Offline-First POS \& Inventory} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Flutter/Dart, SQLite/RoomDB, Firebase}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a resilient offline-first sync engine with background workers, local \textbf{SQLite/RoomDB} payload queuing in dead zones, delta synchronization, and bidirectional conflict resolution; scaled platform to \textbf{1,000+ active users}.}
+            \resumeItem{Integrated \textbf{Google Play Billing} subscriptions and built comprehensive real-time financial reporting (P\&L, tax, date-range).}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Express.js, MongoDB, Hive, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Developed a technical calculation app with offline formula evaluation, local Hive persistence, and cloud synchronization.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Dart, Kotlin, JavaScript/TypeScript, Java, Python, SQL (PostgreSQL, SQLite), HTML5/CSS3} \\
+     \textbf{Architecture \& Frameworks}{: Clean Architecture, Domain-Driven Design (DDD), Modularization, Flutter (iOS, Android, Web), BLoC, Riverpod, GetX} \\
+     \textbf{Security \& APIs}{: Biometric Auth, Secure Storage, SSL/TLS Pinning, JWT, RESTful APIs, JSON, WebSockets, UPI / Payment Gateways} \\
+     \textbf{Offline \& Databases}{: Offline-First Sync, Background Workers, Hive, SQLite / RoomDB, Firebase (Firestore, FCM), MongoDB} \\
+     \textbf{Performance \& Web}{: CanvasKit vs. HTML Rendering, JS Interop, Profiling (Memory Leaks, Cold Starts, FPS), CI/CD, Git, App Store, Play Store}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

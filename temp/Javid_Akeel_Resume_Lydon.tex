@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in LaTeX - Option 3: Jake's Resume with Profile Summary, Education at Bottom (1 Page)
+% Tailored for Lydon Keats: Flutter Developer (Tiruppur, Tamil Nadu)
+% Author : Javid Akeel
+% Based on: Jake Gutierrez's template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit with summary
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Flutter Developer with \textbf{3+ years} of production experience taking mobile applications from blank screen to store deployment across the \textbf{Google Play Store} and \textbf{Apple App Store}. Expert in \textbf{Dart, Flutter}, complex UI/animations, and scalable state management (\textbf{Riverpod, BLoC, Provider, GetX}) using \textbf{Clean Architecture} and \textbf{MVVM}. Hands-on with \textbf{Firebase} (Auth, Firestore, Cloud Messaging, Analytics, Crashlytics), REST APIs, local databases (\textbf{Hive, SQLite}), sensible AI coding tools, and complete store release lifecycles.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer -- Mobile (Flutter)}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Architected and shipped \textbf{Selfitoons} (\href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS App Store}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Google Play}}), an AI video social app, from blank screen to production using \textbf{Riverpod}, Clean Architecture, and \textbf{GoRouter}.}
+        \resumeItem{Built on-device video watermarking and post-processing via \textbf{FFmpeg}, shifting compute to client hardware and reducing server-side CPU and rendering expenses by \textbf{75\%}.}
+        \resumeItem{Eliminated playback memory leaks and sustained steady \textbf{60 FPS} across budget devices by designing a custom \textbf{Video Controller Manager} maintaining a pool of maximum 5 active controllers.}
+        \resumeItem{Integrated \textbf{Firebase Cloud Messaging (FCM)}, push notifications, Crashlytics, and payment gateways (\textbf{Razorpay, Cashfree}) with automated transaction reconciliation and webhook validation.}
+        \resumeItem{Owned end-to-end publishing across the \textbf{Apple App Store} and \textbf{Google Play Console}, managing TestFlight builds, provisioning profiles, privacy manifests, and store compliance updates.}
+        \resumeItem{Engineered \textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}), integrating on-device AI object detection ($<$100ms inference, 98\% accuracy), local barcode scanning, and offline-capable retail transaction logic.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{40,000+ lines} of modular production code for \textbf{Ubill} accounting software across Flutter (Android, iOS, Web) and Node.js microservices.}
+        \resumeItem{Architected modular app features using \textbf{Clean Architecture, MVVM}, and state management with \textbf{GetX, Riverpod, and Provider}, backed by \textbf{Hive} for high-performance offline local storage.}
+        \resumeItem{Connected Flutter clients to secure \textbf{RESTful APIs} and JSON payloads with JWT authentication, role-based access control, and robust network retry states.}
+        \resumeItem{Built a high-performance PDF invoice generator via \textbf{JS Interop} reusing backend HTML/CSS templates on the client, accelerating invoice export speeds by \textbf{50\%}.}
+        \resumeItem{Implemented compliant \textbf{Indian GST calculation} logic, multi-tier tax computations, and automated financial ledgers processing thousands of commercial invoice transactions.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- POS \& Retail Platform} $|$ \href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}} $|$ \emph{Kotlin, Flutter/Dart, Firebase, RoomDB/SQLite}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack offline-first POS app with delta synchronization, conflict resolution, local SQLite caching, and barcode scanning; scaled platform to \textbf{1,000+ active users}.}
+            \resumeItem{Integrated \textbf{Firebase} real-time sync, multi-tier Google Play Billing subscriptions, and automated stock alerts.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Dart, Express.js, MongoDB, Hive, Docker}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Developed a cross-platform utility app for marine engineers featuring offline formula evaluation, Markdown documentation rendering, and cloud synchronization.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Dart, Kotlin, JavaScript/TypeScript, Java, Python, SQL (PostgreSQL, SQLite), HTML5/CSS3} \\
+     \textbf{Mobile \& Frameworks}{: Flutter (iOS, Android, Web), Jetpack Compose, Android SDK, Responsive Layouts, Custom Animations} \\
+     \textbf{Architecture \& State}{: Clean Architecture, MVVM, Riverpod, BLoC, Provider, GetX, RESTful APIs, JSON, WebSockets} \\
+     \textbf{Storage \& Backend}{: Firebase (Auth, Firestore, FCM, Crashlytics, Storage), Hive, SQLite / RoomDB, Shared Preferences, Node.js, MongoDB} \\
+     \textbf{Store Publishing \& Tools}{: Google Play Console, Apple App Store Connect, TestFlight, App Signing, Git, CI/CD, Postman, AI Coding Tools}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

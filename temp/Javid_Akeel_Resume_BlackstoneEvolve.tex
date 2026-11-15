@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in LaTeX - Option 3: Jake's Resume with Profile Summary, Education at Bottom (1 Page)
+% Tailored for Blackstone Evolve: Full Stack Engineer (Flutter, React.js, Next.js, Node.js)
+% Author : Javid Akeel
+% Based on: Jake Gutierrez's template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strictly 1-page fit with summary
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{1pt}
+    \small +91 6383007505 $|$
+    \href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{linkedin.com/in/javid-akeel}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{javid-portfolio-alpha.vercel.app}} $|$
+    \small Chennai, India
+\end{center}
+
+%-----------PROFILE SUMMARY-----------
+\section{Profile Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Full Stack Engineer with \textbf{3+ years} of production experience architecting end-to-end applications across \textbf{Flutter, React.js, Next.js, and Node.js/Express}. Proven track record contributing \textbf{40,000+ lines} of maintainable code across commercial ERP accounting platforms, real-estate web portals, and cross-platform mobile apps. Proficient in designing scalable \textbf{RESTful APIs}, implementing \textbf{JWT/OAuth} authentication, database modeling (\textbf{MongoDB, PostgreSQL}), state management (\textbf{Redux, Riverpod, BLoC}), and cloud deployments on \textbf{AWS} and \textbf{Docker}.
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flutter FullStack Developer}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Authored \textbf{40,000+ lines} of modular production code for \textbf{Ubill} ERP software across Flutter (Web/Mobile), \textbf{Node.js/Express} microservices, and \textbf{MongoDB}.}
+        \resumeItem{Designed and implemented secure backend \textbf{RESTful APIs} in Node.js featuring custom \textbf{JWT authentication}, role-based access control (RBAC), and request rate-limiting.}
+        \resumeItem{Architected responsive web interfaces using modern component lifecycles, \textbf{Clean Architecture}, and client-side caching (\textbf{Hive}), maintaining sub-second screen rendering and zero downtime.}
+        \resumeItem{Engineered a high-performance PDF invoice generator via \textbf{JS Interop} reusing backend HTML/CSS rendering templates on the client, accelerating invoice export speeds by \textbf{50\%}.}
+        \resumeItem{Implemented compliant \textbf{Indian GST computation} logic and commercial transaction ledgers; integrated automated bulk data migration pipelines accelerating customer onboarding by \textbf{60\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer -- Mobile \& Full-Stack}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Engineered cross-platform mobile and web applications for \textbf{Selfitoons} (\href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{iOS}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Android}}), integrating \textbf{REST APIs}, WebSockets, and \textbf{Riverpod/BLoC} state management.}
+        \resumeItem{Built on-device media processing via \textbf{FFmpeg}, shifting compute to client hardware and reducing server-side CPU and bandwidth costs by \textbf{75\%}.}
+        \resumeItem{Designed a custom \textbf{Video Controller Manager} maintaining a pool of maximum 5 active controllers, eliminating memory leaks and driving steady \textbf{60 FPS} playback.}
+        \resumeItem{Integrated \textbf{Razorpay} and \textbf{Cashfree} payment gateways, push notifications, and subscription tiers with automated webhook validation and transaction reconciliation.}
+        \resumeItem{Owned end-to-end publishing, code reviews, and releases across the \textbf{Apple App Store} and \textbf{Google Play Console}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{InvusProp -- Real Estate Management Platform} $|$ \emph{Next.js, React.js, TypeScript, Tailwind CSS, PostgreSQL, AWS, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a scalable full-stack real-estate management portal utilizing \textbf{Next.js (SSR/SSG)} and \textbf{React.js} with responsive \textbf{Tailwind CSS} component architecture.}
+            \resumeItem{Engineered backend RESTful microservices with \textbf{PostgreSQL} relational database persistence, schema migrations, and connection pooling.}
+            \resumeItem{Integrated enterprise-grade authentication using \textbf{AWS Cognito} and provisioned containerized deployments on \textbf{AWS} via \textbf{Docker}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja} $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}} $|$ \emph{Flutter, Node.js/Express, MongoDB, Docker, AWS S3}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack technical calculation mobile app with containerized \textbf{Node.js + Express} REST APIs, \textbf{MongoDB} database persistence, and \textbf{AWS S3} file storage hosted on \textbf{Docker}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript (ES6+), TypeScript, Dart, Python, SQL (PostgreSQL, MySQL), HTML5, CSS3} \\
+     \textbf{Frontend \& Web}{: React.js, Next.js (SSR/SSG), Redux, Context API, Tailwind CSS, Material UI, Responsive Design, JS Interop} \\
+     \textbf{Backend \& APIs}{: Node.js, Express.js, RESTful APIs, Microservices, JWT, OAuth, WebSockets, API Security} \\
+     \textbf{Mobile Frameworks}{: Flutter (iOS, Android, Web), Dart, Riverpod, BLoC, Provider, Firebase (FCM, Auth), Play Store, App Store} \\
+     \textbf{Databases \& DevOps}{: MongoDB, PostgreSQL, SQLite, Hive, AWS (S3, Cognito), Docker, Git, GitHub/GitLab, CI/CD, Postman}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

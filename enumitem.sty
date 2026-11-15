@@ -1,0 +1,18 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{enumitem}[2020/06/24 v3.9 Custom Minimal enumitem]
+\RequirePackage{keyval}
+\define@key{enumitem}{leftmargin}{\def\enit@leftmargin{#1}}
+\define@key{enumitem}{label}{\def\enit@label{#1}}
+\define@key{enumitem}{topsep}{\def\enit@topsep{#1}}
+\define@key{enumitem}{itemsep}{\def\enit@itemsep{#1}}
+\define@key{enumitem}{parsep}{\def\enit@parsep{#1}}
+\let\orig@itemize\itemize
+\let\orig@enditemize\enditemize
+\renewenvironment{itemize}[1][]{%
+  \orig@itemize
+  \setlength{\leftmargin}{0.15in}%
+  \setlength{\itemsep}{-2pt}%
+  \setlength{\parsep}{0pt}%
+}{%
+  \orig@enditemize
+}
