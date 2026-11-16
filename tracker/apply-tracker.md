@@ -32,4 +32,6 @@
 | Lydon Keats | [JD](jd/lydon.md) | Tiruppur (In-person) | Portal / Job Post | Flutter Developer | 14-11-2026 | Tailored / Ready |
 | FuGenTex Solutions | [Indeed](http://in.indeed.com/cmp/Fugened) | [JD](jd/FuGenTex.md) | Indeed (Bengaluru) | Senior Flutter Developer | 14-11-2026 | Tailored / Ready |
 | Blackstone Evolve | Email: hr@blackstoneevolve.com | [JD](jd/BlackstoneEvolve.md) | Direct Email | Full Stack Engineer (Flutter, React, Node) | 14-11-2026 | Tailored / Ready |
+| Mayura Consultancy Services (MCS) | [Listing](https://www.mayuraconsultancy.com/careers/mcs-flutter-developer?r=jlp) | [JD](jd/MayuraConsultancy.md) | Career Portal (Remote) | Flutter Developer | 16-11-2026 | Tailored / Ready |
+| Sweken | Email: careers@sweken.com | [JD](jd/Sweken.md) | Direct Email | Flutter Developer (2-7 Yrs) | 16-11-2026 | Tailored / Ready |
 

@@ -35,13 +35,13 @@
 | **Languages** | Dart, JavaScript, TypeScript, Java, Python, Kotlin, SQL (PostgreSQL), HTML5, CSS3 |
 | **Mobile Frameworks & Tech** | Flutter (iOS, Android, Web), Jetpack Compose (Kotlin), Android SDK |
 | **Web & Frontend** | React, Next.js, HTML/CSS, Tailwind CSS, JS Interop |
-| **Backend & APIs** | Node.js, Express.js, NestJS, Django, REST APIs, HTTP, Dio |
-| **Databases & Storage** | MongoDB, PostgreSQL, Firebase (Realtime DB), RoomDB, Hive, SharedPreferences |
+| **Backend & APIs** | Python (FastAPI, Pydantic, Django), Node.js, Express.js, NestJS, REST APIs, HTTP, Dio, WebSockets |
+| **Databases & Storage** | MongoDB, PostgreSQL, Redis, Firebase (Realtime DB, Firestore), RoomDB, Hive, SharedPreferences |
 | **Cloud & DevOps** | AWS (S3, Cognito), Google Cloud Functions/Run, Docker, Terraform, Git, CI/CD |
-| **Architecture & Patterns** | MVC, MVVM, Clean Architecture, Offline-First, Micro-frontends, SOLID Principles |
+| **Architecture & Patterns** | MVC, MVVM, Clean Architecture, Offline-First, Micro-frontends, SOLID Principles, Role-Based Access (RBAC) |
 | **State Management** | Riverpod, BLoC, GetX, Provider |
-| **AI, Vision & Generative Tech** | LLM APIs (ChatGPT/OpenAI), Multimodal Pipelines, Kling AI, Grok Imagine, On-Device Object Detection, Prompt Engineering, Async Render Queues |
-| **Multimedia & Payments** | FFmpeg (Video processing & watermarking), Video Player Controller, Razorpay, Cashfree, Google Play Billing |
+| **AI, Vision & Generative Tech** | LLM APIs (OpenAI Whisper, ChatGPT Image Editing, Structured Outputs), Prompt Engineering, Pydantic Schemas, Kling AI, Grok, Computer Vision (Object Detection), Async Render Queues |
+| **Multimedia & Payments** | FFmpeg (Video processing & watermarking), Video Player Controller, Razorpay, Cashfree, Google Play Billing, Admob / In-House Ads |
 | **Store Publishing & Releases** | Google Play Console, Apple App Store Connect, TestFlight, iOS Provisioning & Certificates, Android App Signing, Privacy Manifests, Store Compliance |
 | **Developer Tools** | VS Code, Android Studio, IntelliJ IDEA, Postman, Flutter DevTools |
 
@@ -50,35 +50,60 @@
 ## 4. Master Work Experience
 
 ### 1. Doubletap Innovations and Technologies
-- **Role:** Flutter Developer
+- **Role:** Flutter Developer / Full-Stack & AI Engineer
 - **Duration:** Dec 2025 – Present
 - **Location:** Chennai, India
 - **Primary Products:**
   - *Selfitoons* — AI-powered video generation and social media app ([Web](https://selfitoons.ai/) | [iOS App Store](https://apps.apple.com/in/app/selfitoons/id6758597947) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons))
   - *Internsharks* — Professional student-recruiter network with AI Resume Builder ([Web Portal](https://internsharks.ai/) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai))
   - *Fulupo Store* — Smart retail store management with on-device AI object detection & instant automated billing ([Play Store](https://play.google.com/store/apps/details?id=com.doubletap.fulupostore))
-- **Tech Stack:** Flutter, Dart, Riverpod, GoRouter, Generative AI (ChatGPT LLM, Kling AI, Grok Imagine), Multimodal Pipelines, FFmpeg, Razorpay, Cashfree, REST APIs, Object Detection, Video Player SDKs
+- **Tech Stack:** Flutter, Dart, Node.js, Python (FastAPI, Pydantic), React, Riverpod, GoRouter, GetX, Redis, Hive, OpenAI (Whisper, ChatGPT Image Editing, Structured Outputs), Kling AI, Grok, FFmpeg, Razorpay, Cashfree, WebSockets, Computer Vision
 
 #### Uncompressed Achievements & Bullet Points:
-- **Selfitoons (Multimodal AI Video Generation & Social Platform):**
-  - Developed and shipped **Selfitoons**, an AI-driven image + voice to video generation and social platform on Android and iOS.
-  - Engineered an end-to-end **multimodal GenAI pipeline**: ingested raw user voice notes, transcribed speech via LLM APIs (OpenAI Whisper / ChatGPT), extracted semantic intent, and dynamically generated rich prompt descriptions detailing cinematography, camera motion, lighting, and artistic styling to synthesize high-definition videos via **Kling AI** and **Grok Imagine**.
-  - Built an asynchronous **client-side AI generation job queue**: managed render lifecycle states (queued, generating, rendering, ready), exponential backoff polling, WebSocket progress updates, background render notifications, and network dropout recovery for multi-minute video synthesis tasks.
-  - Implemented AI model conditioning controls: allowed dynamic parameter tuning for aspect ratios, video durations, motion dynamics, prompt negative embeddings, and real-time generation credit calculations.
-  - Implemented client-side video watermarking and post-processing via **FFmpeg**, shifting compute to user devices and reducing backend server CPU load and processing expenses by **75%**.
-  - Designed custom **Video Controller Manager** maintaining a pool of max 5 active controllers, eliminating memory leaks and ensuring smooth 60 FPS playback across budget devices.
-  - Architected high-performance social feed with follower graphs, interactions, and media playback using **Riverpod** and **GoRouter**.
-  - Integrated **Razorpay** and **Cashfree** payment gateways for credit purchases, subscription tiers, and transaction reconciliation.
-- **Internsharks (Career Network & AI Resume Engine):**
-  - Built cross-platform mobile and web applications for **Internsharks**, connecting students with recruiters through dynamic job matching.
-  - Developed an intelligent **AI Resume Builder & Content Optimizer**: built automated prompt engineering workflows that ingest raw career notes and dynamically synthesize structured, ATS-optimized resumes in **<3s** adhering to Google XYZ and STAR frameworks.
-  - Engineered an AI-driven **Candidate-Job Matching Engine**: implemented semantic matching algorithms mapping candidate skillset vectors to recruiter job descriptions, driving **92%** match relevance and providing targeted skill-gap recommendations.
-  - Built real-time stream generation with live client previews, interactive editing, and automated PDF export formatting.
-  - Implemented role-based recruiter and applicant portals, interactive messaging, and profile analytics.
-- **Fulupo Store (AI Object Detection & POS Billing):**
-  - Engineered **Fulupo Store**, an intelligent store and inventory manager featuring camera-based on-device **AI object detection** operating at **<100ms** inference with **98% checkout accuracy** for automated cart item recognition and instant billing.
-  - Integrated on-device vision models with local barcode scanning and offline-capable retail transaction processing.
-  - Optimized camera stream frames and inference pipelines for zero latency and low battery consumption on budget Android hardware.
+
+##### 1. Selfitoons (AI Video Generation & Social App)
+- **Flutter:**
+  - Built a high-performance social feed with follower graphs, interactions, and media playback using **Riverpod** and **GoRouter** (scoped rebuilds, declarative navigation, and deep linking). `[feed]` `[state-mgmt]` `[navigation]`
+  - Designed a custom **Video Controller Manager** that pools a max of 5 active controllers and reuses them, eliminating memory leaks, avoiding Android hardware decoder limits, and keeping playback at steady 60 FPS on budget devices. `[performance]` `[video]` `[memory]`
+  - Cached feed data in **Hive** for instant feed loading, with silent background refresh routines. `[performance]` `[caching]` `[offline]`
+  - Persisted generation task IDs in local storage (`SharedPreferences`/Hive) so video creation status can be fetched across app sessions and network dropout boundaries. `[async-jobs]` `[persistence]`
+  - Saved request drafts (image, prompt, audio) so a failed generation reopens in an error state with the original inputs, letting users fix only the field that caused the error. `[ux]` `[error-handling]`
+  - Implemented client-side push notification handlers for video generation completion and other app engagement events. `[notifications]`
+  - Implemented client-side video watermarking with **FFmpeg**, shifting compute to client hardware and reducing backend server CPU/GPU processing load by **~75%**. `[performance]` `[video]` `[cost]`
+  - Built a feed ad-insertion algorithm that serves Google Ads every 7th video and in-house promotional cards every 15th video. `[ads]` `[monetization]` `[feed]`
+  - Integrated **Razorpay** and **Cashfree** on the client for credit purchases and tiered subscription plans. `[payments]` `[monetization]`
+- **Node.js:**
+  - Built a dynamic feed ranking algorithm leveraging user interests, likes, posts, and seen history vectors. `[feed]` `[algorithms]` `[recommendation]`
+  - Cached feeds in **Redis**, shared across user segments with similar interests for sub-millisecond retrieval. `[redis]` `[caching]` `[scalability]`
+  - Built a **Redis-backed job queue** to manage and throttle video generation requests, dispatching tasks reliably to the Python generation service. `[queue]` `[redis]` `[async-jobs]`
+  - Built a credit transaction lifecycle for video generation: credits are locked while a video processes, deducted on successful generation, and released on failure. `[payments]` `[transactions]` `[backend]`
+  - Built webhook handling to receive video generation completion events from third-party AI providers and trigger user push notifications. `[webhooks]` `[notifications]`
+  - Integrated **Razorpay** and **Cashfree** on the backend for credit purchases, subscription webhooks, and automated reconciliation. `[payments]` `[monetization]`
+- **Python (FastAPI, Pydantic):**
+  - Built a **FastAPI** service that turns a user’s voice prompt and character image into a generated video, with **Pydantic** models for strict request and response schema validation. `[fastapi]` `[genai]` `[pipeline]`
+  - Transcribed voice prompts with **OpenAI (Whisper)**, then used the extracted text to edit the character image with **ChatGPT image editing** so it matches the situation the user described. `[genai]` `[multimodal]` `[openai]`
+  - Built an automated prompt-expansion step that turns the transcribed text into a 10-second choreography script, using **Pydantic schemas** to enforce structured LLM output. `[llm]` `[prompt-engineering]` `[structured-output]`
+  - Integrated **Grok** and **Kling AI** as video generation providers, with routing logic that sends the request to Grok when the user selects audio. `[genai]` `[integrations]` `[routing]`
+
+##### 2. Internsharks (Career Platform for Students & Recruiters)
+- **Flutter:**
+  - Built an interactive **AI Resume Builder** that renders a live PDF preview on-device as the user types plain text, using structured JSON returned by the AI. `[ai]` `[pdf]` `[realtime-ui]`
+  - Built separate student and recruiter experiences with role-based access control (RBAC) in a unified codebase. `[role-based]` `[architecture]`
+  - Used **GetX** for state management and navigation, with deep linking into candidate and internship profiles. `[state-mgmt]` `[navigation]`
+- **React:**
+  - Built the web version of the interactive AI resume builder, featuring a live PDF preview as the user types plain text. `[ai]` `[pdf]` `[realtime-ui]`
+  - Built role-based student and recruiter experiences on the web, including recruiter screens for posting internships and reviewing applicants. `[role-based]` `[full-stack]`
+- **Python:**
+  - Built AI endpoints that convert a user’s raw resume text into structured JSON for client-side resume rendering. `[llm]` `[structured-output]` `[ai]`
+  - Built eligibility filtering that matches a student’s skills and degree against each job description, so they only see internships they qualify for. `[matching]` `[backend]`
+  - Built an AI assessment flow: when a student applies, **ChatGPT** generates an MCQ assessment for that internship, and only students who pass can submit the application. `[llm]` `[openai]` `[workflow]`
+
+##### 3. Fulupo Store (POS with AI Item Recognition)
+- **Flutter:**
+  - Built the camera scanning flow that captures multiple items at once and sends them to the backend for recognition. `[camera]` `[pos]`
+- **Backend / AI (Computer Vision):**
+  - Built an AI object detection pipeline that identifies multiple items from a single scan, with no barcodes needed. `[computer-vision]` `[ai]` `[pos]`
+  - Matched detected items against the store’s inventory database and automatically added them to the cart with the right quantities. `[matching]` `[inventory]`
 
 ---
 
@@ -89,60 +114,89 @@
 - **Primary Product:** *Ubill* — Cloud Accounting & GST Filing Software
 - **Web App Link:** [Ubill Web Portal](https://app.ubill.tech/)
 - **Play Store Link:** [Ubill on Google Play Store](https://play.google.com/store/apps/details?id=com.ubill.tech)
-- **Tech Stack:** Flutter Web/Desktop/Mobile, Node.js, Express.js, MongoDB, GetX, Riverpod, Provider, Hive, HTML/CSS, JS Interop
+- **Tech Stack:** Flutter Web/Desktop/Mobile, Node.js, Express.js, MongoDB, GetX, Riverpod, Provider, Hive, HTML/CSS, JS Interop, Nodemailer
 
 #### Uncompressed Achievements & Bullet Points:
-- Contributed **40,000+ lines of robust production code** across Flutter frontend applications, Node.js microservices, and MongoDB backend databases.
-- Implemented compliant **Indian GST calculation** logic, multi-tier tax computations, and automated financial ledgers processing thousands of commercial invoice transactions.
-- Architected a web-first **Flutter Web** application for Ubill with responsive layouts, multi-screen compatibility, and desktop-class user experience.
-- Built an ultra-fast PDF invoice generator utilizing **JS Interop** to reuse backend HTML/CSS rendering templates on the client side, increasing invoice generation speed by **50%**.
-- Designed and built secure Node.js + MongoDB backend APIs featuring custom JWT authentication, role-based authorization, and encrypted data transport.
-- Directly onboarded enterprise clients, collaborating with product managers and customer success teams to refine UI/UX and boost feature adoption.
-- Implemented multiple Flutter architectural patterns including **MVC, MVVM, and Clean Architecture**, with state management implementations across **GetX, Riverpod, and Provider**, backed by **Hive** for high-performance offline local storage.
-- Engineered an **Excel bulk stock upload** pipeline, eliminating manual data entry for 10,000+ SKU catalogs and accelerating customer onboarding and migration from legacy billing apps and spreadsheets by **60%**. 
+
+##### Flutter:
+- Architected a web-first **Flutter Web** app for Ubill with responsive layouts across all screen sizes and a desktop-class user experience. `[flutter-web]` `[responsive]` `[architecture]`
+- Used **Provider** for state management across the Flutter Web app, keeping UI state in sync with live invoice, GST, and ledger data. `[state-mgmt]` `[provider]` `[flutter-web]`
+- Built client-side **PDF invoice rendering for Flutter Web** using **JS Interop**, reusing the backend's HTML/CSS invoice template instead of downloading large PDFs from the server or rebuilding the layout in Flutter. This cut template development effort by ~50%, kept invoices consistent across email, web, and download, and reduced server data transfer. `[pdf]` `[js-interop]` `[flutter-web]` `[architecture]` `[reuse]`
+- Implemented **live Indian GST calculation** as the user edits an invoice, with multi-tier tax computation and automatic CGST/SGST vs IGST handling based on intra-state or inter-state supply. `[gst]` `[fintech]` `[domain-logic]` `[realtime-ui]`
+- Built automated **financial ledgers** tracking commercial invoice transactions for buyers and suppliers. `[fintech]` `[ledger]` `[domain-logic]`
+- Built **bulk Excel upload** for sales invoices, purchase invoices, items, categories, journals, customers, and suppliers — parsing and validating files entirely on the client before sending to the backend. This removed manual data entry and a major adoption barrier for customers managing their books in Excel. `[data-import]` `[excel]` `[validation]` `[onboarding]` `[fintech]`
+
+##### Node.js (Express, MongoDB):
+- Designed and built secure backend APIs with **Node.js, Express, and MongoDB**, including custom JWT authentication and role-based authorization (RBAC). `[auth]` `[jwt]` `[rbac]` `[security]` `[mongodb]`
+- Built HTML invoice templates on the backend and delivered invoice emails with **Nodemailer**. The same template was later reused on the Flutter client for client-side PDF rendering. `[email]` `[nodemailer]` `[templating]` `[pdf]`
+- Built scheduled **cron jobs** that email users reminders to file their GST returns. `[cron]` `[email]` `[nodemailer]` `[automation]` `[gst]`
+- Built automated **pending invoice reminder emails** to clients, driven by scheduled background jobs. `[cron]` `[email]` `[nodemailer]` `[automation]` `[invoicing]`
+- Built a **migration script** that moved **650 users** from the company's legacy billing app to Ubill, preserving complete user data and billing history with zero data loss. `[migration]` `[data-integrity]` `[mongodb]` `[scripting]`
 
 ---
 
 ## 5. Master Projects & Freelance Portfolio
 
-### 1. Bizstack — Community & POS Platform
+### 1. Bizstack — Offline-First POS App
 - **Type:** Independent / Client Project
-- **Tech Stack:** Kotlin (Jetpack Compose), Flutter, Firebase Realtime Database, Django, Google Cloud Functions, RoomDB, Google Play Billing
+- **Tech Stack:** Kotlin (Jetpack Compose), Python (Google Cloud Run), Firebase Realtime Database, Room (local DB)
 - **App Link:** [Bizstack on Play Store](http://play.google.com/store/apps/details?id=com.nativedesk.bizstack&hl=en_IN)
-- Its a POS app developed in Kotlin Jetpack compose .
-- Its a offline first app with delta sync 
-- i did the frontend and backend .
-- google cloud run with python and firebase was used to database 
-- roomdb was used for local db 
-- handled complex sync and conflict logic 
-- handled complex billing logic 
-- it has barcode scanner 
-- it has profit loss , category wise , item wise , seller wise , day wise , year wise , month wise reports 
-- it has stock alert and calculation also 
-   
+
+#### Uncompressed Achievements & Bullet Points:
+
+##### Kotlin (Jetpack Compose):
+- Built a full POS application in **Kotlin with Jetpack Compose**, published on the Google Play Store. `[android]` `[compose]` `[pos]`
+- Designed an **offline-first architecture** with **Room** as the local database and delta sync to the cloud, so the app works fully without connectivity. `[offline-first]` `[room]` `[sync]` `[architecture]`
+- Implemented **sync conflict resolution logic** for data edited on multiple devices or while offline. `[sync]` `[conflict-resolution]` `[distributed]`
+- Implemented the **POS billing logic** including multi-item transactions, pricing rules, and receipt generation. `[billing]` `[pos]` `[domain-logic]`
+- Integrated **barcode scanning** for fast item lookup and billing without manual input. `[barcode]` `[camera]` `[pos]`
+- Built comprehensive **analytics and reporting**: profit & loss, category-wise, item-wise, seller-wise, and day/month/year-range views. `[reporting]` `[analytics]` `[data-viz]`
+- Built **stock tracking** with automatic stock level calculation and configurable low-stock alerts. `[inventory]` `[alerts]`
+
+##### Backend (Python, Google Cloud Run, Firebase):
+- Built the backend in **Python on Google Cloud Run**, with **Firebase Realtime Database** as the cloud store and delta sync APIs that serve only changed records since the client's last sync timestamp. `[python]` `[cloud-run]` `[firebase]` `[backend]` `[sync]`
 
 ---
 
-### 2. Engine Room Ninja — Maritime Reference & Utility App
+### 2. Engine Room Ninja — Q&A Community App for Marine Engineers
 - **Type:** Freelance Mobile Application
-- **Tech Stack:** Flutter, Express.js, MongoDB, AWS S3, Docker, REST APIs
+- **Tech Stack:** Flutter, BLoC, Express.js, MongoDB, AWS S3, Docker, REST APIs
 - **App Link:** [Engine Room Ninja on Play Store](https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja)
-- **Key Achievements:**
-  - Built a specialized utility app for marine engineers to reference engine room technical manuals, log data, and perform calculations on mobile.
-  - Developed Express.js backend services and MongoDB schemas containerized with **Docker** and hosted with **AWS S3** file storage integration.
-  - The frontend was developed using Flutter 
-  - Created a special MD formatter for post and bulk posting from admin panel 
+
+#### Uncompressed Achievements & Bullet Points:
+
+##### Flutter:
+- Built a **Quora-style community app** for marine engineers to ask and answer technical questions, now used by **1,000+ users**. `[flutter]` `[android]` `[community]` `[product]`
+- Built social features including **post likes and nested comment threads**. `[social]` `[comments]` `[engagement]`
+- Used **BLoC** for state management across the app. `[state-mgmt]` `[bloc]` `[architecture]`
+- Implemented **deep linking** so shared posts open directly in the correct in-app screen. `[deep-linking]` `[navigation]` `[sharing]`
+- Rendered **Markdown-formatted posts** in the app feed. `[markdown]` `[content-rendering]`
+- Built a custom **Markdown formatter in the Flutter admin panel** for creating single posts and bulk-uploading structured content. `[admin-panel]` `[markdown]` `[bulk-upload]` `[tooling]`
+
+##### Node.js (Express, MongoDB):
+- Built **REST APIs and MongoDB schemas** for posts, likes, comments, and user data using Express.js. `[rest]` `[express]` `[mongodb]` `[schema-design]`
+- Integrated **AWS S3** for storing and serving media files and attachments. `[aws-s3]` `[file-storage]` `[cloud]`
+- Containerized the backend with **Docker** for consistent, reproducible deployment. `[docker]` `[devops]`
 
 ---
 
-### 3. InvusProp Admin Panel — Real Estate Platform
+### 3. InvusProp — Real Estate Management Admin Platform
 - **Type:** Full-Stack Enterprise Platform
-- **Tech Stack:** Next.js, NestJS, Tailwind CSS, AWS (Cognito), Docker, Terraform, PostgreSQL
-- **Key Achievements:**
-  - Developed a scalable real-estate management admin platform utilizing **Next.js** and **NestJS** microservices.
-  - Integrated enterprise-grade role-based access control (RBAC) and authentication using **AWS Cognito**.
-  - Provisioned and managed cloud infrastructure using **Terraform** and **Docker** on AWS.
-  - Developed a complete CRUD application with all the required features for real estate management 
+- **Tech Stack:** Next.js, NestJS, Tailwind CSS, PostgreSQL, AWS Cognito, Docker, Terraform
+
+#### Uncompressed Achievements & Bullet Points:
+
+##### Next.js (Tailwind CSS):
+- Built the admin platform frontend in **Next.js and Tailwind CSS** for managing real estate data end-to-end. `[nextjs]` `[react]` `[tailwind]` `[admin-panel]`
+- Built complete **CRUD interfaces** for real estate management, with complex search, filtering, and data table views. `[crud]` `[search]` `[filtering]`
+
+##### NestJS (PostgreSQL):
+- Built **NestJS** backend services with **PostgreSQL** for the platform's real estate management features. `[nestjs]` `[postgresql]` `[backend]` `[typescript]`
+- Implemented **role-based access control (RBAC)** and authentication using **AWS Cognito**. `[rbac]` `[auth]` `[aws-cognito]` `[security]`
+- Built **scheduled jobs** that remind users about upcoming site visits. `[cron]` `[notifications]` `[scheduling]`
+
+##### DevOps / Infrastructure:
+- Provisioned and managed **AWS infrastructure** using **Terraform** and **Docker**. `[terraform]` `[docker]` `[aws]` `[iac]` `[devops]`
 
 ---
 
