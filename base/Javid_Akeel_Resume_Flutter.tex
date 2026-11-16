@@ -1,0 +1,244 @@
+% Preferred Flutter resume — LaTeX recreation of Javid's ReportLab PDF.
+% Content is verbatim. Layout matches the original A4 one-page design.
+% Output lives in /workspace/resumes/ (not the git repo).
+
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=1]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[a4paper,left=44pt,right=44pt,top=39.076pt,bottom=50pt]{geometry}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\hypersetup{
+  hidelinks,
+  pdfborder={0 0 0},
+  pdfcreator={},
+  pdfproducer={},
+  pdftitle={Javid Akeel - Resume},
+  pdfauthor={Javid Akeel}
+}
+
+\definecolor{linkblue}{rgb}{0.043137,0.239216,0.568627}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\fboxsep}{0pt}
+\setlength{\lineskip}{0pt}
+\setlength{\lineskiplimit}{0pt}
+\setlength{\topskip}{12.924pt}
+\raggedbottom
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\frenchspacing
+\urlstyle{same}
+
+% Helvetica ASCII tilde (8r / WinAnsi slot 126), not the CM textcomp glyph.
+\DeclareFontEncoding{8r}{}{}
+\DeclareFontSubstitution{8r}{phv}{m}{n}
+\newcommand{\asitilde}{{\usefont{8r}{phv}{m}{n}\char126}}
+
+% Section heading: 10pt bold, then a 0.7pt rule whose centre is 2.1pt below the baseline.
+% #2 = extra skip after the rule (before the first body line).
+\newcommand{\resumesection}[2][4.2pt]{%
+  \par
+  \vskip 7pt
+  \noindent\begingroup
+    \fontsize{10}{11.4}\bfseries\selectfont
+    #2\par
+  \endgroup
+  \nointerlineskip
+  \vskip 1.75pt
+  \hrule height 0.7pt
+  \nointerlineskip
+  \vskip #1
+}
+
+% Job title (9pt bold) + right-aligned 8.4pt date, optically raised 0.6pt.
+\newcommand{\entryheading}[2]{%
+  \par\nointerlineskip
+  \vskip 6pt
+  \noindent\begingroup
+    \fontsize{9}{9.68}\bfseries\selectfont
+    #1\hfill\raisebox{0.6pt}{\fontsize{8.4}{9.68}\selectfont #2}\par
+  \endgroup
+}
+
+\newcommand{\projectheading}[2]{%
+  \par\nointerlineskip
+  \vskip 5pt
+  \noindent\begingroup
+    \fontsize{9}{9.68}\bfseries\selectfont
+    #1\hfill\raisebox{0.6pt}{\fontsize{8.4}{9.68}\selectfont #2}\par
+  \endgroup
+}
+
+\newcommand{\entrysub}[1]{%
+  \par\nointerlineskip
+  \vskip 1.15pt
+  \noindent\begingroup
+    \fontsize{8}{9.88}\itshape\selectfont
+    #1\par
+  \endgroup
+}
+
+\newcommand{\skillline}[2]{%
+  \par\nointerlineskip
+  \noindent\begingroup
+    \fontsize{8.4}{10.08}\selectfont
+    \textbf{#1:} #2\par
+  \endgroup
+  \nointerlineskip
+  \vskip 2.1pt
+}
+
+\newcommand{\eduheading}[2]{%
+  \par\nointerlineskip
+  \noindent\begingroup
+    \fontsize{8.4}{10.08}\bfseries\selectfont
+    #1\hfill{\mdseries #2}\par
+  \endgroup
+  \nointerlineskip
+  \vskip 2.1pt
+}
+
+\newcommand{\live}[2]{\href{#1}{\textcolor{linkblue}{#2}}}
+
+\newlist{rbullets}{itemize}{1}
+\setlist[rbullets]{
+  leftmargin=11pt,
+  labelsep=0pt,
+  labelwidth=9pt,
+  itemindent=0pt,
+  align=left,
+  itemsep=1.4pt,
+  parsep=0pt,
+  topsep=1.2pt,
+  partopsep=0pt,
+  after=\vspace{0pt},
+  before={\fontsize{8.4}{10.08}\selectfont\raggedright},
+  label={\fontsize{8}{10.08}\selectfont\textbullet}
+}
+
+\begin{document}
+
+%---------- NAME + CONTACT ----------
+{\centering
+  \fontsize{18}{11}\bfseries\selectfont Javid Akeel\par
+  \nointerlineskip
+  \vskip 5.1pt
+  \normalfont\fontsize{8}{10.08}\selectfont
+  +91 6383007505 |
+  \href{mailto:workwithakeel@gmail.com}{\textcolor{black}{workwithakeel@gmail.com}}
+  |
+  \href{https://www.linkedin.com/in/javid-akeel/}{\textcolor{linkblue}{linkedin.com/in/javid-akeel}}
+  |
+  \href{https://javid-portfolio-alpha.vercel.app/}{\textcolor{linkblue}{javid-portfolio-alpha.vercel.app}}
+  | Chennai, India\par
+}
+
+%---------- SUMMARY ----------
+\resumesection[3.3pt]{SUMMARY}
+\begingroup
+\fontsize{8.4}{10.08}\selectfont
+Flutter developer with 3+ years building and shipping cross-platform apps for Android, iOS, and Web, with full-stack experience in\\
+Node.js and Python. Owns store releases on the Apple App Store and Google Play. Strengths: video and feed performance, offline-first\\
+caching, state management (Riverpod, BLoC, GetX, Provider), and payment integrations (Razorpay, Cashfree, Google Play Billing).\par
+\endgroup
+
+%---------- EXPERIENCE ----------
+\resumesection[4.2pt]{EXPERIENCE}
+\vspace{-4.7pt}
+\entryheading{Software Engineer -- Mobile \& AI (Flutter), Doubletap Innovations and Technologies}{Dec 2025 -- Present}
+\entrysub{Chennai, India | Live: Selfitoons (\live{https://selfitoons.ai/}{Web} | \live{https://apps.apple.com/in/app/selfitoons/id6758597947}{App Store} | \live{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{Play Store}), Internsharks (\live{https://internsharks.ai/}{Web} | \live{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{Play Store}), Fulupo Store (\live{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{Play Store})}
+
+\begin{rbullets}
+  \item Built \textbf{Selfitoons} (iOS, Android), an AI video generation and social app: a high-performance feed with follower graphs and interactions\\
+    using \textbf{Riverpod} and \textbf{GoRouter} (scoped rebuilds, deep linking).
+  \item Designed a custom \textbf{Video Controller Manager} that pools a max of 5 controllers, eliminating memory leaks, avoiding Android\\
+    hardware decoder limits, and keeping 60 FPS playback on budget devices.
+  \item Cached the feed in \textbf{Hive} for instant loads with silent background refresh; persisted generation task IDs and request drafts so users\\
+    can track status across sessions and fix only the failing input after an error.
+  \item Implemented client-side video watermarking with \textbf{FFmpeg}, cutting backend processing load by \asitilde 75\%.
+  \item Integrated \textbf{Razorpay} and \textbf{Cashfree} for credit purchases and subscriptions; built feed ad insertion (Google Ads every 7th video,\\
+    in-house ads every 15th) and push notifications for generation completion.
+  \item Backend: built the \textbf{Node.js} feed ranking (interests, likes, seen history) with Redis caching and a credit lifecycle that locks credits\\
+    during generation, deducts on success, and releases on failure; built the \textbf{FastAPI/Pydantic} pipeline from voice prompt (OpenAI\\
+    transcription) and character image to video via Grok and Kling AI.
+  \item \textbf{Internsharks} (Flutter, React, Python): built an AI resume builder that renders a live PDF on-device as the user types, with GetX, deep\\
+    linking, and role-based student and recruiter experiences; built Python eligibility filtering and AI-generated MCQ assessments.
+  \item \textbf{Fulupo Store}: built the Flutter camera scanning flow and the backend item detection and inventory matching for barcode-free retail\\
+    billing.
+  \item \textbf{Google Play publishing (end to end):} shipped Selfitoons, Internsharks, and Fulupo Store through Play Console, covering app\\
+    signing, Internal/Closed/Open testing tracks, store listing assets, content ratings, staged rollouts, and production release.
+  \item \textbf{Apple App Store publishing (end to end):} shipped Selfitoons on iOS, covering signing certificates, provisioning profiles, Xcode build\\
+    schemes, TestFlight internal and external beta, Privacy Manifests (PrivacyInfo.xcprivacy), export compliance, age ratings, store listing\\
+    assets, and App Store review submission.
+\end{rbullets}
+
+\entryheading{Flutter FullStack Developer, Ecfile Solutions (Ubill)}{Oct 2023 -- Nov 2025}
+\entrysub{Chennai, India | Cloud accounting and GST filing software | Live: \live{https://app.ubill.tech/}{Web portal} | \live{https://play.google.com/store/apps/details?id=com.ubill.tech}{Play Store}}
+
+\begin{rbullets}
+  \item Architected a web-first \textbf{Flutter Web} app with responsive layouts and a desktop-class experience, using \textbf{Provider} and Clean\\
+    Architecture.
+  \item Built client-side PDF invoice rendering with \textbf{JS Interop}, reusing the backend HTML/CSS template instead of downloading large PDFs\\
+    or rebuilding the layout in Flutter, cutting template development effort by \asitilde 50\%.
+  \item Implemented live Indian \textbf{GST calculation} as invoices are edited (multi-tier, CGST/SGST vs IGST) and automated financial ledgers.
+  \item Built \textbf{bulk Excel upload} for sales and purchase invoices, items, categories, journals, customers, and suppliers, with client-side\\
+    parsing and validation, removing manual data entry for customers migrating from spreadsheets.
+  \item Backend (\textbf{Node.js, Express, MongoDB}): built APIs with custom JWT auth and RBAC, invoice emails (Nodemailer), cron reminders\\
+    for GST filing and pending invoices, and a script that migrated 650 users from the legacy app with data and billing history intact.
+\end{rbullets}
+
+%---------- PROJECTS ----------
+\resumesection[4.2pt]{PROJECTS}
+
+\projectheading{Bizstack -- Offline-first POS}{\live{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{Play Store}}
+\entrysub{Kotlin, Jetpack Compose, Room, Python (Django), Firebase, Cloud Run}
+\begin{rbullets}
+  \item Built a full-stack POS app with a \textbf{Room} offline-first design, delta sync with conflict resolution, barcode scanning, billing logic, profit/loss\\
+    and item, seller, and date-range reports, and stock alerts; backend on Django and Google Cloud Run with Firebase Realtime\\
+    Database.
+\end{rbullets}
+
+\projectheading{Engine Room Ninja -- Q\&A community for marine engineers}{\live{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{Play Store}}
+\entrysub{Flutter, BLoC, Express.js, MongoDB, AWS S3, Docker}
+\begin{rbullets}
+  \item Built likes, nested comments, deep linking, and \textbf{WebSocket} one-to-one DMs; coin purchases with \textbf{Google Play Billing} (verified on\\
+    the backend) to unlock answers; and a Flutter admin panel with a custom Markdown formatter for bulk posting.
+\end{rbullets}
+
+\projectheading{InvusProp -- Real estate admin platform}{}
+\entrysub{Next.js, NestJS, Tailwind CSS, PostgreSQL, AWS Cognito, Docker, Terraform}
+\begin{rbullets}
+  \item Built CRUD with complex search and filtering, RBAC with \textbf{AWS Cognito}, scheduled site-visit reminders, and AWS infrastructure with\\
+    Terraform and Docker.
+\end{rbullets}
+
+%---------- TECHNICAL SKILLS ----------
+\resumesection[4.0pt]{TECHNICAL SKILLS}
+\skillline{Languages}{Dart, Kotlin, JavaScript/TypeScript, Python, SQL}
+\skillline{Mobile \& Web}{Flutter (Android, iOS, Web), Jetpack Compose, React, Next.js}
+\skillline{Architecture \& State}{Clean Architecture, Offline-First, Riverpod, BLoC, GetX, Provider, GoRouter}
+\skillline{Backend/Data}{Node.js, Express, NestJS, FastAPI, Django, REST/WebSockets, MongoDB, PostgreSQL, Redis, Firebase, Hive, Room}
+\skillline{Payments, Media \& AI}{Razorpay, Cashfree, Google Play Billing, FFmpeg, OpenAI APIs, Pydantic structured output, Kling AI, Grok}
+\skillline{Cloud \& Release}{AWS (S3, Cognito), Google Cloud Run, Docker, Terraform, Git, Play Console, App Store Connect, TestFlight}
+\vspace{-2.1pt}
+
+%---------- EDUCATION ----------
+\resumesection[4.0pt]{EDUCATION}
+\eduheading{SRM Institute of Science and Technology, Chennai -- MCA}{2024 -- 2026}
+\eduheading{Sadakathullah Appa College, Tirunelveli -- B.Sc.\ Computer Science}{2020 -- 2023}
+
+\end{document}

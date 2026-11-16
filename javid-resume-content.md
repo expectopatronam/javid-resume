@@ -42,7 +42,7 @@
 | **State Management** | Riverpod, BLoC, GetX, Provider |
 | **AI, Vision & Generative Tech** | LLM APIs (OpenAI Whisper, ChatGPT Image Editing, Structured Outputs), Prompt Engineering, Pydantic Schemas, Kling AI, Grok, Computer Vision (Object Detection), Async Render Queues |
 | **Multimedia & Payments** | FFmpeg (Video processing & watermarking), Video Player Controller, Razorpay, Cashfree, Google Play Billing, Admob / In-House Ads |
-| **Store Publishing & Releases** | Google Play Console, Apple App Store Connect, TestFlight, iOS Provisioning & Certificates, Android App Signing, Privacy Manifests, Store Compliance |
+| **Store Publishing & Releases** | Google Play Console (Production, Staged Rollouts, Internal/Closed/Open Testing), Apple App Store Connect, TestFlight (Internal & External Beta), iOS Signing Certificates & Provisioning Profiles, Privacy Manifests (PrivacyInfo.xcprivacy), Export Compliance, Age Ratings, Android App Signing, Store Listing Assets, App Store Review Submissions |
 | **Developer Tools** | VS Code, Android Studio, IntelliJ IDEA, Postman, Flutter DevTools |
 
 ---
@@ -58,6 +58,9 @@
   - *Internsharks* — Professional student-recruiter network with AI Resume Builder ([Web Portal](https://internsharks.ai/) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai))
   - *Fulupo Store* — Smart retail store management with AI object detection & instant automated billing ([Play Store](https://play.google.com/store/apps/details?id=com.doubletap.fulupostore))
 - **Tech Stack:** Flutter, Dart, Node.js, Python (FastAPI, Pydantic), React, Riverpod, GoRouter, GetX, Redis, Hive, OpenAI (Whisper, ChatGPT Image Editing, Structured Outputs), Kling AI, Grok, FFmpeg, Razorpay, Cashfree, Computer Vision
+
+#### Store Publishing — End-to-End Ownership:
+- Managed complete end-to-end release lifecycle across **Apple App Store** (Selfitoons) and **Google Play Console** (Selfitoons, Internsharks, Fulupo Store): signing certificates, provisioning profiles, Xcode build schemes, **TestFlight** internal/external beta, Privacy Manifests (`PrivacyInfo.xcprivacy`), export compliance, age ratings, store listing assets, content ratings, staged rollouts, and App Store review submissions — **5+ production apps shipped across both stores**. `[ios]` `[android]` `[app-store]` `[play-store]` `[testflight]` `[release-management]`
 
 #### Uncompressed Achievements & Bullet Points:
 
