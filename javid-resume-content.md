@@ -40,7 +40,7 @@
 | **Cloud & DevOps** | AWS (S3, Cognito), Google Cloud Run, Cloudflare R2, Docker, Kubernetes, Terraform, Git, CI/CD |
 | **Architecture & Patterns** | MVC, MVVM, Clean Architecture, Offline-First, SOLID Principles, Role-Based Access (RBAC) |
 | **State Management** | Riverpod, BLoC, GetX, Provider |
-| **AI, Vision & Generative Tech** | LLM APIs (OpenAI Whisper, ChatGPT Image Editing, Structured Outputs), Prompt Engineering, Pydantic Schemas, Kling AI, Grok, Computer Vision (Object Detection, YOLOv8, OpenCLIP, OCR), Async Render Queues |
+| **AI, Vision & Generative Tech** | LLM APIs (OpenAI Whisper, ChatGPT Image Editing, Structured Outputs), LangChain, Prompt Engineering, Pydantic Schemas, Kling AI, Grok, Computer Vision (Object Detection, YOLOv8, OpenCLIP, OCR), Async Render Queues |
 | **Multimedia & Payments** | FFmpeg (Video processing & watermarking), Video Player Controller, Razorpay, Cashfree, Google Play Billing, Admob / In-House Ads |
 | **Store Publishing & Releases** | Google Play Console (Production, Staged Rollouts, Internal/Closed/Open Testing), Apple App Store Connect, TestFlight (Internal & External Beta), iOS Signing Certificates & Provisioning Profiles, Privacy Manifests (PrivacyInfo.xcprivacy), Export Compliance, Age Ratings, Android App Signing, Store Listing Assets, App Store Review Submissions |
 | **Developer Tools** | VS Code, Android Studio, IntelliJ IDEA, Postman, Flutter DevTools |
@@ -57,7 +57,7 @@
   - *Selfitoons* — AI-powered video generation and social media app ([Web](https://selfitoons.ai/) | [iOS App Store](https://apps.apple.com/in/app/selfitoons/id6758597947) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons))
   - *Internsharks* — Professional student-recruiter network with AI Resume Builder ([Web Portal](https://internsharks.ai/) | [Play Store](https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai))
   - *Fulupo Store* — Smart retail store management with AI object detection & instant automated billing ([Play Store](https://play.google.com/store/apps/details?id=com.doubletap.fulupostore))
-- **Tech Stack:** Flutter, Dart, Node.js, Python (FastAPI, Pydantic, Celery), React, Riverpod, GoRouter, GetX, PostgreSQL, MongoDB, Redis, Hive, Kubernetes, Cloudflare R2, OpenAI (Whisper, ChatGPT Image Editing, Structured Outputs), Kling AI, Grok, FFmpeg, Razorpay, Cashfree, YOLOv8, OpenCLIP, OCR
+- **Tech Stack:** Flutter, Dart, Node.js, Python (FastAPI, Pydantic, Celery), React, Riverpod, GoRouter, GetX, PostgreSQL, MongoDB, Redis, Hive, Kubernetes, Cloudflare R2, OpenAI (Whisper, ChatGPT Image Editing, Structured Outputs), LangChain, Kling AI, Grok, FFmpeg, Razorpay, Cashfree, YOLOv8, OpenCLIP, OCR
 
 #### Store Publishing — End-to-End Ownership:
 - Owned the complete release lifecycle across **Apple App Store** (Selfitoons) and **Google Play Console** (Selfitoons, Internsharks, Fulupo Store) — managing signing certificates, provisioning profiles, Xcode schemes, **TestFlight** beta, Privacy Manifests (`PrivacyInfo.xcprivacy`), export compliance, content ratings, and staged rollouts — shipping **5+ production apps across both stores**. `[ios]` `[android]` `[app-store]` `[play-store]` `[testflight]` `[release-management]`
@@ -77,10 +77,10 @@
   - To prevent duplicate charges or lost credits during slow async video renders, engineered an ACID **credit transaction lifecycle** in **PostgreSQL** (lock credits on queue, deduct on completion webhook, auto-release on failure) alongside **Razorpay/Cashfree** payment verification. `[postgresql]` `[payments]` `[transactions]` `[backend]`
   - To decouple slow AI video generation from API response times, integrated **Node.js** with **Python FastAPI** to return a `job_id` immediately for **Hive** tracking while handling completion/failure webhooks to settle **PostgreSQL** credit locks and trigger push notifications. `[nodejs]` `[postgresql]` `[webhooks]` `[notifications]`
 - **Python (FastAPI, Pydantic, Celery), MongoDB & Cloudflare R2:**
-  - To turn unstructured voice and character-image inputs into deterministic AI video renders without blocking API requests, built a **FastAPI** service that enqueues jobs onto **Celery (Redis)** and returns a `job_id`, running **OpenAI Whisper** (multilingual transcription & normalization), **ChatGPT image editing**, and **Pydantic**-validated choreography/lip-sync scripts routed to **Grok** or **Kling AI** on **Kubernetes** worker pods. `[fastapi]` `[celery]` `[redis]` `[kubernetes]` `[genai]` `[openai]` `[pydantic]`
+  - To turn unstructured voice and character-image inputs into deterministic AI video renders without blocking API requests, built a **FastAPI** service that enqueues jobs onto **Celery (Redis)** and returns a `job_id`, running **OpenAI Whisper** (multilingual transcription & normalization), **ChatGPT image editing**, and **LangChain** + **Pydantic**-validated choreography/lip-sync prompt chains routed to **Grok** or **Kling AI** on **Kubernetes** worker pods. `[fastapi]` `[celery]` `[redis]` `[kubernetes]` `[genai]` `[openai]` `[langchain]` `[pydantic]`
   - To avoid re-running expensive upstream AI steps on transient provider errors or timeouts, implemented **step-level checkpointing in MongoDB** with **Celery retries (exponential backoff)**, storing media on **Cloudflare R2** and firing completion/failure webhooks to Node.js. `[celery]` `[retries]` `[mongodb]` `[cloudflare-r2]` `[async-jobs]`
   - To prevent unexpected LLM/API budget overruns across products, built token-usage aggregation and USD/INR cost reporting workflows with real-time credit monitoring and automated low-credit email alerts. `[ai]` `[cost-tracking]` `[monitoring]`
-  - To give non-technical stakeholders instant spend visibility, implemented natural-language cost analytics, automated Excel report generation, and role-based access controls (**RBAC**) in **FastAPI**, **MongoDB**, and **Docker**. `[analytics]` `[excel]` `[rbac]`
+  - To give non-technical stakeholders instant spend visibility, implemented **LangChain**-powered natural-language cost analytics, automated Excel report generation, and role-based access controls (**RBAC**) in **FastAPI**, **MongoDB**, and **Docker**. `[langchain]` `[analytics]` `[excel]` `[rbac]`
 
 ##### 2. Internsharks (Career Platform for Students & Recruiters)
 - **Flutter:**
@@ -221,9 +221,9 @@ When tailoring a resume for a specific Job Description (JD), extract content bas
 > Node.js developer with experience across Express, NestJS, MongoDB, PostgreSQL, and Redis: payment integrations (Razorpay, Cashfree), webhooks, job queues, RBAC and JWT/Cognito auth, WebSocket chat, and AWS infrastructure with Docker and Terraform.
 
 ### Role Focus: GenAI Developer / AI Engineer
-- **Highlight:** Selfitoons Python pipeline (voice transcription with OpenAI, image editing with ChatGPT, structured choreography prompts via Pydantic, Grok/Kling routing), Selfitoons job queue and credit lock/deduct/release lifecycle, Internsharks (AI resume-to-JSON, AI-generated MCQ assessments, eligibility matching), Fulupo Store (AI object detection matched to inventory).
-- **Keywords:** Generative AI, LLM APIs, OpenAI, Whisper, Prompt Engineering, Structured Outputs, Pydantic, FastAPI, Multimodal Pipelines, Image-to-Video, Kling AI, Grok, Computer Vision, Async Job Queues.
-- **Do not claim unless true:** RAG, vector databases, embeddings, LangChain/LlamaIndex, fine-tuning, evals, agents.
+- **Highlight:** Selfitoons Python pipeline (voice transcription with OpenAI, image editing with ChatGPT, LangChain + Pydantic structured choreography prompts, Grok/Kling routing, LangChain natural-language cost analytics), Selfitoons Celery job queue and PostgreSQL credit lock/deduct/release lifecycle, Internsharks (AI resume-to-JSON, AI-generated MCQ assessments, eligibility matching), Fulupo Store (AI object detection matched to inventory).
+- **Keywords:** Generative AI, LLM APIs, OpenAI, Whisper, LangChain, Prompt Engineering, Structured Outputs, Pydantic, FastAPI, Celery, Multimodal Pipelines, Image-to-Video, Kling AI, Grok, Computer Vision, Async Job Queues.
+- **Do not claim unless true:** RAG, vector databases, embeddings, LlamaIndex, fine-tuning, evals, agents.
 
 ### Role Focus: Python Developer
 - **Highlight:** Selfitoons (FastAPI, Pydantic, Celery workers, third-party provider integration), Internsharks (Python AI endpoints, eligibility filtering, assessment workflow), Bizstack (Django on Google Cloud Run, Firebase, delta sync APIs).
