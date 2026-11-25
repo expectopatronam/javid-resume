@@ -6,13 +6,13 @@ A consolidated reference of all personal, professional, product, app store, and 
 
 ## 1. Contact & Profiles
 
-| Name / Platform | Link / Details | URL |
-| :--- | :--- | :--- |
-| **Email** | [workwithakeel@gmail.com](mailto:workwithakeel@gmail.com) | `mailto:workwithakeel@gmail.com` |
-| **LinkedIn** | [linkedin.com/in/javid-akeel](https://www.linkedin.com/in/javid-akeel/) | `https://www.linkedin.com/in/javid-akeel/` |
-| **Portfolio** | [javid-portfolio-alpha.vercel.app](https://javid-portfolio-alpha.vercel.app/) | `https://javid-portfolio-alpha.vercel.app/` |
-| **GitHub** | [github.com/expectopatronam](https://github.com/expectopatronam) | `https://github.com/expectopatronam` |
-| **Phone** | [+91 6383007505](tel:+916383007505) | `tel:+916383007505` |
+| Name / Platform | Link / Details                                                                | URL                                         |
+| :-------------- | :---------------------------------------------------------------------------- | :------------------------------------------ |
+| **Email**       | [workwithakeel@gmail.com](mailto:workwithakeel@gmail.com)                     | `mailto:workwithakeel@gmail.com`            |
+| **LinkedIn**    | [linkedin.com/in/javid-akeel](https://www.linkedin.com/in/javid-akeel/)       | `https://www.linkedin.com/in/javid-akeel/`  |
+| **Portfolio**   | [javid-portfolio-alpha.vercel.app](https://javid-portfolio-alpha.vercel.app/) | `https://javid-portfolio-alpha.vercel.app/` |
+| **GitHub**      | [github.com/expectopatronam](https://github.com/expectopatronam)              | `https://github.com/expectopatronam`        |
+| **Phone**       | [+91 6383007505](tel:+916383007505)                                           | `tel:+916383007505`                         |
 
 ---
 
