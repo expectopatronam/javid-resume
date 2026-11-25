@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in LaTeX - GenAI, Python & Applied AI Engineer (2-Page Base Template)
+% Author : Javid Akeel
+% Based on: Jake Gutierrez's template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins: 0.5in all around
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in, itemsep=1.5pt, parsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Javid Akeel} \\ \vspace{2pt}
+    \small +91 6383007505 $|$
+    \href{mailto:workwithakeel@gmail.com}{\underline{workwithakeel@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/javid-akeel/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/expectopatronam}{\underline{GitHub}} $|$
+    \href{https://javid-portfolio-alpha.vercel.app/}{\underline{Portfolio}} $|$
+    Chennai, India $|$ \textbf{Immediate Joiner}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+ \begin{itemize}[leftmargin=0.0in, itemsep=0pt, parsep=0pt, topsep=2pt, label={}]
+    \small{\item{
+     Applied AI, GenAI \& Python Engineer (\textbf{Immediate Joiner}) with \textbf{3+ years} of production experience building multimodal LLM pipelines, computer vision services, and scalable backends in \textbf{Python (FastAPI, Django, Celery, Pydantic)}, \textbf{LangChain}, and \textbf{Node.js}. Proven track record shipping \textbf{OpenAI (Whisper, ChatGPT)}, \textbf{Kling AI / Grok}, \textbf{YOLOv8 / OpenCLIP / OCR}, and async distributed worker architectures on \textbf{Redis}, \textbf{PostgreSQL}, \textbf{MongoDB}, \textbf{Docker}, \textbf{Kubernetes}, and \textbf{AWS / Google Cloud Run}.
+    }}
+ \end{itemize}
+ \vspace{-4pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer -- AI, Python \& Full-Stack}{Dec 2025 -- Present}
+      {Doubletap Innovations and Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Selfitoons} (\href{https://selfitoons.ai/}{\underline{Web}} $|$ \href{https://apps.apple.com/in/app/selfitoons/id6758597947}{\underline{App Store}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.ai.selfitoons}{\underline{Play Store}}) --- \textbf{Multimodal GenAI Pipeline (FastAPI, Celery, LangChain):} To turn unstructured voice and character-image inputs into deterministic AI videos without blocking APIs, built a \textbf{FastAPI} service queuing jobs onto \textbf{Celery (Redis)} and returning a \texttt{job\_id} --- running \textbf{OpenAI Whisper} (multilingual transcription \& normalization), \textbf{ChatGPT image editing}, and \textbf{LangChain + Pydantic} choreography/lip-sync prompt chains routed to \textbf{Grok} or \textbf{Kling AI} on \textbf{Kubernetes} workers.}
+        \resumeItem{\textbf{Fault-Tolerant Checkpointing \& Storage:} To avoid re-running expensive upstream AI calls on transient provider timeouts, implemented \textbf{step-level checkpointing in MongoDB} with \textbf{Celery} exponential-backoff retries, storing media on \textbf{Cloudflare R2} and firing completion/failure webhooks.}
+        \resumeItem{\textbf{AI Token Usage, Cost Analytics \& RBAC:} To prevent LLM/API budget overruns and give stakeholders spend visibility, built token-usage aggregation, USD/INR cost reporting, real-time credit monitoring, low-credit email alerts, \textbf{LangChain}-powered natural-language cost analytics, Excel exports, and \textbf{RBAC} (\textbf{FastAPI}, \textbf{MongoDB}, \textbf{Docker}).}
+        \resumeItem{\textbf{Feed Ranking \& Caching (Node.js, Redis):} To personalize discovery at low latency, built a \textbf{Node.js} feed ranking service (interests, likes, seen history) backed by \textbf{Redis} cohort caching, keeping feed reads fast under load.}
+        \resumeItem{\textbf{ACID Credit Lifecycle (PostgreSQL, Razorpay, Cashfree):} To prevent duplicate charges or lost credits during slow async video renders, engineered an ACID \textbf{PostgreSQL} credit transaction lifecycle (lock on queue, deduct on webhook, auto-release on failure) alongside \textbf{Razorpay} and \textbf{Cashfree} payment verification.}
+        \resumeItem{\textbf{Async API Integration \& Clients (React, Flutter, FFmpeg):} Integrated \textbf{Node.js} with \textbf{FastAPI} to return a \texttt{job\_id} immediately for client tracking; built the \textbf{React} web and \textbf{Flutter} mobile social feed, video player, likes, and nested comments (\textbf{Riverpod}, \textbf{GoRouter}, \textbf{Hive}), 5-controller \textbf{60 FPS} pooling, and client-side \textbf{FFmpeg} watermarking cutting server compute by \textbf{$\sim$75\%}.}
+        \resumeItem{\textbf{Internsharks} (\href{https://internsharks.ai/}{\underline{Web}} $|$ \href{https://play.google.com/store/apps/details?id=com.doubletap.internsharks.ai}{\underline{Play Store}}) --- \textbf{AI Recruitment \& Assessment Pipelines (FastAPI, ChatGPT, OCR):} To standardize resumes and filter unqualified applications, built \textbf{FastAPI} pipelines for PDF/DOCX/image ingestion (\textbf{OCR}, AI enhancement, ATS scoring, JD matching, structured JSON) plus degree/skill eligibility matching, \textbf{ChatGPT} MCQ assessments, and multi-round AI mock-interview workflows.}
+        \resumeItem{\textbf{React \& Flutter Clients:} Built role-based login for recruiters and students, job/internship listings, job postings, applicant tracking, and an interactive AI Resume Builder (live PDF preview) across both \textbf{React} web and \textbf{Flutter} (\textbf{GetX}).}
+        \resumeItem{\textbf{Fulupo Store} (\href{https://play.google.com/store/apps/details?id=com.doubletap.fulupostore}{\underline{Play Store}}) --- \textbf{Real-Time Computer Vision (YOLOv8, OpenCLIP, WebSockets):} Replaced one-by-one barcode scanning with a multi-item camera flow cutting checkout scanning time by \textbf{$\sim$70\%}, backed by \textbf{YOLOv8}, \textbf{OpenCLIP}, and \textbf{OCR} detection, tracking, best-frame selection, and embedding catalog matching over \textbf{WebSockets} and \textbf{REST APIs}.}
+        \resumeItem{\textbf{Retail Document OCR \& Reporting:} Built automated receipt and supplier bill extraction pipelines with column detection, tax/product parsing, structured data processing, and automated Excel report generation.}
+        \resumeItem{\textbf{End-to-End Release Ownership:} Shipped \textbf{5+ production apps} across \textbf{Apple App Store} and \textbf{Google Play Console} (signing certificates, Xcode schemes, \textbf{TestFlight} beta, Privacy Manifests, and staged rollouts).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-Stack Software Engineer (Flutter, Node.js \& Web)}{Oct 2023 -- Nov 2025}
+      {Ecfile Solutions -- Ubill (\href{https://app.ubill.tech/}{\underline{Web Portal}} $|$ \href{https://play.google.com/store/apps/details?id=com.ubill.tech}{\underline{Play Store}})}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{To deliver a desktop-class cloud accounting platform, architected a responsive \textbf{Flutter Web} application (\textbf{Provider}, \textbf{Clean Architecture}) and built client-side \textbf{PDF rendering via JS Interop} reusing backend HTML/CSS templates --- cutting template effort by \textbf{$\sim$50\%} and reducing server payload.}
+        \resumeItem{To eliminate manual tax calculation errors on commercial invoices, implemented \textbf{live multi-tier Indian GST computation} (automatic intra-state CGST/SGST vs.\ inter-state IGST) wired directly to automated financial ledgers.}
+        \resumeItem{To remove onboarding friction for SMBs migrating from spreadsheets, built client-side parsed and validated \textbf{bulk Excel uploads} for invoices, inventory, journals, customers, and suppliers.}
+        \resumeItem{\textbf{Node.js, Express \& MongoDB:} Built multi-tenant REST APIs with \textbf{JWT Authentication}, \textbf{RBAC}, \textbf{Nodemailer} invoice delivery, scheduled \textbf{cron jobs} for GST/overdue reminders, and a migration script moving \textbf{650 users} with billing history intact.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\newpage
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{2pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bizstack -- Offline-First POS \& Python Sync Backend} $|$ \emph{Python (Django), Cloud Run, Firebase, Kotlin, Room}}{\href{https://play.google.com/store/apps/details?id=com.nativedesk.bizstack}{\underline{Play Store}}}
+          \resumeItemListStart
+            \resumeItem{To support multi-device offline sync at low operational overhead, built \textbf{Python (Django)} delta-sync REST APIs on \textbf{Google Cloud Run} backed by \textbf{Firebase Realtime Database} using \texttt{last\_sync} and \texttt{updated\_at} timestamp queries.}
+            \resumeItem{To keep retail billing running during internet outages, built a Play Store-published \textbf{Kotlin / Jetpack Compose} POS app using a \textbf{Room} offline-first architecture with timestamp-based delta sync and last-write-wins conflict resolution.}
+            \resumeItem{To speed up counter checkout and inventory control, integrated \textbf{barcode scanning}, itemized POS billing/tax calculation, low-stock alerts, and P\&L, item, seller, and date-range analytics reports.}
+          \resumeItemListEnd
+          \vspace{2pt}
+
+      \resumeProjectHeading
+          {\textbf{InvusProp -- Real Estate Admin Platform} $|$ \emph{Next.js, NestJS, Tailwind, PostgreSQL, AWS Cognito, Terraform}}{Freelance}
+          \resumeItemListStart
+            \resumeItem{To centralize property operations for internal teams, built a responsive \textbf{Next.js} and \textbf{Tailwind CSS} admin dashboard with full CRUD workflows and multi-criteria search, sorting, and filtering across real estate listings.}
+            \resumeItem{To secure multi-role property access and prevent missed client follow-ups, built \textbf{NestJS + PostgreSQL} REST services with \textbf{AWS Cognito} / \textbf{JWT} authentication, \textbf{RBAC}, and scheduled site-visit reminder jobs.}
+            \resumeItem{To ensure repeatable cloud environments across staging and production, containerized services with \textbf{Docker} and provisioned AWS infrastructure via \textbf{Terraform} IaC.}
+          \resumeItemListEnd
+          \vspace{2pt}
+
+      \resumeProjectHeading
+          {\textbf{Engine Room Ninja -- Q\&A App} $|$ \emph{Flutter, BLoC, Express.js, MongoDB, AWS S3, Docker}}{Freelance $|$ \href{https://play.google.com/store/apps/details?id=com.engine_room_ninja.marine_ninja}{\underline{Play Store}}}
+          \resumeItemListStart
+            \resumeItem{To give marine engineers a dedicated technical Q\&A hub, built a Quora-style \textbf{Flutter (BLoC)} community app with post likes, nested comment threads, Markdown rendering, and \textbf{deep linking} to shared posts --- scaling to \textbf{1,000+ Play Store downloads}.}
+            \resumeItem{To streamline content publishing and monetize expert answers, built a Flutter admin panel with a custom Markdown bulk-posting formatter, \textbf{Google Play Billing} coin unlocks, and real-time \textbf{WebSocket} 1-to-1 direct messaging.}
+            \resumeItem{To power community interactions, media uploads, and secure monetization, built \textbf{Express.js / MongoDB} REST APIs with \textbf{JWT} auth, \textbf{AWS S3} asset storage, and backend purchase verification, containerized with \textbf{Docker}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{2pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.0in, itemsep=3pt, parsep=0pt, topsep=3pt, label={}]
+    \small{\item{
+     \textbf{GenAI \& LLM Orchestration}{: OpenAI (Whisper, ChatGPT, Structured Outputs), LangChain, Pydantic Schemas, Prompt Engineering, Kling AI, Grok, Token \& Cost Analytics} \\
+     \textbf{Computer Vision \& OCR}{: YOLOv8, OpenCLIP, Object Detection \& Tracking, Embedding Catalog Matching, OCR (PDF, DOCX, Receipts, Images)} \\
+     \textbf{Languages \& Backend}{: Python (FastAPI, Django, Celery, Pydantic), JavaScript/TypeScript (Node.js, Express.js, NestJS), SQL (PostgreSQL, MySQL), Dart, Kotlin} \\
+     \textbf{Databases, Queues \& Caching}{: PostgreSQL, MySQL, MongoDB, Redis, Celery, Firebase (Realtime Database), Hive, RoomDB} \\
+     \textbf{Frontend \& Mobile}{: React.js, Next.js, Tailwind CSS, Flutter (Web, iOS, Android), JS Interop, Jetpack Compose} \\
+     \textbf{Cloud, DevOps \& Security}{: Docker, Kubernetes, AWS (S3, Cognito), Google Cloud Run, Cloudflare R2, Terraform, JWT Authentication, RBAC, Git, CI/CD} \\
+     \textbf{Media, Payments \& Tools}{: FFmpeg, Razorpay, Cashfree, Google Play Billing, Postman, VS Code, Android Studio, Play Console, App Store Connect}
+    }}
+ \end{itemize}
+ \vspace{2pt}
+
+%-----------CORE AI & ENGINEERING COMPETENCIES-----------
+\section{Core AI \& Engineering Competencies}
+  \begin{itemize}[leftmargin=0.16in, itemsep=2.5pt, parsep=0pt, topsep=3pt]
+    \resumeItem{\textbf{Multimodal GenAI Pipelines:} Orchestrating voice-to-video, image-editing, ATS resume extraction, and AI mock-interview workflows using \textbf{OpenAI}, \textbf{LangChain}, and \textbf{Pydantic} schema enforcement.}
+    \resumeItem{\textbf{Distributed Python \& Async Workers:} Scaling non-blocking \textbf{FastAPI} services with \textbf{Celery + Redis} queues, \textbf{MongoDB} step-level checkpointing, exponential-backoff retries, and \textbf{Kubernetes} worker pods.}
+    \resumeItem{\textbf{Computer Vision \& Real-Time Streaming:} Deploying \textbf{YOLOv8}, \textbf{OpenCLIP}, and \textbf{OCR} pipelines over \textbf{WebSockets} for barcode-free multi-item retail checkout and automated invoice extraction.}
+    \resumeItem{\textbf{AI Governance, Security \& Billing:} Building USD/INR token-cost analytics, low-credit alerting, \textbf{JWT Authentication}, \textbf{RBAC}, and ACID \textbf{PostgreSQL} credit transaction locks.}
+    \resumeItem{\textbf{Cloud \& Full-Stack Delivery:} Containerizing services with \textbf{Docker}, provisioning AWS with \textbf{Terraform}, deploying serverless APIs on \textbf{Google Cloud Run}, and building \textbf{React / Next.js / Flutter} apps.}
+  \end{itemize}
+  \vspace{2pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Master of Computer Applications (MCA)}{2024 -- 2026}
+    \resumeSubheading
+      {Sadakathullah Appa College}{Tirunelveli, India}
+      {Bachelor of Science in Computer Science (B.Sc.\ CS)}{2020 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
